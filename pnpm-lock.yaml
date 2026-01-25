@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@cloudflare/kv-asset-handler':
-        specifier: ^0.4.2
+        specifier: 0.4.2
         version: 0.4.2
       next:
         specifier: ^16.1.4
