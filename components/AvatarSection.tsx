@@ -6,7 +6,7 @@ export default function AvatarSection() {
     <section className={styles.avatarSection}>
       <img src="/avatar.jpg" alt="Avatar" className={styles.avatar} />
       <h1> KuromiPiPi 🐱</h1>
-      <p>--- quero amanhecer, entardecer e anoitecer com você ---</p>
+      <p>quero amanhecer, entardecer e anoitecer com você</p>
     </section>
   );
 }
