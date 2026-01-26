@@ -1,41 +1,124 @@
+/* =========================
+   视图切换 toggle 按钮容器
+   ========================= */
 .toggle {
-  text-align: center;
-  margin-bottom: 1rem;
+  text-align: center; /* 居中显示切换按钮 */
+  margin-bottom: 1rem; /* 下方间距 */
+  display: flex;
+  justify-content: flex-end; /* 右对齐 */
+  gap: 0.5rem;
+  width: 100%; /* 占满整行宽度 */
+  box-sizing: border-box; /* 避免 padding 导致宽度偏差 */
 }
+
+/* toggle 内的按钮样式 */
 .toggle button {
-  margin: 0 0.5rem;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
+  margin: 0 0.5rem; /* 左右间距 */
+  padding: 0.3rem 0.6rem; /* 内边距 */
+  cursor: pointer; /* 鼠标悬停显示手型 */
 }
+
+/* =========================
+   卡片模式 grid 容器
+   ========================= */
 .cardGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  display: grid; /* 网格布局 */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* 自适应列，最小 250px */
+  gap: 1rem; /* 网格间距 */
 }
+
+/* =========================
+   列表模式容器
+   ========================= */
 .listGrid {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 垂直排列每条列表项 */
 }
 
-/* /styles/PostList.module.css */
+/* =========================
+   图标切换按钮容器
+   ========================= */
 .viewSwitch {
   display: flex;
-  gap: 10px;
-  margin-bottom: 1rem;
+  justify-content: flex-end; /* 右对齐 */
+  margin-bottom: 1rem; /* 下方间距 */
+  gap: 0.5rem; /* 图标间距 */
 }
 
+/* =========================
+   图标按钮样式
+   ========================= */
 .iconButton {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  border-radius: 6px;
-  padding: 4px;
-  transition:
-    background-color 0.2s,
-    transform 0.2s;
+  width: 22px; /* 图标宽度 */
+  height: 22px; /* 图标高度 */
+  cursor: pointer; /* 鼠标悬停显示手型 */
+  opacity: 0.7; /* 默认半透明 */
+  transition: all 0.2s; /* 动画效果 */
+  border-radius: 6px; /* 圆角 */
+  padding: 4px; /* 内边距，扩大可点击区域 */
 }
 
 .iconButton:hover {
-  background-color: #f0f0f0; /* hover 浅灰色 */
-  transform: scale(1.05);
+  opacity: 1; /* hover 变为不透明 */
+  transform: scale(1.1); /* hover 放大 */
+  background-color: var(--color-gray-100); /* hover 浅灰色背景 */
+}
+
+/* =========================
+   分页容器
+   ========================= */
+.pagination {
+  display: flex;
+  justify-content: center; /* 居中显示分页 */
+  margin-top: 1.5rem; /* 上方间距 */
+  gap: 0.5rem; /* 按钮间距 */
+}
+
+/* =========================
+   分页按钮
+   ========================= */
+.pageButton {
+  padding: 0.5rem 1rem; /* 内边距 */
+  border-radius: 10px; /* 圆角 */
+  border: 1px solid var(--color-gray-300); /* 边框颜色 */
+  background-color: var(--color-gray-100); /* 背景颜色 */
+  font-weight: 500;
+  color: var(--color-gray-400); /* 文字颜色 */
+  cursor: pointer;
+  transition: all 0.2s; /* hover/active 动画 */
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+/* hover 状态 */
+.pageButton:hover:not(:disabled) {
+  background-color: var(--color-gray-200);
+}
+
+/* active 状态 */
+.pageButton:active:not(:disabled) {
+  transform: scale(0.985) translateY(0.5px); /* 按下微缩 + 下移 */
+  background-color: var(--color-gray-200);
+}
+
+/* disabled 状态 */
+.pageButton:disabled {
+  cursor: not-allowed; /* 不可点击 */
+  opacity: 0.5; /* 半透明 */
+}
+
+/* =========================
+   分页文字信息
+   ========================= */
+.pageInfo {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  color: var(--color-gray-400); /* 文字颜色 */
+  font-size: 0.8rem; /* 小号字体 */
 }

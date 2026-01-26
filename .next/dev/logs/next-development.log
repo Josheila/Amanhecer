@@ -1,3080 +1,1374 @@
-[00:00:00.571] Server  LOG     ✓ Ready in 392ms
-[00:00:01.646] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+[00:00:00.580] Server  LOG     ✓ Ready in 413ms
+[00:01:02.892] Server  LOG     ✓ Compiled in 45ms
+[00:02:06.639] Server  LOG     ✓ Compiled in 45ms
+[00:02:40.097] Server  LOG     ✓ Compiled in 12ms
+[00:04:39.852] Server  LOG     ✓ Compiled in 69ms
+[00:08:41.388] Server  LOG     ✓ Compiled in 78ms
+[00:09:08.693] Server  LOG     ✓ Compiled in 19ms
+[00:23:10.098] Server  LOG     ✓ Compiled in 36ms
+[00:23:10.405] Browser ERROR   ./styles/globals.css:36:1
+Parsing CSS source code failed
+  34 | }
+  35 |
+> 36 | // /lib/colors.ts
+     | ^
+  37 | // 全局颜色库
+  38 |
+  39 | const colors = {
+
+Invalid empty selector
+
+Import trace:
+  Browser:
+    ./styles/globals.css
+    ./pages/_app.tsx
+[00:24:25.099] Server  LOG     ✓ Compiled in 19ms
+[00:25:04.398] Server  LOG     ✓ Compiled in 58ms
+[00:25:05.401] Browser ERROR   ./styles/Header.module.css:2:15
+Parsing CSS source code failed
+  1 | /* components/Header.module.css */
+> 2 | import {colors from "../lib/colors.ts";
+    |               ^
+  3 |
+  4 |
+  5 | .header {
+
+Unexpected token Ident("from")
+
+Import traces:
+  Browser:
+    ./styles/Header.module.css
+    ./components/Header.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./styles/Header.module.css
+    ./components/Header.tsx
+    ./pages/posts.tsx
+[00:25:05.401] Browser ERROR   ./styles/Header.module.css
+Transforming CSS failed
+Selector "import" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./styles/Header.module.css
+    ./components/Header.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./styles/Header.module.css
+    ./components/Header.tsx
+    ./pages/posts.tsx
+[00:25:09.922] Server  LOG     ✓ Compiled in 104ms
+[00:25:35.624] Server  LOG     ✓ Compiled in 24ms
+[00:28:33.942] Server  LOG     ✓ Compiled in 29ms
+[00:29:01.961] Server  LOG     ✓ Compiled in 12ms
+[00:29:20.780] Server  LOG     ✓ Compiled in 8ms
+[00:29:33.399] Server  LOG     ✓ Compiled in 41ms
+[00:29:48.574] Server  LOG     ✓ Compiled in 7ms
+[00:30:46.971] Server  LOG     ✓ Compiled in 80ms
+[00:37:17.110] Server  LOG     ✓ Compiled in 24ms
+[00:37:35.531] Server  LOG     ✓ Compiled in 20ms
+[00:39:10.498] Server  LOG     ✓ Compiled in 9ms
+[00:39:20.827] Server  LOG     ✓ Compiled in 11ms
+[00:39:36.378] Server  LOG     ✓ Compiled in 5ms
+[00:39:40.043] Server  LOG     ✓ Compiled in 8ms
+[00:40:24.050] Server  LOG     ✓ Compiled in 17ms
+[00:40:41.702] Server  LOG     ✓ Compiled in 8ms
+[00:40:49.301] Server  LOG     ✓ Compiled in 5ms
+[00:43:58.274] Server  LOG     ✓ Compiled in 27ms
+[00:44:08.553] Server  LOG     ✓ Compiled in 10ms
+[00:44:19.416] Server  LOG     ✓ Compiled in 11ms
+[00:44:40.464] Server  LOG     ✓ Compiled in 12ms
+[00:45:17.187] Server  LOG     ✓ Compiled in 12ms
+[00:45:31.141] Server  LOG     ✓ Compiled in 11ms
+[00:47:23.492] Server  LOG     ✓ Compiled in 52ms
+[00:47:31.678] Server  LOG     ✓ Compiled in 9ms
+[00:47:54.208] Server  LOG     ✓ Compiled in 12ms
+[00:47:58.625] Server  LOG     ✓ Compiled in 6ms
+[00:50:02.365] Server  LOG     ✓ Compiled in 28ms
+[00:50:14.460] Server  LOG     ✓ Compiled in 12ms
+[00:50:24.868] Server  LOG     ✓ Compiled in 11ms
+[00:50:38.919] Server  LOG     ✓ Compiled in 8ms
+[00:50:45.811] Server  LOG     ✓ Compiled in 10ms
+[00:51:07.520] Server  LOG     ✓ Compiled in 14ms
+[00:51:18.121] Server  LOG     ✓ Compiled in 17ms
+[00:51:38.486] Server  LOG     ✓ Compiled in 20ms
+[00:52:37.237] Server  LOG     ✓ Compiled in 14ms
+[00:52:45.025] Server  LOG     ✓ Compiled in 10ms
+[00:52:55.899] Server  LOG     ✓ Compiled in 9ms
+[00:53:14.727] Server  LOG     ✓ Compiled in 12ms
+[00:53:19.013] Server  LOG     ✓ Compiled in 10ms
+[00:53:43.447] Server  LOG     ✓ Compiled in 14ms
+[00:53:53.207] Server  LOG     ✓ Compiled in 7ms
+[00:54:31.904] Server  LOG     ✓ Compiled in 11ms
+[00:58:54.076] Server  LOG     ✓ Compiled in 25ms
+[00:59:50.049] Server  LOG     ✓ Compiled in 7ms
+[01:01:13.277] Server  LOG     ✓ Compiled in 26ms
+[01:02:53.975] Server  LOG     ✓ Compiled in 19ms
+[01:03:24.738] Server  LOG     ✓ Compiled in 9ms
+[01:03:43.358] Server  LOG     ✓ Compiled in 12ms
+[01:08:58.055] Server  LOG     ✓ Compiled in 33ms
+[01:09:37.231] Server  LOG     ✓ Compiled in 12ms
+[01:10:08.637] Server  LOG     ✓ Compiled in 23ms
+[01:10:09.403] Browser ERROR   ./components/PostCard.tsx:49:23
+Parsing ecmascript source code failed
+  47 |             <h3
+  48 |               style={
+> 49 |                 margin: "0 0 0.5rem 0",
+     |                       ^
+  50 |                 fontWeight: 400,
+  51 |                 color: "var(--color-gray-400)",
+  52 |                 font-size: 1rem
+
+Expected '</', got ':'
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:10:11.401] Browser ERROR   ./components/PostCard.tsx:49:23
+Parsing ecmascript source code failed
+  47 |             <h3
+  48 |               style={
+> 49 |                 margin: "0 0 0.5rem 0",
+     |                       ^
+  50 |                 fontWeight: 400,
+  51 |                 color: "var(--color-gray-400)",
+  52 |                 font-size: 1rem
+
+Expected '</', got ':'
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:10:20.408] Browser ERROR   ./components/PostCard.tsx:49:23
+Parsing ecmascript source code failed
+  47 |             <h3
+  48 |               style={
+> 49 |                 margin: "0 0 0.5rem 0",
+     |                       ^
+  50 |                 fontWeight: 400,
+  51 |                 color: "var(--color-gray-400)",
+  52 |                 font-size: 1rem
+
+Expected '</', got ':'
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:11:15.128] Server  LOG     ✓ Compiled in 16ms
+[01:12:11.517] Server  LOG     ✓ Compiled in 10ms
+[01:12:27.100] Server  LOG     ✓ Compiled in 12ms
+[01:14:36.223] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.224] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.224] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.225] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.225] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.226] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:14:36.226] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
+
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
 
+[01:14:36.227] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.647] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.647] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.648] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.648] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.648] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.649] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.649] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.651] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.652] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:01.937] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:02.195] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:02.195] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:02.398] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:02.398] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:06.817] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.819] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.820] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.821] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.822] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.823] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.824] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.826] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.830] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:06.831] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:07.063] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:07.229] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:07.229] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:07.229] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:07.229] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:10.182] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.183] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.185] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.186] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.187] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.188] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.189] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.190] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.191] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.192] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.301] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:10.483] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:10.483] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
 https://nextjs.org/docs/messages/module-not-found
-[00:00:10.483] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:10.483] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:22.357] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+[01:14:36.252] Server  LOG     ✓ Compiled in 69ms
+[01:14:36.403] Browser ERROR   ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[01:14:59.596] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-[00:00:22.359] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.361] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
+[01:14:59.597] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.362] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-
 https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.363] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
+[01:14:59.599] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.364] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-
 https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.364] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
+[01:14:59.600] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.365] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-
 https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:22.367] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
 
+[01:14:59.601] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.368] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:22.476] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
 
+[01:14:59.603] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
 
-[00:00:22.614] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:22.614] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:22.614] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:22.614] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:24.095] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
 
-
-https://nextjs.org/docs/messages/module-not-found
+[01:14:59.604] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-[00:00:24.096] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:24.098] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
+[01:14:59.605] Server  ERROR   ⨯ ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
 
-[00:00:24.099] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:24.100] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+[01:14:59.626] Server  LOG     ✓ Compiled in 11ms
+[01:15:00.402] Browser ERROR   ./components/PostCard.tsx:4:1
+Module not found: Can't resolve '../lib/date'
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/date";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[01:15:28.197] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
 
-[00:00:24.101] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
 
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:24.102] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+[01:15:28.197] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
 
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:24.103] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
 
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:24.104] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-
-
-https://nextjs.org/docs/messages/module-not-found
+[01:15:28.198] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
 
-[00:00:24.105] Server  ERROR   ⨯ ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
 
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:24.215] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+[01:15:28.198] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
 
 
-https://nextjs.org/docs/messages/module-not-found
-
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
 
-[00:00:24.354] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:24.354] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:24.354] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:24.354] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:29.177] Server  LOG     ✓ Compiled in 71ms
-[00:00:29.516] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+[01:15:28.228] Server  LOG     ✓ Compiled in 207ms
+[01:15:28.402] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:29.516] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:30.429] Browser ERROR   ./pages/posts/[slug].tsx:8:1
-Module not found: Can't resolve '../components/AvatarSection'
-   6 | import { Post } from "../lib/posts";
-   7 | import Header from "../components/Header";
->  8 | import AvatarSection from "../components/AvatarSection";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
-  11 | interface PostPageProps {
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:30.429] Browser ERROR   ./pages/posts/[slug].tsx:7:1
-Module not found: Can't resolve '../components/Header'
-   5 | import { GetStaticPaths, GetStaticProps } from "next";
-   6 | import { Post } from "../lib/posts";
->  7 | import Header from "../components/Header";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import AvatarSection from "../components/AvatarSection";
-   9 | import ReactMarkdown from "react-markdown";
-  10 |
+[01:15:28.402] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-[00:00:31.413] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:54.566] Server  LOG     ✓ Compiled in 33ms
-[00:02:33.878] Browser LOG     Refreshing page data due to server-side change
-[00:02:34.007] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
-
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-[00:02:34.166] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:15:28.402] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
-Did you mean to import getAllPosts?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:02:34.166] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
-
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
-Did you mean to import getAllPosts?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:02:35.990] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
-
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-[00:02:36.128] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:16:41.015] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:41.016] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:41.018] Server  ERROR   ⨯ ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:41.271] Browser ERROR   uncaughtError: Error: ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:41.469] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:41.469] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:02:36.128] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:16:41.469] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:02:37.086] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:16:41.469] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:41.469] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
-[00:02:37.224] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:16:41.469] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:02:37.224] Browser ERROR   ./pages/posts/[slug].tsx:5:1
-Export getPostBySlug doesn't exist in target module
-  3 | import Link from "next/link";
-  4 | import ReactMarkdown from "react-markdown";
-> 5 | import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import styles from "../../styles/Header.module.css"; // 用和首页同样的样式
-  7 |
-  8 | interface PostPageProps {
 
-The export getPostBySlug was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Import traces:
+  Browser:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+  SSR:
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:17:31.638] Server  LOG     ✓ Compiled in 10ms
+[01:17:32.121] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:32.121] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
+
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
 Did you mean to import getAllPosts?
 All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:04:13.300] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:13.326] Server  LOG     ✓ Compiled in 23ms
-[00:04:13.485] Browser ERROR   uncaughtError: Error: ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-
-
-[00:04:13.639] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:13.639] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:15.761] Browser ERROR   uncaughtError: Error: ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-
-
-[00:04:15.901] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:15.901] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:17.600] Browser ERROR   uncaughtError: Error: ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-
-
-[00:04:17.740] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:17.740] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:18.461] Browser ERROR   uncaughtError: Error: ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-
-
-[00:04:18.598] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:18.598] Browser ERROR   ./lib/posts.ts:55:13
-Parsing ecmascript source code failed
-  53 |     cover: data.cover || null,
-  54 |     content,
-> 55 |   } as Post;
-     |             ^
-  56 |
-  57 |
-
-Expected '}', got '<eof>'
-
-Import trace:
-  SSR:
-    ./lib/posts.ts
-    ./pages/posts/[slug].tsx
-[00:04:39.875] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:07:34.466] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:17:32.121] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:07:34.467] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:18:14.403] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[01:18:14.403] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-
-[00:07:34.467] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:18:14.403] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:07:34.468] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:18:25.402] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[01:18:25.403] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-
-[00:07:34.468] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:18:25.403] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:07:34.469] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:19:00.625] Server  LOG     ✓ Compiled in 46ms
+[01:19:01.210] Browser ERROR   ./lib/posts.ts:2:1
+Module not found: Can't resolve 'fs'
+  1 | // /lib/posts.ts
+> 2 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  3 | import path from "path";
+  4 | import matter from "gray-matter";
+  5 |
+
+Import traces:
+  SSR:
+    ./lib/posts.ts
+    ./pages/posts.tsx
+
+  Browser:
+    ./lib/posts.ts
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
 https://nextjs.org/docs/messages/module-not-found
+[01:19:01.210] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-
-[00:07:34.469] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [client] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:19:01.210] Browser ERROR   ./components/PostCard.tsx:4:1
+Export formatDate doesn't exist in target module
+  2 | import Link from "next/link";
+  3 | import { Post } from "../lib/posts";
+> 4 | import { formatDate } from "../lib/posts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface PostCardProps {
+  7 |   post: Post; // 单条文章数据
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:07:34.470] Server  ERROR   ⨯ ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-
+The export formatDate was not found in module [project]/lib/posts.ts [ssr] (ecmascript).
+Did you mean to import getAllPosts?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
 
   SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:07:34.496] Server  LOG     ✓ Compiled in 47ms
-[00:07:35.514] Browser ERROR   ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-Import traces:
-  Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
-
-  SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:08:07.514] Browser ERROR   ./components/Header.tsx:2:1
-Module not found: Can't resolve './Header.module.css'
-  1 | import Link from "next/link";
-> 2 | import styles from "./Header.module.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | interface HeaderProps {
-  5 |   buttons?: { label: string; href: string }[];
-
-Import traces:
-  Browser:
-    ./components/Header.tsx
-    ./pages/index.tsx
-
-  SSR:
-    ./components/Header.tsx
-    ./pages/index.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:09:17.208] Server  LOG     ✓ Compiled in 29ms
-[00:11:17.718] Server  LOG     ✓ Compiled in 39ms
-[00:12:24.106] Server  LOG     ✓ Compiled in 14ms
-[00:14:08.718] Server  LOG     ✓ Compiled in 19ms
-[00:15:39.929] Server  LOG     ✓ Compiled in 9ms
-[00:17:06.105] Server  LOG     ✓ Compiled in 21ms
-[00:18:00.804] Server  LOG     ✓ Compiled in 32ms
-[00:19:02.815] Server  LOG     ✓ Compiled in 17ms
-[00:21:18.062] Server  LOG     ✓ Compiled in 70ms
-[00:21:18.115] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/about.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:22:16.795] Server  LOG     ✓ Compiled in 22ms
-[00:23:16.695] Server  LOG     ✓ Compiled in 19ms
-[00:23:22.932] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:22.962] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:23.016] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:23.043] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:23.159] Browser ERROR   uncaughtError: Error: EISDIR: illegal operation on a directory, read
-[00:23:29.012] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:29.044] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:29.146] Browser ERROR   uncaughtError: Error: EISDIR: illegal operation on a directory, read
-[00:23:40.719] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:40.747] Server  ERROR   ⨯ Error: EISDIR: illegal operation on a directory, read
-[00:23:40.846] Browser ERROR   uncaughtError: Error: EISDIR: illegal operation on a directory, read
-[00:24:54.892] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:24:54.892] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:24:54.918] Server  LOG     ✓ Compiled in 54ms
-[00:33:58.215] Server  LOG     ✓ Compiled in 38ms
-[00:34:56.168] Server  LOG     ✓ Compiled in 12ms
-[00:35:35.963] Server  LOG     ✓ Compiled in 13ms
-[00:36:37.532] Server  LOG     ✓ Compiled in 23ms
-[00:37:11.139] Server  LOG     ✓ Compiled in 35ms
-[00:37:33.119] Server  LOG     ✓ Compiled in 22ms
-[00:40:09.572] Server  LOG     ✓ Compiled in 18ms
-[00:43:46.411] Server  LOG     ✓ Compiled in 20ms
-[00:47:08.512] Server  LOG     ✓ Compiled in 24ms
-[00:47:48.631] Server  LOG     ✓ Compiled in 64ms
-[00:47:48.720] Browser LOG     Refreshing page data due to server-side change
-[00:47:48.720] Browser ERROR   %o
-
-%s
-
-%s
- {} The above error occurred in the <PostList> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
-[00:50:05.395] Server  LOG     ✓ Compiled in 33ms
-[00:50:24.385] Server  LOG     ✓ Compiled in 12ms
-[00:52:03.581] Server  LOG     ✓ Compiled in 87ms
-[00:52:03.633] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/now.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:54:11.967] Server  LOG     ✓ Compiled in 22ms
-[00:57:48.384] Server  LOG     ✓ Compiled in 46ms
-[00:58:07.133] Server  LOG     ✓ Compiled in 22ms
-[00:58:30.794] Server  LOG     ✓ Compiled in 25ms
-[01:00:54.428] Server  LOG     ✓ Compiled in 23ms
-[01:00:54.516] Browser ERROR   %o
-
-%s
-
-%s
- {} The above error occurred in the <PostPage> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
-[01:03:27.277] Server  LOG     ✓ Compiled in 90ms
-[01:03:34.908] Server  ERROR   PageNotFoundError: Cannot find module for page: /tags/milestone
-[01:04:36.825] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/tags/[tag]"
-[01:04:36.869] Server  ERROR   ⨯ Error: The default export is not a React Component in page: "/tags/[tag]"
-[01:04:37.006] Browser ERROR   uncaughtError: Error: The default export is not a React Component in page: "/tags/[tag]"
-[01:04:42.091] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:42.103] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:05:30.577] Server  LOG     ✓ Compiled in 48ms
-[01:11:59.863] Server  LOG     ✓ Compiled in 13ms
-[01:12:15.679] Server  LOG     ✓ Compiled in 5ms
-[01:14:08.187] Server  LOG     ✓ Compiled in 22ms
-[01:16:42.987] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.988] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.988] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.988] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.989] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.989] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.989] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.989] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.994] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.994] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.994] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.994] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:42.995] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.007] Browser LOG     Refreshing page data due to server-side change
-[01:16:43.016] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.016] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.016] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.017] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.017] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.134] Browser ERROR   uncaughtError: Error: ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:16:43.297] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:16:43.297] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:17:14.263] Server  LOG     ✓ Compiled in 17ms
-[01:17:14.514] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:17:20.020] Server  LOG     ✓ Compiled in 24ms
-[01:17:20.515] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap"; // 你维护的 tag 映射
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: string[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:17:22.115] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:19:45.511] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.511] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.515] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.517] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.518] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.518] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.518] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.519] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.527] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.527] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.528] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.528] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.528] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.540] Browser LOG     Refreshing page data due to server-side change
-[01:19:45.552] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.552] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.553] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.553] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.554] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.697] Browser ERROR   uncaughtError: Error: ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:45.889] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:19:45.889] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:19:50.369] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.371] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.373] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.375] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.376] Server  ERROR   ⨯ ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.482] Browser ERROR   uncaughtError: Error: ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:19:50.621] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:19:50.621] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:20:05.514] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:20:32.139] Server  LOG     ✓ Compiled in 20ms
-[01:20:32.514] Browser ERROR   ./pages/tags.tsx:5:1
-Module not found: Can't resolve '../lib/tagMap'
-  3 | import Header from "../components/Header";
-  4 | import { getAllPosts, Post } from "../lib/posts";
-> 5 | import tagMap from "../lib/tagMap";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 |
-  7 | interface TagsPageProps {
-  8 |   tags: { name: string; count: number }[];
-
-https://nextjs.org/docs/messages/module-not-found
-[01:20:33.751] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:20:34.013] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
-      <App pageProps={{tags:[...]}} __N_SSG={true} Component={function TagsPage} err={undefined} ...>
-        <TagsPage tags={[...]}>
-          <div className="container" style={{maxWidth:"...", ...}}>
-            <Header>
-            <main style={{...}}>
-              <h1>
-              <div style={{position:"...", ...}}>
-                <LinkComponent href="/tags/blog">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "25.454254503956413%"
--                       top: "24.3648%"
-+                       left: "16.141076590717713%"
--                       left: "36.8975%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "2.5999999999999996rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       font-size: "2.6rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-                <LinkComponent href="/tags/mile...">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "38.1775177155005%"
--                       top: "8.46769%"
-+                       left: "49.79386971272327%"
--                       left: "41.767%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "0.9500000000000001rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       font-size: "0.95rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-      ...
-
-[01:21:37.522] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./pages/tags.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:21:37.543] Server  LOG     ✓ Compiled in 53ms
-[01:21:37.860] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
-      <App pageProps={{tags:[...]}} __N_SSG={true} Component={function Tags} err={undefined} ...>
-        <Tags tags={[...]}>
-          <div className="container" style={{maxWidth:"...", ...}}>
-            <Header>
-            <main style={{...}}>
-              <h1>
-              <div style={{position:"...", ...}}>
-                <LinkComponent href="/tags/blog">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "5%"
--                       top: "5%"
-+                       left: "34.27491964188346%"
--                       left: "41.0879%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "2.8rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "2.8rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-                <LinkComponent href="/tags/mile...">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "8%"
--                       top: "8%"
-+                       left: "37.243318984172085%"
--                       left: "7.66436%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "0.9666666666666667rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "0.966667rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-      ...
-
-[01:21:39.903] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
-      <App pageProps={{tags:[...]}} __N_SSG={true} Component={function Tags} err={undefined} ...>
-        <Tags tags={[...]}>
-          <div className="container" style={{maxWidth:"...", ...}}>
-            <Header>
-            <main style={{...}}>
-              <h1>
-              <div style={{position:"...", ...}}>
-                <LinkComponent href="/tags/blog">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "5%"
--                       top: "5%"
-+                       left: "88.68746946868073%"
--                       left: "13.8489%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "2.8rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "2.8rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-                <LinkComponent href="/tags/mile...">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "8%"
--                       top: "8%"
-+                       left: "57.42773919412903%"
--                       left: "60.8317%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "0.9666666666666667rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "0.966667rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-      ...
-
-[01:21:59.276] Server  LOG     ✓ Compiled in 13ms
-[01:22:01.469] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
-      <App pageProps={{tags:[...]}} __N_SSG={true} Component={function Tags} err={undefined} ...>
-        <Tags tags={[...]}>
-          <div className="container" style={{maxWidth:"...", ...}}>
-            <Header>
-            <main style={{...}}>
-              <h1>
-              <div style={{position:"...", ...}}>
-                <LinkComponent href="/tags/blog">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "5%"
--                       top: "5%"
-+                       left: "32.35230388414415%"
--                       left: "18.2652%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "2.8rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "2.8rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-                <LinkComponent href="/tags/mile...">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "8%"
--                       top: "8%"
-+                       left: "85.72303395124842%"
--                       left: "48.2216%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "0.9666666666666667rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "0.966667rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-      ...
-
-[01:22:13.582] Server  LOG     ✓ Compiled in 10ms
-[01:22:24.737] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
-      <App pageProps={{tags:[...]}} __N_SSG={true} Component={function Tags} err={undefined} ...>
-        <Tags tags={[...]}>
-          <div className="container" style={{maxWidth:"...", ...}}>
-            <Header>
-            <main style={{...}}>
-              <h1>
-              <div style={{position:"...", ...}}>
-                <LinkComponent href="/tags/blog">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "5%"
--                       top: "5%"
-+                       left: "90.82738625670011%"
--                       left: "57.8119%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "2.8rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "2.8rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-                <LinkComponent href="/tags/mile...">
-                  <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
-                    <div
-                      style={{
-+                       position: "absolute"
--                       position: "absolute"
-+                       top: "8%"
--                       top: "8%"
-+                       left: "83.62442506841288%"
--                       left: "76.9491%"
-+                       padding: "0.1rem 0.3rem"
-+                       borderRadius: "6px"
-+                       cursor: "pointer"
--                       cursor: "pointer"
-+                       fontSize: "0.9666666666666667rem"
-+                       fontWeight: 500
-+                       transition: "background-color 0.2s, transform 0.2s"
-+                       backgroundColor: "rgba(255,255,255,0.7)"
-+                       whiteSpace: "nowrap"
--                       padding-top: "0.1rem"
--                       padding-right: "0.3rem"
--                       padding-bottom: "0.1rem"
--                       padding-left: "0.3rem"
--                       border-top-left-radius: "6px"
--                       border-top-right-radius: "6px"
--                       border-bottom-right-radius: "6px"
--                       border-bottom-left-radius: "6px"
--                       font-size: "0.966667rem"
--                       font-weight: "500"
--                       transition-behavior: "normal, normal"
--                       transition-duration: "0.2s, 0.2s"
--                       transition-timing-function: "ease, ease"
--                       transition-delay: "0s, 0s"
--                       transition-property: "background-color, transform"
--                       background-color: "rgba(255, 255, 255, 0.7)"
--                       white-space-collapse: "collapse"
--                       text-wrap-mode: "nowrap"
-                      }}
-                      onMouseEnter={function onMouseEnter}
-                      onMouseLeave={function onMouseLeave}
-                    >
-      ...
-
-[01:23:41.314] Server  LOG     ✓ Compiled in 28ms
-[01:25:53.836] Server  LOG     ✓ Compiled in 16ms
-[01:27:42.319] Browser LOG     Refreshing page data due to server-side change
-[01:27:42.466] Browser ERROR   uncaughtError: Error: ./pages/posts/[slug].tsx:52:34
+    ./components/PostCard.tsx
+    ./components/PostList.tsx
+    ./pages/posts.tsx
+[01:19:04.971] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:23.130] Server  LOG     ✓ Compiled in 16ms
+[01:20:51.924] Server  LOG     ✓ Compiled in 27ms
+[01:21:02.828] Server  LOG     ✓ Compiled in 15ms
+[01:21:08.278] Server  LOG     ✓ Compiled in 13ms
+[01:21:13.645] Server  LOG     ✓ Compiled in 11ms
+[01:21:35.692] Server  LOG     ✓ Compiled in 8ms
+[01:21:57.156] Server  LOG     ✓ Compiled in 23ms
+[01:23:26.676] Server  LOG     ✓ Compiled in 15ms
+[01:24:12.927] Server  LOG     ✓ Compiled in 21ms
+[01:24:20.124] Server  LOG     ✓ Compiled in 14ms
+[01:26:21.383] Server  LOG     ✓ Compiled in 43ms
+[01:26:50.648] Server  LOG     ✓ Compiled in 13ms
+[01:29:25.194] Server  LOG     ✓ Compiled in 37ms
+[01:30:10.058] Server  LOG     ✓ Compiled in 47ms
+[01:31:50.381] Server  LOG     ✓ Compiled in 15ms
+[01:33:00.336] Server  LOG     ✓ Compiled in 13ms
+[01:33:23.308] Server  LOG     ✓ Compiled in 10ms
+[01:34:16.643] Server  LOG     ✓ Compiled in 16ms
+[01:36:12.749] Server  LOG     ✓ Compiled in 11ms
+[01:37:03.876] Server  LOG     ✓ Compiled in 27ms
+[01:37:22.175] Server  LOG     ✓ Compiled in 9ms
+[01:38:02.848] Server  LOG     ✓ Compiled in 8ms
+[01:39:00.223] Server  LOG     ✓ Compiled in 17ms
+[01:40:31.642] Server  LOG     ✓ Compiled in 8ms
+[01:40:59.406] Server  LOG     ✓ Compiled in 10ms
+[01:44:26.822] Server  LOG     ✓ Compiled in 19ms
+[01:46:58.023] Server  LOG     ✓ Compiled in 19ms
+[01:48:39.314] Server  LOG     ✓ Compiled in 44ms
+[01:49:14.581] Server  LOG     ✓ Compiled in 35ms
+[01:49:14.685] Browser LOG     Refreshing page data due to server-side change
+[01:49:14.685] Browser ERROR   ./pages/index.tsx:14:46
 Parsing ecmascript source code failed
-  50 |                       cursor: "pointer",
-  51 |                       fontSize: "0.85rem",
-> 52 |                       color: #706F6C
-     |                                  ^
-  53 |                     }}
-  54 |                   >
-  55 |                     # {tagMap[tag] || tag}
+  12 |   return (
+  13 |     <div className="container">
+> 14 |       <div1 style={{ marginTop: "2rem" }}> </>
+     |                                              ^
+  15 |       <AvatarSection />
+  16 |       <Header style={{ justifyContent: "center" }} />
+  17 |     </div>
 
-Identifier cannot follow number
-
-
-[01:27:42.623] Browser ERROR   ./pages/posts/[slug].tsx:52:34
-Parsing ecmascript source code failed
-  50 |                       cursor: "pointer",
-  51 |                       fontSize: "0.85rem",
-> 52 |                       color: #706F6C
-     |                                  ^
-  53 |                     }}
-  54 |                   >
-  55 |                     # {tagMap[tag] || tag}
-
-Identifier cannot follow number
-[01:27:42.623] Browser ERROR   ./pages/posts/[slug].tsx
-Code generation for chunk item errored
-An error occurred while generating the chunk item [project]/pages/posts/[slug].tsx [ssr] (ecmascript)
-
-Caused by:
-- CJS module can't be async.
-
-Debug info:
-- An error occurred while generating the chunk item [project]/pages/posts/[slug].tsx [ssr] (ecmascript)
-- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
-- Execution of EcmascriptChunkItemContent::new failed
-- CJS module can't be async.
-[01:27:42.623] Browser ERROR   ./pages/posts/[slug].tsx:52:34
-Parsing ecmascript source code failed
-  50 |                       cursor: "pointer",
-  51 |                       fontSize: "0.85rem",
-> 52 |                       color: #706F6C
-     |                                  ^
-  53 |                     }}
-  54 |                   >
-  55 |                     # {tagMap[tag] || tag}
-
-Identifier cannot follow number
-[01:27:42.623] Browser ERROR   ./pages/posts/[slug].tsx
-Code generation for chunk item errored
-An error occurred while generating the chunk item [project]/pages/posts/[slug].tsx [ssr] (ecmascript)
-
-Caused by:
-- CJS module can't be async.
-
-Debug info:
-- An error occurred while generating the chunk item [project]/pages/posts/[slug].tsx [ssr] (ecmascript)
-- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
-- Execution of EcmascriptChunkItemContent::new failed
-- CJS module can't be async.
-[01:27:57.183] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:27:57.190] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:30:48.129] Server  LOG     ✓ Compiled in 25ms
-[01:31:25.098] Server  LOG     ✓ Compiled in 54ms
-[01:31:37.061] Server  LOG     ✓ Compiled in 13ms
-[01:31:55.913] Server  LOG     ✓ Compiled in 10ms
-[01:33:06.184] Server  LOG     ✓ Compiled in 25ms
-[01:33:36.139] Server  LOG     ✓ Compiled in 24ms
-[01:34:08.619] Server  LOG     ✓ Compiled in 7ms
-[01:35:23.050] Server  LOG     ✓ Compiled in 13ms
-[01:35:48.128] Server  LOG     ✓ Compiled in 13ms
-[01:36:18.136] Server  LOG     ✓ Compiled in 19ms
+Expression expected
+[01:49:40.631] Server  LOG     ✓ Compiled in 16ms
+[01:49:40.701] Browser LOG     Refreshing page data due to server-side change

@@ -9,9 +9,40 @@ a {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+:root {
+  --color-primary: #1e90ff;
+  --color-secondary: #ff6b6b;
+  --color-accent: #ffd93d;
+  --color-background: #fff;
+  --color-surface: #f8f8f8;
+  --color-text-primary: #222;
+  --color-text-secondary: #555;
+  --color-text-muted: #888;
+  --color-text-inverted: #fff;
+  --color-border: #e0e0e0;
+  --color-gray-100: #f8f8f8;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c4c4c4;
+  --color-gray-400: #888;
+  --color-gray-500: #706f6c;
+  --color-gray-600: #444;
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-info: #17a2b8;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=styles_globals_dc36e6c9.css.map*/

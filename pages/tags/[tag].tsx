@@ -1,8 +1,8 @@
-// /pages/tags/[tag].tsx
+// pages/tags/[tag].tsx
 import { GetStaticPaths, GetStaticProps } from "next";
-import Header from "../../components/Header";
-import PostList from "../../components/PostList";
 import { getAllPosts, Post } from "../../lib/posts";
+import PostList from "../../components/PostList";
+import Header from "../../components/Header";
 import { tagMap } from "../../lib/tags";
 
 interface TagPageProps {
@@ -12,36 +12,30 @@ interface TagPageProps {
 
 export default function TagPage({ tag, posts }: TagPageProps) {
   return (
-    <div className="container">
+    <div className="container" style={{ maxWidth: "640px", margin: "0 auto" }}>
       <Header buttons={[{ label: "Posts", href: "/posts" }]} />
       <main style={{ marginTop: "2rem" }}>
-        <h1># {tagMap[tag] || tag}</h1>
+        <h1>Tag: {tagMap[tag] || tag}</h1>
         <PostList posts={posts} />
       </main>
     </div>
   );
 }
 
-// 动态生成所有 tag 页面
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
-  const tagsSet = new Set<string>();
-  posts.forEach((post) => post.tags.forEach((t) => tagsSet.add(t)));
-  const paths = Array.from(tagsSet).map((tag) => ({
-    params: { tag },
-  }));
+  const tags = Array.from(new Set(posts.flatMap((p) => p.tags)));
+  const paths = tags.map((tag) => ({ params: { tag } }));
+
   return { paths, fallback: false };
 };
 
-// 获取当前 tag 对应的所有文章
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const tag = params?.tag as string;
-  const posts = getAllPosts().filter((post) => post.tags.includes(tag));
+  //   直接调用 getAllPosts(tag) 获取某个 tag 的文章
+  const posts = getAllPosts(tag);
 
   return {
-    props: {
-      tag,
-      posts,
-    },
+    props: { tag, posts },
   };
 };

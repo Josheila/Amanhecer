@@ -16,25 +16,25 @@ export default function PostPage({ post }: PostPageProps) {
       {/* 使用 Header 组件，只显示一个 Posts 按钮 */}
       <Header buttons={[{ label: "Posts", href: "/posts" }]} />
       {/* 文章内容 */}
-      <main
-        style={{ maxWidth: "700px", margin: "2rem auto", padding: "0 1rem" }}
-      >
+      <main>
         {post.cover && (
           <img
             src={post.cover}
             alt={post.title}
             style={{
               width: "100%",
-              height: "300px",
+              height: "250px",
               objectFit: "cover",
-              borderRadius: "10px",
+              borderRadius: "1px",
               marginBottom: "1rem",
             }}
           />
         )}
         <h1>{post.title}</h1>
         <p style={{ color: "#888", marginBottom: "1rem" }}>{post.date}</p>
+
         <ReactMarkdown>{post.content}</ReactMarkdown>
+
         {/* Tags 区域 */}
         {post.tags && post.tags.length > 0 && (
           <div style={{ marginTop: "2rem" }}>

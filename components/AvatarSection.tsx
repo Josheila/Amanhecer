@@ -6,7 +6,10 @@ export default function AvatarSection() {
     <section className={styles.avatarSection}>
       <img src="/avatar.jpg" alt="Avatar" className={styles.avatar} />
       <h1>Amanhecer 🌅</h1>
-      <p>Olá, seja bem-vinda!</p>
+      <p>
+        Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja
+        bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda!
+      </p>
     </section>
   );
 }

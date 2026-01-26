@@ -102,6 +102,7 @@ function PostCard({ post, view }) {
                 post.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                     style: {
                         height: "150px",
+                        aspectRatio: "4 / 3",
                         overflow: "hidden"
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -114,7 +115,7 @@ function PostCard({ post, view }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/PostCard.tsx",
-                        lineNumber: 29,
+                        lineNumber: 35,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
@@ -134,7 +135,7 @@ function PostCard({ post, view }) {
                             children: post.title
                         }, void 0, false, {
                             fileName: "[project]/components/PostCard.tsx",
-                            lineNumber: 37,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -146,13 +147,13 @@ function PostCard({ post, view }) {
                             children: post.date
                         }, void 0, false, {
                             fileName: "[project]/components/PostCard.tsx",
-                            lineNumber: 38,
+                            lineNumber: 44,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/PostCard.tsx",
-                    lineNumber: 36,
+                    lineNumber: 42,
                     columnNumber: 11
                 }, this)
             ]
@@ -178,7 +179,7 @@ function PostCard({ post, view }) {
                     children: post.date
                 }, void 0, false, {
                     fileName: "[project]/components/PostCard.tsx",
-                    lineNumber: 54,
+                    lineNumber: 60,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -188,13 +189,13 @@ function PostCard({ post, view }) {
                     children: post.title
                 }, void 0, false, {
                     fileName: "[project]/components/PostCard.tsx",
-                    lineNumber: 55,
+                    lineNumber: 61,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/PostCard.tsx",
-            lineNumber: 44,
+            lineNumber: 50,
             columnNumber: 9
         }, this)
     }, void 0, false, {
@@ -225,13 +226,17 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$run
 // /components/PostList.tsx
 var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/react [external] (react, cjs)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PostCard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/PostCard.tsx [ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/PostList.module.css [ssr] (css module)"); // 新建 CSS 文件
+var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/PostList.module.css [ssr] (css module)");
 ;
 ;
 ;
 ;
-function PostList({ posts }) {
+function PostList({ posts, pageSize = 15 }) {
     const [viewMode, setViewMode] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])("card");
+    const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(1);
+    const totalPages = Math.ceil(posts.length / pageSize);
+    const startIndex = (currentPage - 1) * pageSize;
+    const paginatedPosts = posts.slice(startIndex, startIndex + pageSize);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -244,7 +249,7 @@ function PostList({ posts }) {
                         onClick: ()=>setViewMode("card")
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 18,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -254,13 +259,13 @@ function PostList({ posts }) {
                         onClick: ()=>setViewMode("list")
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 24,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 17,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -269,23 +274,81 @@ function PostList({ posts }) {
                     gridTemplateColumns: viewMode === "card" ? "repeat(auto-fit, minmax(250px, 1fr))" : "1fr",
                     gap: "1rem"
                 },
-                children: posts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PostCard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                children: paginatedPosts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PostCard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                         post: post,
                         view: viewMode
                     }, post.slug, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 44,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 33,
+                lineNumber: 39,
                 columnNumber: 7
+            }, this),
+            totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                style: {
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "1.5rem",
+                    gap: "0.5rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setCurrentPage((p)=>Math.max(p - 1, 1)),
+                        disabled: currentPage === 1,
+                        style: {
+                            padding: "0.5rem 1rem",
+                            borderRadius: "5px",
+                            border: "1px solid #ccc",
+                            cursor: currentPage === 1 ? "not-allowed" : "pointer"
+                        },
+                        children: "Prev"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PostList.tsx",
+                        lineNumber: 64,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                        style: {
+                            padding: "0.5rem 1rem"
+                        },
+                        children: [
+                            currentPage,
+                            " / ",
+                            totalPages
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/PostList.tsx",
+                        lineNumber: 77,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setCurrentPage((p)=>Math.min(p + 1, totalPages)),
+                        disabled: currentPage === totalPages,
+                        style: {
+                            padding: "0.5rem 1rem",
+                            borderRadius: "5px",
+                            border: "1px solid #ccc",
+                            cursor: currentPage === totalPages ? "not-allowed" : "pointer"
+                        },
+                        children: "Next"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PostList.tsx",
+                        lineNumber: 81,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/PostList.tsx",
+                lineNumber: 56,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/PostList.tsx",
-        lineNumber: 15,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }

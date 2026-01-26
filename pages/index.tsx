@@ -11,19 +11,8 @@ interface HomeProps {
 export default function Home({ posts }: HomeProps) {
   return (
     <div className="container">
-      <Header />
       <AvatarSection />
-      <PostList posts={posts} />
+      <Header style={{ justifyContent: "center" }} />
     </div>
   );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(); // 自动读取 posts 目录下所有 Markdown 文件
-
-  return {
-    props: {
-      posts,
-    },
-  };
-};

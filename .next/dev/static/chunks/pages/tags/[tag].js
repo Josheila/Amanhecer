@@ -6,8 +6,8 @@ __turbopack_load_page_chunks__("/tags/[tag]", [
   "static/chunks/62cdd_next_link_8787c27d.js",
   "static/chunks/5e54f_react-dom_4d21b075._.js",
   "static/chunks/node_modules__pnpm_f4116989._.js",
-  "static/chunks/[root-of-the-server]__08c6babd._.js",
-  "static/chunks/styles_da1fd6ad._.css",
+  "static/chunks/[root-of-the-server]__99665b6d._.js",
+  "static/chunks/styles_9acb9d40._.css",
   "static/chunks/pages_tags_[tag]_tsx_2da965e7._.js",
-  "static/chunks/turbopack-pages_tags_[tag]_tsx_86c46157._.js"
+  "static/chunks/turbopack-pages_tags_[tag]_tsx_2984f82f._.js"
 ])

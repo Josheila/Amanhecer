@@ -466,6 +466,7 @@ function triggerUpdate(msg) {
 
 __turbopack_context__.v({
   "header": "Header-module__vcZAwq__header",
+  "myHeaderOverride": "Header-module__vcZAwq__myHeaderOverride",
   "navButton": "Header-module__vcZAwq__navButton",
   "navButtons": "Header-module__vcZAwq__navButtons",
   "navText": "Header-module__vcZAwq__navText",
@@ -501,9 +502,10 @@ function Header({ buttons = [
         label: "About",
         href: "/about"
     }
-] }) {
+], style }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].header,
+        style: style,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButtons,
             children: buttons.map((btn)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -513,22 +515,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 21,
+                        lineNumber: 24,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 20,
+                    lineNumber: 23,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 18,
+            lineNumber: 21,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 17,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -582,6 +584,10 @@ function Tags({ tags }) {
     const maxCount = sortedTags[0]?.count || 1;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "container",
+        style: {
+            maxWidth: "640px",
+            margin: "0 auto"
+        },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 buttons: [
@@ -592,7 +598,7 @@ function Tags({ tags }) {
                 ]
             }, void 0, false, {
                 fileName: "[project]/pages/tags.tsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -601,10 +607,13 @@ function Tags({ tags }) {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        children: "All Tags"
+                        style: {
+                            color: "var(--color-gray-500)"
+                        },
+                        children: "Tags"
                     }, void 0, false, {
                         fileName: "[project]/pages/tags.tsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -631,9 +640,13 @@ function Tags({ tags }) {
                                         fontWeight: 500,
                                         transition: "background-color 0.2s, transform 0.2s",
                                         backgroundColor: "rgba(255,255,255,0.7)",
+                                        color: "var(--color-gray-400)",
                                         padding: "0.2rem 0.5rem",
                                         borderRadius: "6px",
-                                        whiteSpace: "nowrap"
+                                        whiteSpace: "nowrap",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "0.2rem"
                                     },
                                     onMouseEnter: (e)=>{
                                         e.currentTarget.style.backgroundColor = "rgba(220,220,220,0.8)";
@@ -644,35 +657,46 @@ function Tags({ tags }) {
                                         e.currentTarget.style.transform = "scale(1)";
                                     },
                                     children: [
-                                        "#",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icon/pound.svg",
+                                            alt: "#",
+                                            style: {
+                                                width: "1em",
+                                                height: "1em"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/pages/tags.tsx",
+                                            lineNumber: 68,
+                                            columnNumber: 19
+                                        }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tags$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["tagMap"][tag.name] || tag.name
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/tags.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 42,
                                     columnNumber: 17
                                 }, this)
                             }, tag.name, false, {
                                 fileName: "[project]/pages/tags.tsx",
-                                lineNumber: 42,
+                                lineNumber: 41,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/pages/tags.tsx",
-                        lineNumber: 24,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/tags.tsx",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/tags.tsx",
-        lineNumber: 18,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }

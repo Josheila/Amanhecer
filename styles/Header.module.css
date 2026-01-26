@@ -3,7 +3,9 @@
 .header {
   padding: 1rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* 右对齐 */
+  align-items: center; /* 垂直居中 */
+  gap: 1rem; /* 可选：按钮间距 */
 }
 
 .navButtons {
@@ -20,21 +22,28 @@
   padding: 0.25rem 1rem;
   min-height: 1.75rem;
   min-width: 1.75rem;
-  border: 1px solid #d1d1d1; /* border-sand-6 */
-  background-color: #f8f8f8; /* bg-sand-1 */
-  border-radius: 10px; /* 圆角10 */
+  border: 1px solid var(--color-gray-200);
+  background-color: var(--color-gray-100);
+  border-radius: 20px; /* 圆角10 */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: var(--color-gray-400);
+  -webkit-tap-highlight-color: transparent; /* 去掉移动端点击蓝色高亮 */
 }
 
 .navButton:hover {
-  background-color: #e0e0e0; /* hover 状态 */
+  background-color: var(--color-gray-200); /* hover 状态 */
+}
+
+.navButton:focus {
+  outline: none; /* 去掉聚焦时的蓝色轮廓 */
 }
 
 .navButton:active {
   transform: scale(0.985) translateY(0.5px);
-  background-color: #dcdcdc; /* active 状态 */
+  background-color: var(--color-gray-200); /* active 状态 */
 }
 
 .navText {
@@ -42,4 +51,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1rem;
+}
+
+.myHeaderOverride {
+  justify-content: center;
 }

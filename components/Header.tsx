@@ -3,6 +3,8 @@ import styles from "../styles/Header.module.css";
 
 interface HeaderProps {
   buttons?: { label: string; href: string }[];
+  style?: React.CSSProperties; // ✅ 允许外部传 style
+  className?: string; // 可选 className 支持
 }
 
 export default function Header({
@@ -12,9 +14,10 @@ export default function Header({
     { label: "Now", href: "/now" },
     { label: "About", href: "/about" },
   ],
+  style,
 }: HeaderProps) {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} style={style}>
       <nav className={styles.navButtons}>
         {buttons.map((btn) => (
           <Link key={btn.href} href={btn.href}>

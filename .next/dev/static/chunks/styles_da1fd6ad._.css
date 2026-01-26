@@ -13,6 +13,8 @@
 .Header-module__vcZAwq__navButton {
   letter-spacing: .05em;
   cursor: pointer;
+  color: #000;
+  -webkit-tap-highlight-color: transparent;
   background-color: #f8f8f8;
   border: 1px solid #d1d1d1;
   border-radius: 10px;
@@ -29,6 +31,10 @@
 
 .Header-module__vcZAwq__navButton:hover {
   background-color: #e0e0e0;
+}
+
+.Header-module__vcZAwq__navButton:focus {
+  outline: none;
 }
 
 .Header-module__vcZAwq__navButton:active {

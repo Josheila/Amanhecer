@@ -28,7 +28,51 @@ a {
 .container {
   /* width: 60%; */
   margin: 0 auto; /* 居中 */
-  max-width: 700px; /* 可选，防止屏幕太宽 */
+  max-width: 750px; /* 可选，防止屏幕太宽 */
   /* min-width: 300px; 可选，防止太窄 */
   padding: 0 1rem; /* 两侧留白 */
+}
+
+/* 全局 CSS 变量 */
+:root {
+  /* 主色调 */
+  --color-primary: #1e90ff;
+  --color-secondary: #ff6b6b;
+  --color-accent: #ffd93d;
+
+  /* 背景 / 卡片 */
+  --color-background: #ffffff;
+  --color-surface: #f8f8f8;
+
+  /* 文本 */
+  --color-text-primary: #222222;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+  --color-text-inverted: #ffffff;
+
+  /* 边框 */
+  --color-border: #e0e0e0;
+
+  /* 灰阶 */
+  --color-gray-100: #f8f8f8;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c4c4c4;
+  --color-gray-400: #888888;
+  --color-gray-500: #706f6c;
+  --color-gray-600: #444444;
+
+  /* 状态色 */
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-info: #17a2b8;
+}
+
+/* 可选：全局基础样式示例 */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
