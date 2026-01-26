@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Documents/Amanhecer/styles/globals.css"],"sourcesContent":["/* /styles/globals.css */\n\nhtml,\nbody {\n  font-family:\n    Helvetica,\n    Apple Color Emoji,\n    Segoe UI Emoji,\n    NotoColorEmoji,\n    Noto Color Emoji,\n    Segoe UI Symbol,\n    Android Emoji,\n    EmojiSymbols,\n    -apple-system,\n    BlinkMacSystemFont,\n    Segoe UI,\n    Roboto,\n    Helvetica Neue,\n    Noto Sans,\n    sans-serif;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n.container {\n  /* width: 60%; */\n  margin: 0 auto; /* 居中 */\n  max-width: 700px; /* 可选，防止屏幕太宽 */\n  /* min-width: 300px; 可选，防止太窄 */\n  padding: 0 1rem; /* 两侧留白 */\n}\n"],"names":[],"mappings":"AAEA;;;;AAoBA;;;;;AAKA"}}]
+}

@@ -1,0 +1,59 @@
+/* [project]/styles/Header.module.css [client] (css) */
+.Header-module__vcZAwq__header {
+  justify-content: center;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.Header-module__vcZAwq__navButtons {
+  gap: 10px;
+  display: flex;
+}
+
+.Header-module__vcZAwq__navButton {
+  letter-spacing: .05em;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  padding: .25rem 1rem;
+  font-weight: 500;
+  transition: all .15s;
+  display: flex;
+  position: relative;
+}
+
+.Header-module__vcZAwq__navButton:hover {
+  background-color: #e0e0e0;
+}
+
+.Header-module__vcZAwq__navButton:active {
+  background-color: #dcdcdc;
+  transform: scale(.985)translateY(.5px);
+}
+
+.Header-module__vcZAwq__navText {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* [project]/styles/AvatarSection.module.css [client] (css) */
+.AvatarSection-module__6tOn5G__avatarSection {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.AvatarSection-module__6tOn5G__avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles_182ce216._.css.map*/

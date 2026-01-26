@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/sheilazhai",
+    "outputFileTracingRoot": "/Users/sheilazhai/Documents/Amanhecer",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,12 +293,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "/Users/sheilazhai"
+      "root": "/Users/sheilazhai/Documents/Amanhecer"
     },
     "distDirRoot": ".next"
   },
   "appDir": "/Users/sheilazhai/Documents/Amanhecer",
-  "relativeAppDir": "Documents/Amanhecer",
+  "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",

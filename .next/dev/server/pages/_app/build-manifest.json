@@ -6,17 +6,16 @@
   "rootMainFiles": [],
   "pages": {
     "/_app": [
-      "static/chunks/ab9ed_next_dist_compiled_7b4b8e37._.js",
-      "static/chunks/ab9ed_next_dist_shared_lib_1ba7acc6._.js",
-      "static/chunks/ab9ed_next_dist_client_33539886._.js",
-      "static/chunks/ab9ed_next_dist_58dc5ddd._.js",
-      "static/chunks/ab9ed_next_app_f26fa9ab.js",
-      "static/chunks/[next]_entry_page-loader_ts_681e600b._.js",
-      "static/chunks/547db_react-dom_dbd0f6f6._.js",
-      "static/chunks/6347f__pnpm_a2b3cc98._.js",
-      "static/chunks/[root-of-the-server]__d9153e97._.js",
-      "static/chunks/Documents_Amanhecer_pages__app_2da965e7._.js",
-      "static/chunks/turbopack-Documents_Amanhecer_pages__app_fde651e7._.js"
+      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
+      "static/chunks/62cdd_next_dist_shared_lib_fa1a15f5._.js",
+      "static/chunks/62cdd_next_dist_client_819bece2._.js",
+      "static/chunks/62cdd_next_dist_cef891fc._.js",
+      "static/chunks/5e54f_react-dom_4d21b075._.js",
+      "static/chunks/node_modules__pnpm_f4116989._.js",
+      "static/chunks/[root-of-the-server]__73ecdec8._.js",
+      "static/chunks/styles_globals_dc36e6c9.css",
+      "static/chunks/pages__app_2da965e7._.js",
+      "static/chunks/turbopack-pages__app_f173c181._.js"
     ]
   },
   "ampFirstPages": []

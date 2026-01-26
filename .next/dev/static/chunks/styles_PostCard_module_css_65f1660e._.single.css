@@ -1,0 +1,22 @@
+/* [project]/styles/PostCard.module.css [client] (css) */
+.PostCard-module__AAaJVq__card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.PostCard-module__AAaJVq__date {
+  color: #888;
+  font-size: .8rem;
+}
+
+.PostCard-module__AAaJVq__title {
+  margin: .5rem 0;
+}
+
+.PostCard-module__AAaJVq__excerpt {
+  color: #555;
+}
+
+/*# sourceMappingURL=styles_PostCard_module_css_65f1660e._.single.css.map*/

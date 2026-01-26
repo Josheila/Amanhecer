@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // 将项目导出为静态 HTML
+  output: 'export', // 告诉 Next.js 构建成静态输出
 }
 
 module.exports = nextConfig

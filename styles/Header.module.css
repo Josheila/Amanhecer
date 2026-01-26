@@ -1,0 +1,45 @@
+/* components/Header.module.css */
+
+.header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px; /* 按钮间距 */
+}
+
+.navButton {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  padding: 0.25rem 1rem;
+  min-height: 1.75rem;
+  min-width: 1.75rem;
+  border: 1px solid #d1d1d1; /* border-sand-6 */
+  background-color: #f8f8f8; /* bg-sand-1 */
+  border-radius: 10px; /* 圆角10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:hover {
+  background-color: #e0e0e0; /* hover 状态 */
+}
+
+.navButton:active {
+  transform: scale(0.985) translateY(0.5px);
+  background-color: #dcdcdc; /* active 状态 */
+}
+
+.navText {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

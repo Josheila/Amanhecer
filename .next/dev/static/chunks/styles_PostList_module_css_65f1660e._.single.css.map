@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/PostList.module.css"],"sourcesContent":[".toggle {\n  text-align: center;\n  margin-bottom: 1rem;\n}\n.toggle button {\n  margin: 0 0.5rem;\n  padding: 0.3rem 0.6rem;\n  cursor: pointer;\n}\n.cardGrid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 1rem;\n}\n.listGrid {\n  display: flex;\n  flex-direction: column;\n}\n\n/* /styles/PostList.module.css */\n.viewSwitch {\n  display: flex;\n  gap: 10px;\n  margin-bottom: 1rem;\n}\n\n.iconButton {\n  width: 24px;\n  height: 24px;\n  cursor: pointer;\n  border-radius: 6px;\n  padding: 4px;\n  transition:\n    background-color 0.2s,\n    transform 0.2s;\n}\n\n.iconButton:hover {\n  background-color: #f0f0f0; /* hover 浅灰色 */\n  transform: scale(1.05);\n}\n"],"names":[],"mappings":"AAAA;;;;;AAIA;;;;;;AAKA;;;;;;AAKA;;;;;AAMA;;;;;;AAMA;;;;;;;;;AAWA"}}]
+}

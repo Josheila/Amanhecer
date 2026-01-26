@@ -1,0 +1,77 @@
+/* [project]/styles/Header.module.css [client] (css) */
+.Header-module__vcZAwq__header {
+  background-color: #f8f8f8;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  display: flex;
+}
+
+.Header-module__vcZAwq__header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.Header-module__vcZAwq__header a:hover {
+  color: #0070f3;
+}
+
+/* [project]/styles/AvatarSection.module.css [client] (css) */
+.AvatarSection-module__6tOn5G__avatarSection {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.AvatarSection-module__6tOn5G__avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+/* [project]/styles/PostCard.module.css [client] (css) */
+.PostCard-module__AAaJVq__card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.PostCard-module__AAaJVq__date {
+  color: #888;
+  font-size: .8rem;
+}
+
+.PostCard-module__AAaJVq__title {
+  margin: .5rem 0;
+}
+
+.PostCard-module__AAaJVq__excerpt {
+  color: #555;
+}
+
+/* [project]/styles/PostList.module.css [client] (css) */
+.PostList-module__ImdqVq__toggle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.PostList-module__ImdqVq__toggle button {
+  cursor: pointer;
+  margin: 0 .5rem;
+  padding: .3rem .6rem;
+}
+
+.PostList-module__ImdqVq__cardGrid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  display: grid;
+}
+
+.PostList-module__ImdqVq__listGrid {
+  flex-direction: column;
+  display: flex;
+}
+
+/*# sourceMappingURL=styles_57a8ec73._.css.map*/

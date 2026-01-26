@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/PostCard.module.css"],"sourcesContent":[".card {\n  border: 1px solid #ddd;\n  border-radius: 8px;\n  padding: 1rem;\n  margin-bottom: 1rem;\n}\n.date {\n  font-size: 0.8rem;\n  color: #888;\n}\n.title {\n  margin: 0.5rem 0;\n}\n.excerpt {\n  color: #555;\n}"],"names":[],"mappings":"AAAA;;;;;;;AAMA;;;;;AAIA;;;;AAGA"}}]
+}
