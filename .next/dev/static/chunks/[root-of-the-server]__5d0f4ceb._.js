@@ -541,24 +541,46 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/pages/about.tsx [client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/lib/date.ts [client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// /pages/about.tsx
+// /lib/date.ts
+__turbopack_context__.s([
+    "formatDate",
+    ()=>formatDate
+]);
+function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+    });
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/pages/now.tsx [client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// /pages/now.tsx
 __turbopack_context__.s([
     "__N_SSG",
     ()=>__N_SSG,
     "default",
-    ()=>AboutPage
+    ()=>NowPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Header.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$2f$lib$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__Markdown__as__default$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react-markdown@10.1.0_@types+react@19.2.9_react@19.2.3/node_modules/react-markdown/lib/index.js [client] (ecmascript) <export Markdown as default>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/date.ts [client] (ecmascript)");
+;
 ;
 ;
 ;
 var __N_SSG = true;
-function AboutPage({ post }) {
+function NowPage({ post }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "container",
         children: [
@@ -570,8 +592,8 @@ function AboutPage({ post }) {
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/pages/about.tsx",
-                lineNumber: 25,
+                fileName: "[project]/pages/now.tsx",
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -590,51 +612,62 @@ function AboutPage({ post }) {
                             marginBottom: "1rem"
                         }
                     }, void 0, false, {
-                        fileName: "[project]/pages/about.tsx",
-                        lineNumber: 28,
+                        fileName: "[project]/pages/now.tsx",
+                        lineNumber: 31,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         children: post.title
                     }, void 0, false, {
-                        fileName: "[project]/pages/about.tsx",
-                        lineNumber: 40,
+                        fileName: "[project]/pages/now.tsx",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        style: {
+                            color: "#888",
+                            marginBottom: "1rem"
+                        },
+                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
+                    }, void 0, false, {
+                        fileName: "[project]/pages/now.tsx",
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$2f$lib$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__Markdown__as__default$3e$__["default"], {
                         children: post.content
                     }, void 0, false, {
-                        fileName: "[project]/pages/about.tsx",
-                        lineNumber: 42,
+                        fileName: "[project]/pages/now.tsx",
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/pages/about.tsx",
-                lineNumber: 26,
+                fileName: "[project]/pages/now.tsx",
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/pages/about.tsx",
-        lineNumber: 24,
+        fileName: "[project]/pages/now.tsx",
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
-_c = AboutPage;
+_c = NowPage;
 var _c;
-__turbopack_context__.k.register(_c, "AboutPage");
+__turbopack_context__.k.register(_c, "NowPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[next]/entry/page-loader.ts { PAGE => \"[project]/pages/about.tsx [client] (ecmascript)\" } [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[next]/entry/page-loader.ts { PAGE => \"[project]/pages/now.tsx [client] (ecmascript)\" } [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-const PAGE_PATH = "/about";
+const PAGE_PATH = "/now";
 (window.__NEXT_P = window.__NEXT_P || []).push([
     PAGE_PATH,
     ()=>{
-        return __turbopack_context__.r("[project]/pages/about.tsx [client] (ecmascript)");
+        return __turbopack_context__.r("[project]/pages/now.tsx [client] (ecmascript)");
     }
 ]);
 // @ts-expect-error module.hot exists
@@ -647,11 +680,11 @@ if (module.hot) {
     });
 }
 }),
-"[hmr-entry]/hmr-entry.js { ENTRY => \"[project]/pages/about\" }", ((__turbopack_context__) => {
+"[hmr-entry]/hmr-entry.js { ENTRY => \"[project]/pages/now\" }", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.r("[next]/entry/page-loader.ts { PAGE => \"[project]/pages/about.tsx [client] (ecmascript)\" } [client] (ecmascript)");
+__turbopack_context__.r("[next]/entry/page-loader.ts { PAGE => \"[project]/pages/now.tsx [client] (ecmascript)\" } [client] (ecmascript)");
 }),
 ]);
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__a39a580c._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__5d0f4ceb._.js.map

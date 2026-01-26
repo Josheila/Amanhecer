@@ -38,7 +38,7 @@ export default function AboutPage({ post }: AboutPageProps) {
           />
         )}
         <h1>{post.title}</h1>
-        <p style={{ color: "#888", marginBottom: "1rem" }}>{post.date}</p>
+        {/* <p style={{ color: "#888", marginBottom: "1rem" }}>{post.date}</p> */}
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </main>
     </div>

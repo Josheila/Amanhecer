@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import Header from "../../components/Header"; // 用 Header 组件
 import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
 import { tagMap } from "../../lib/tags";
+import { formatDate } from "../../lib/date";
 
 interface PostPageProps {
   post: Post;
@@ -31,7 +32,9 @@ export default function PostPage({ post }: PostPageProps) {
           />
         )}
         <h1>{post.title}</h1>
-        <p style={{ color: "#888", marginBottom: "1rem" }}>{post.date}</p>
+        <p style={{ color: "#888", marginBottom: "1rem" }}>
+          {formatDate(post.date)}
+        </p>
 
         <ReactMarkdown>{post.content}</ReactMarkdown>
 

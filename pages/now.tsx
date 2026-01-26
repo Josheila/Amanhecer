@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import Header from "../components/Header";
 import ReactMarkdown from "react-markdown";
+import { formatDate } from "../lib/date";
 
 interface Post {
   title: string;
@@ -40,7 +41,9 @@ export default function NowPage({ post }: NowPageProps) {
           />
         )}
         <h1>{post.title}</h1>
-        <p style={{ color: "#888", marginBottom: "1rem" }}>{post.date}</p>
+        <p style={{ color: "#888", marginBottom: "1rem" }}>
+          {formatDate(post.date)}
+        </p>
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </main>
     </div>
