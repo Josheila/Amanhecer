@@ -113,6 +113,21 @@ function App({ Component, pageProps }) {
         ]
     }, void 0, true);
 }
+/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+    rel: "icon",
+    href: "/favicon.ico"
+}, void 0, false, {
+    fileName: "[project]/pages/_app.tsx",
+    lineNumber: 15,
+    columnNumber: 1
+}, ("TURBOPACK compile-time value", void 0));
+/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("title", {
+    children: "KuromiPiPi"
+}, void 0, false, {
+    fileName: "[project]/pages/_app.tsx",
+    lineNumber: 16,
+    columnNumber: 1
+}, ("TURBOPACK compile-time value", void 0));
 }),
 ];
 
