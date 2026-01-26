@@ -24,6 +24,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
+        label: "Home",
+        href: "/"
+    },
+    {
         label: "Posts",
         href: "/posts"
     },
@@ -52,22 +56,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -143,8 +147,8 @@ __turbopack_context__.s([
     ()=>tagMap
 ]);
 const tagMap = {
-    blog: "日常",
-    milestone: "大事纪"
+    daily: "にちじょうりょく",
+    milestone: "aniversário"
 };
 }),
 "[project]/lib/date.ts [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -157,11 +161,12 @@ __turbopack_context__.s([
 ]);
 function formatDate(dateStr) {
     const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric"
-    });
+    const year = date.getFullYear() % 100; // 取年份后两位
+    const month = date.toLocaleString("en-US", {
+        month: "short"
+    }); // Jan, Feb...
+    const day = date.getDate();
+    return `${month} ${day}, ${year.toString().padStart(2, "0")}`;
 }
 }),
 "[project]/pages/posts/[slug].tsx [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -218,10 +223,11 @@ function PostPage({ post }) {
                         src: post.cover,
                         alt: post.title,
                         style: {
-                            width: "100%",
-                            height: "250px",
+                            width: "50%",
+                            // height: "250px",
+                            aspectRatio: "1 / 1",
                             objectFit: "cover",
-                            borderRadius: "1px",
+                            borderRadius: "16px",
                             marginBottom: "1rem"
                         }
                     }, void 0, false, {
@@ -233,25 +239,36 @@ function PostPage({ post }) {
                         children: post.title
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 34,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                         style: {
-                            color: "#888",
+                            color: "var(--color-gray-400)",
+                            fontSize: "16px",
                             marginBottom: "1rem"
                         },
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
-                        children: post.content
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                        style: {
+                            color: "var(--color-gray-500)",
+                            fontSize: "14px"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
+                            children: post.content
+                        }, void 0, false, {
+                            fileName: "[project]/pages/posts/[slug].tsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 39,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -288,7 +305,7 @@ function PostPage({ post }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/posts/[slug].tsx",
-                                                lineNumber: 60,
+                                                lineNumber: 68,
                                                 columnNumber: 21
                                             }, this),
                                             " ",
@@ -296,22 +313,22 @@ function PostPage({ post }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/posts/[slug].tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 55,
                                         columnNumber: 19
                                     }, this)
                                 }, tag, false, {
                                     fileName: "[project]/pages/posts/[slug].tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 54,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 44,
+                            lineNumber: 52,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 43,
+                        lineNumber: 51,
                         columnNumber: 11
                     }, this)
                 ]

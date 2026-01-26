@@ -49,7 +49,7 @@ export default function PostList({ posts, pageSize = 9 }: PostListProps) {
       </div>
 
       {/* 翻页按钮 */}
-      {totalPages > 1 && (
+      {/* {totalPages > 1 && (
         <div className={styles.pagination}>
           <button
             className={styles.pageButton}
@@ -71,6 +71,72 @@ export default function PostList({ posts, pageSize = 9 }: PostListProps) {
             Next
           </button>
         </div>
+      )} */}
+
+      {totalPages > 1 && (
+        <ul className={styles.pageNumbers}>
+          {/* 上一页 */}
+          <li>
+            <button
+              className={`${styles.pageNumber} ${styles.prev}`}
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+            >
+              «
+            </button>
+          </li>
+
+          {/* 页码 */}
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+            // 显示第一页、最后一页、当前页前后各一页
+            if (
+              page === 1 ||
+              page === totalPages ||
+              (page >= currentPage - 1 && page <= currentPage + 1)
+            ) {
+              return (
+                <li key={page}>
+                  {page === currentPage ? (
+                    <span className={`${styles.pageNumber} ${styles.current}`}>
+                      {page}
+                    </span>
+                  ) : (
+                    <button
+                      className={styles.pageNumber}
+                      onClick={() => setCurrentPage(page)}
+                    >
+                      {page}
+                    </button>
+                  )}
+                </li>
+              );
+            }
+
+            // 前后省略号
+            if (page === currentPage - 2 || page === currentPage + 2) {
+              return (
+                <li key={page}>
+                  <span className={`${styles.pageNumber} ${styles.dots}`}>
+                    …
+                  </span>
+                </li>
+              );
+            }
+
+            return null;
+          })}
+
+          {/* 下一页 */}
+          <li>
+            <button
+              className={`${styles.pageNumber} ${styles.next}`}
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+            >
+              »
+            </button>
+          </li>
+        </ul>
       )}
     </div>
   );

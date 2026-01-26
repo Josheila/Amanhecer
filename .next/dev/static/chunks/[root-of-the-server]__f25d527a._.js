@@ -487,6 +487,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
+        label: "Home",
+        href: "/"
+    },
+    {
         label: "Posts",
         href: "/posts"
     },
@@ -515,22 +519,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -550,8 +554,8 @@ __turbopack_context__.s([
     ()=>tagMap
 ]);
 const tagMap = {
-    blog: "日常",
-    milestone: "大事纪"
+    daily: "にちじょうりょく",
+    milestone: "aniversário"
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

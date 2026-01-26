@@ -5,11 +5,8 @@ export default function AvatarSection() {
   return (
     <section className={styles.avatarSection}>
       <img src="/avatar.jpg" alt="Avatar" className={styles.avatar} />
-      <h1>Amanhecer 🌅</h1>
-      <p>
-        Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja
-        bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda!
-      </p>
+      <h1> KuromiPiPi 🐱</h1>
+      <p>--- quero amanhecer, entardecer e anoitecer com você ---</p>
     </section>
   );
 }

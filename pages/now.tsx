@@ -24,7 +24,7 @@ export default function NowPage({ post }: NowPageProps) {
   return (
     <div className="container">
       {/* Header: 直接显示 Posts 按钮 */}
-      <Header buttons={[{ label: "Posts", href: "/posts" }]} />
+      <Header buttons={[{ label: "Home", href: "/" }]} />
 
       <main style={{ marginTop: "2rem" }}>
         {post.cover && (
@@ -32,19 +32,29 @@ export default function NowPage({ post }: NowPageProps) {
             src={post.cover}
             alt={post.title}
             style={{
-              width: "100%",
-              height: "300px",
+              width: "50%",
+              // height: "250px",
+              aspectRatio: "1 / 1",
               objectFit: "cover",
               borderRadius: "10px",
               marginBottom: "1rem",
             }}
           />
         )}
+
         <h1>{post.title}</h1>
-        <p style={{ color: "#888", marginBottom: "1rem" }}>
+        <p
+          style={{
+            color: "var(--color-gray-400)",
+            fontSize: "16px",
+            marginBottom: "1rem",
+          }}
+        >
           {formatDate(post.date)}
         </p>
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
       </main>
     </div>
   );

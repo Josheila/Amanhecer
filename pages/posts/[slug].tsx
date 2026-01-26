@@ -23,20 +23,28 @@ export default function PostPage({ post }: PostPageProps) {
             src={post.cover}
             alt={post.title}
             style={{
-              width: "100%",
-              height: "250px",
+              width: "50%",
+              // height: "250px",
+              aspectRatio: "1 / 1",
               objectFit: "cover",
-              borderRadius: "1px",
+              borderRadius: "16px",
               marginBottom: "1rem",
             }}
           />
         )}
         <h1>{post.title}</h1>
-        <p style={{ color: "#888", marginBottom: "1rem" }}>
+        <p
+          style={{
+            color: "var(--color-gray-400)",
+            fontSize: "16px",
+            marginBottom: "1rem",
+          }}
+        >
           {formatDate(post.date)}
         </p>
-
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
 
         {/* Tags 区域 */}
         {post.tags && post.tags.length > 0 && (

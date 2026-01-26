@@ -9,6 +9,7 @@ interface HeaderProps {
 
 export default function Header({
   buttons = [
+    { label: "Home", href: "/" },
     { label: "Posts", href: "/posts" },
     { label: "Tags", href: "/tags" },
     { label: "Now", href: "/now" },

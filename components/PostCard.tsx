@@ -31,8 +31,8 @@ export default function PostCard({ post, view }: PostCardProps) {
             // 封面图部分
             <div
               style={{
-                height: "120px",
-                aspectRatio: "4 / 3", // 固定4:3比例
+                height: "100%",
+                width: "100%",
                 overflow: "hidden",
               }}
             >

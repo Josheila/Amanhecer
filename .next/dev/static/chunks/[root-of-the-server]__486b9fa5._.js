@@ -487,6 +487,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
+        label: "Home",
+        href: "/"
+    },
+    {
         label: "Posts",
         href: "/posts"
     },
@@ -515,22 +519,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -574,14 +578,14 @@ function AvatarSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                children: "Amanhecer 🌅"
+                children: " KuromiPiPi 🐱"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
                 lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda!"
+                children: "--- quero amanhecer, entardecer e anoitecer com você ---"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
                 lineNumber: 9,
@@ -626,7 +630,25 @@ function Home({ posts }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 style: {
                     justifyContent: "center"
-                }
+                },
+                buttons: [
+                    {
+                        label: "Posts",
+                        href: "/posts"
+                    },
+                    {
+                        label: "Tags",
+                        href: "/tags"
+                    },
+                    {
+                        label: "Now",
+                        href: "/now"
+                    },
+                    {
+                        label: "About",
+                        href: "/about"
+                    }
+                ]
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
                 lineNumber: 15,

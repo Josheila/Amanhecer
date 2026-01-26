@@ -22,15 +22,16 @@ interface AboutPageProps {
 export default function AboutPage({ post }: AboutPageProps) {
   return (
     <div className="container">
-      <Header buttons={[{ label: "Posts", href: "/posts" }]} />
+      <Header buttons={[{ label: "Home", href: "/" }]} />
       <main style={{ marginTop: "2rem" }}>
         {post.cover && (
           <img
             src={post.cover}
             alt={post.title}
             style={{
-              width: "100%",
-              height: "300px",
+              width: "50%",
+              // height: "250px",
+              aspectRatio: "1 / 1",
               objectFit: "cover",
               borderRadius: "10px",
               marginBottom: "1rem",

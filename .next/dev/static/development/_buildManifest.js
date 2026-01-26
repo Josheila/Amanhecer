@@ -1,4 +1,10 @@
 self.__BUILD_MANIFEST = {
+  "/": [
+    "static/chunks/pages/index.js"
+  ],
+  "/_error": [
+    "static/chunks/pages/_error.js"
+  ],
   "/about": [
     "static/chunks/pages/about.js"
   ],
@@ -10,6 +16,9 @@ self.__BUILD_MANIFEST = {
   ],
   "/posts/[slug]": [
     "static/chunks/pages/posts/[slug].js"
+  ],
+  "/tags": [
+    "static/chunks/pages/tags.js"
   ],
   "__rewrites": {
     "afterFiles": [],

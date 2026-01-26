@@ -487,6 +487,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
+        label: "Home",
+        href: "/"
+    },
+    {
         label: "Posts",
         href: "/posts"
     },
@@ -515,22 +519,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -574,14 +578,14 @@ function AvatarSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                children: "Amanhecer 🌅"
+                children: " KuromiPiPi 🐱"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
                 lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda! Olá, seja bem-vinda!"
+                children: "--- quero amanhecer, entardecer e anoitecer com você ---"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
                 lineNumber: 9,
@@ -611,11 +615,12 @@ __turbopack_context__.s([
 ]);
 function formatDate(dateStr) {
     const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric"
-    });
+    const year = date.getFullYear() % 100; // 取年份后两位
+    const month = date.toLocaleString("en-US", {
+        month: "short"
+    }); // Jan, Feb...
+    const day = date.getDate();
+    return `${month} ${day}, ${year.toString().padStart(2, "0")}`;
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -657,8 +662,8 @@ function PostCard({ post, view }) {
                 post.cover && // 封面图部分
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     style: {
-                        height: "120px",
-                        aspectRatio: "4 / 3",
+                        height: "100%",
+                        width: "100%",
                         overflow: "hidden"
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -777,11 +782,19 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.v({
   "cardGrid": "PostList-module__ImdqVq__cardGrid",
+  "current": "PostList-module__ImdqVq__current",
+  "dots": "PostList-module__ImdqVq__dots",
   "iconButton": "PostList-module__ImdqVq__iconButton",
   "listGrid": "PostList-module__ImdqVq__listGrid",
+  "next": "PostList-module__ImdqVq__next",
   "pageButton": "PostList-module__ImdqVq__pageButton",
   "pageInfo": "PostList-module__ImdqVq__pageInfo",
+  "pageInput": "PostList-module__ImdqVq__pageInput",
+  "pageNavForm": "PostList-module__ImdqVq__pageNavForm",
+  "pageNumber": "PostList-module__ImdqVq__pageNumber",
+  "pageNumbers": "PostList-module__ImdqVq__pageNumbers",
   "pagination": "PostList-module__ImdqVq__pagination",
+  "prev": "PostList-module__ImdqVq__prev",
   "toggle": "PostList-module__ImdqVq__toggle",
   "viewSwitch": "PostList-module__ImdqVq__viewSwitch",
 });
@@ -860,45 +873,92 @@ function PostList({ posts, pageSize = 9 }) {
                 lineNumber: 39,
                 columnNumber: 7
             }, this),
-            totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pagination,
+            totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumbers,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageButton,
-                        onClick: ()=>setCurrentPage((p)=>Math.max(p - 1, 1)),
-                        disabled: currentPage === 1,
-                        children: "Prev"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber} ${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].prev}`,
+                            onClick: ()=>setCurrentPage((p)=>Math.max(p - 1, 1)),
+                            disabled: currentPage === 1,
+                            children: "«"
+                        }, void 0, false, {
+                            fileName: "[project]/components/PostList.tsx",
+                            lineNumber: 80,
+                            columnNumber: 13
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 54,
+                        lineNumber: 79,
                         columnNumber: 11
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageInfo,
-                        children: [
-                            currentPage,
-                            " / ",
-                            totalPages
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 62,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageButton,
-                        onClick: ()=>setCurrentPage((p)=>Math.min(p + 1, totalPages)),
-                        disabled: currentPage === totalPages,
-                        children: "Next"
+                    Array.from({
+                        length: totalPages
+                    }, (_, i)=>i + 1).map((page)=>{
+                        // 显示第一页、最后一页、当前页前后各一页
+                        if (page === 1 || page === totalPages || page >= currentPage - 1 && page <= currentPage + 1) {
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                children: page === currentPage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber} ${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].current}`,
+                                    children: page
+                                }, void 0, false, {
+                                    fileName: "[project]/components/PostList.tsx",
+                                    lineNumber: 100,
+                                    columnNumber: 21
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber,
+                                    onClick: ()=>setCurrentPage(page),
+                                    children: page
+                                }, void 0, false, {
+                                    fileName: "[project]/components/PostList.tsx",
+                                    lineNumber: 104,
+                                    columnNumber: 21
+                                }, this)
+                            }, page, false, {
+                                fileName: "[project]/components/PostList.tsx",
+                                lineNumber: 98,
+                                columnNumber: 17
+                            }, this);
+                        }
+                        // 前后省略号
+                        if (page === currentPage - 2 || page === currentPage + 2) {
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber} ${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].dots}`,
+                                    children: "…"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/PostList.tsx",
+                                    lineNumber: 119,
+                                    columnNumber: 19
+                                }, this)
+                            }, page, false, {
+                                fileName: "[project]/components/PostList.tsx",
+                                lineNumber: 118,
+                                columnNumber: 17
+                            }, this);
+                        }
+                        return null;
+                    }),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber} ${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].next}`,
+                            onClick: ()=>setCurrentPage((p)=>Math.min(p + 1, totalPages)),
+                            disabled: currentPage === totalPages,
+                            children: "»"
+                        }, void 0, false, {
+                            fileName: "[project]/components/PostList.tsx",
+                            lineNumber: 131,
+                            columnNumber: 13
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 66,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 53,
+                lineNumber: 77,
                 columnNumber: 9
             }, this)
         ]
