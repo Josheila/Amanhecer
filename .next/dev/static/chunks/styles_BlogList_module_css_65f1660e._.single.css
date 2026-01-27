@@ -1,0 +1,165 @@
+/* [project]/styles/BlogList.module.css [client] (css) */
+.BlogList-module__YLJmxG__toggle {
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  gap: .5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__toggle button {
+  cursor: pointer;
+  margin: 0 .5rem;
+  padding: .3rem .6rem;
+}
+
+.BlogList-module__YLJmxG__cardGrid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  display: grid;
+}
+
+.BlogList-module__YLJmxG__listGrid {
+  flex-direction: column;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__viewSwitch {
+  justify-content: flex-end;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__iconButton {
+  cursor: pointer;
+  opacity: .7;
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  transition: all .2s;
+}
+
+.BlogList-module__YLJmxG__iconButton:hover {
+  opacity: 1;
+  background-color: var(--color-gray-100);
+  transform: scale(1.1);
+}
+
+.BlogList-module__YLJmxG__pagination {
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageButton {
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-400);
+  cursor: pointer;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  transition: all .2s;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageButton:hover:not(:disabled) {
+  background-color: var(--color-gray-200);
+}
+
+.BlogList-module__YLJmxG__pageButton:active:not(:disabled) {
+  background-color: var(--color-gray-200);
+  transform: scale(.985)translateY(.5px);
+}
+
+.BlogList-module__YLJmxG__pageButton:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.BlogList-module__YLJmxG__pageInfo {
+  color: var(--color-gray-400);
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 1rem;
+  font-size: .8rem;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageNumbers {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageNumber {
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-000);
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  transition: all .2s;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageNumber:hover:not(:disabled) {
+  background-color: var(--color-gray-200);
+}
+
+.BlogList-module__YLJmxG__pageNumber:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.BlogList-module__YLJmxG__current {
+  border-color: var(--color-gray-300);
+  background-color: var(--color-gray-100);
+  cursor: default;
+  border-radius: 20px;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.BlogList-module__YLJmxG__dots {
+  cursor: default;
+  background: none;
+  border: none;
+}
+
+.BlogList-module__YLJmxG__prev, .BlogList-module__YLJmxG__next {
+  color: var(--color-gray-300);
+  font-weight: 400;
+}
+
+.BlogList-module__YLJmxG__pageNavForm {
+  align-items: center;
+  gap: .3rem;
+  display: flex;
+}
+
+.BlogList-module__YLJmxG__pageInput {
+  border: 1px solid var(--color-gray-300);
+  text-align: center;
+  border-radius: 4px;
+  width: 3rem;
+  padding: .3rem .5rem;
+}
+
+/*# sourceMappingURL=styles_BlogList_module_css_65f1660e._.single.css.map*/

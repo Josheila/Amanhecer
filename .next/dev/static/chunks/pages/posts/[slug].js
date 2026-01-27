@@ -6,9 +6,9 @@ __turbopack_load_page_chunks__("/posts/[slug]", [
   "static/chunks/62cdd_next_link_8787c27d.js",
   "static/chunks/5e54f_react-dom_4d21b075._.js",
   "static/chunks/b5ecd_micromark-core-commonmark_dev_lib_f7b16d9d._.js",
-  "static/chunks/node_modules__pnpm_0b4b392d._.js",
-  "static/chunks/[root-of-the-server]__69f32f35._.js",
-  "static/chunks/styles_Header_module_042f6c35.css",
+  "static/chunks/node_modules__pnpm_d810ab38._.js",
+  "static/chunks/[root-of-the-server]__94c8c414._.js",
+  "static/chunks/styles_a2b4d11d._.css",
   "static/chunks/pages_posts_[slug]_tsx_2da965e7._.js",
-  "static/chunks/turbopack-pages_posts_[slug]_tsx_c825e37f._.js"
+  "static/chunks/turbopack-pages_posts_[slug]_tsx_72ff56d4._.js"
 ])

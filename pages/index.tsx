@@ -1,7 +1,6 @@
 import { GetStaticProps } from "next";
 import Header from "../components/Header";
 import AvatarSection from "../components/AvatarSection";
-import PostList from "../components/PostList";
 import { getAllPosts, Post } from "../lib/posts";
 
 interface HomeProps {
@@ -16,7 +15,8 @@ export default function Home({ posts }: HomeProps) {
         style={{ justifyContent: "center" }}
         buttons={[
           { label: "Posts", href: "/posts" },
-          { label: "Tags", href: "/tags" },
+          { label: "CozyDiary", href: "/cozydiary" },
+          { label: "Moment", href: "/moment" },
           { label: "Now", href: "/now" },
           { label: "About", href: "/about" },
         ]}

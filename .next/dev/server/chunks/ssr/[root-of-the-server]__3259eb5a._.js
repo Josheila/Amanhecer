@@ -32,6 +32,14 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
         label: "Tags",
         href: "/tags"
     },
@@ -56,22 +64,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 22,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -119,7 +127,7 @@ function AvatarSection() {
                 children: "quero amanhecer, entardecer e anoitecer com você"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 9,
+                lineNumber: 23,
                 columnNumber: 7
             }, this)
         ]
@@ -149,7 +157,7 @@ function Home({ posts }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AvatarSection$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -162,8 +170,12 @@ function Home({ posts }) {
                         href: "/posts"
                     },
                     {
-                        label: "Tags",
-                        href: "/tags"
+                        label: "CozyDiary",
+                        href: "/cozydiary"
+                    },
+                    {
+                        label: "Moment",
+                        href: "/moment"
                     },
                     {
                         label: "Now",
@@ -176,13 +188,13 @@ function Home({ posts }) {
                 ]
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 13,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }

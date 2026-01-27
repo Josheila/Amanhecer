@@ -6,6 +6,20 @@ export default function AvatarSection() {
     <section className={styles.avatarSection}>
       <img src="/avatar.jpg" alt="Avatar" className={styles.avatar} />
       <h1> KuromiPiPi 🐱</h1>
+      {/* <div className={styles.authorLinks}>
+        <a href="mailto:jingyao.zhai@gmail.com" title="Email">
+          ✉️
+        </a>
+        <a href="https://douban.com/people/irisyours" title="Douban">
+          📖
+        </a>
+        <a href="https://weibo.com/u/2142355765" title="Weibo">
+          🧧
+        </a>
+        <a href="https://www.notion.so/josheila" title="Notion">
+          📝
+        </a>
+      </div> */}
       <p>quero amanhecer, entardecer e anoitecer com você</p>
     </section>
   );

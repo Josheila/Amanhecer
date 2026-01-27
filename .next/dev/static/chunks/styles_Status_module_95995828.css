@@ -1,0 +1,29 @@
+/* [project]/styles/Status.module.css [client] (css) */
+.Status-module__mYkSqG__statusPage {
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+}
+
+.Status-module__mYkSqG__statusCard {
+  word-wrap: break-word;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.Status-module__mYkSqG__statusCard p {
+  margin: 0;
+}
+
+.Status-module__mYkSqG__statusCard small {
+  color: #666;
+  margin-top: .5rem;
+  font-size: .75rem;
+  display: block;
+}
+
+/*# sourceMappingURL=styles_Status_module_95995828.css.map*/

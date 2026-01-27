@@ -6,6 +6,9 @@ import Header from "../../components/Header"; // 用 Header 组件
 import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
 import { tagMap } from "../../lib/tags";
 import { formatDate } from "../../lib/date";
+import remarkGfm from "remark-gfm";
+import styles from "../../styles/MdContent.module.css";
+import remarkBreaks from "remark-breaks";
 
 interface PostPageProps {
   post: Post;
@@ -14,8 +17,17 @@ interface PostPageProps {
 export default function PostPage({ post }: PostPageProps) {
   return (
     <div className="container">
-      {/* 使用 Header 组件，只显示一个 Posts 按钮 */}
-      <Header buttons={[{ label: "Posts", href: "/posts" }]} />
+      <Header
+        buttons={[
+          // { label: "Home", href: "/" },
+          { label: "Posts", href: "/posts" },
+          // { label: "CozyDiary", href: "/cozydiary" },
+          // { label: "Status", href: "/status" },
+          { label: "Tags", href: "/tags" },
+          // { label: "Now", href: "/now" },
+          // { label: "About", href: "/about" },
+        ]}
+      />
       {/* 文章内容 */}
       <main>
         {post.cover && (
@@ -32,7 +44,7 @@ export default function PostPage({ post }: PostPageProps) {
             }}
           />
         )}
-        <h1>{post.title}</h1>
+
         <p
           style={{
             color: "var(--color-gray-400)",
@@ -42,8 +54,12 @@ export default function PostPage({ post }: PostPageProps) {
         >
           {formatDate(post.date)}
         </p>
-        <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+        <h1>{post.title}</h1>
+
+        <div className={styles.mdContent}>
+          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
+            {post.content}
+          </ReactMarkdown>
         </div>
 
         {/* Tags 区域 */}

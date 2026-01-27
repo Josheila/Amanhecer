@@ -495,6 +495,10 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
         label: "Tags",
         href: "/tags"
     },
@@ -519,22 +523,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
@@ -585,7 +589,7 @@ function AvatarSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "--- quero amanhecer, entardecer e anoitecer com você ---"
+                children: "quero amanhecer, entardecer e anoitecer com você"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
                 lineNumber: 9,
@@ -816,6 +820,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+const isMobile = ("TURBOPACK compile-time value", "object") !== "undefined" && window.innerWidth < 768;
 function PostList({ posts, pageSize = 9 }) {
     _s();
     const [viewMode, setViewMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])("card");
@@ -835,7 +840,7 @@ function PostList({ posts, pageSize = 9 }) {
                         onClick: ()=>setViewMode("card")
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 24,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -845,19 +850,19 @@ function PostList({ posts, pageSize = 9 }) {
                         onClick: ()=>setViewMode("list")
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 30,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 style: {
                     display: "grid",
-                    gridTemplateColumns: viewMode === "card" ? "repeat(3, 1fr)" : "1fr",
+                    gridTemplateColumns: viewMode === "card" ? isMobile ? "repeat(2, 1fr)" : "repeat(3, 1fr)" : "1fr",
                     gap: "1rem"
                 },
                 children: paginatedPosts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PostCard$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -865,12 +870,12 @@ function PostList({ posts, pageSize = 9 }) {
                         view: viewMode
                     }, post.slug, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 47,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 39,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -884,12 +889,12 @@ function PostList({ posts, pageSize = 9 }) {
                             children: "«"
                         }, void 0, false, {
                             fileName: "[project]/components/PostList.tsx",
-                            lineNumber: 80,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 79,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, this),
                     Array.from({
@@ -903,7 +908,7 @@ function PostList({ posts, pageSize = 9 }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/PostList.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 85,
                                     columnNumber: 21
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$PostList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber,
@@ -911,12 +916,12 @@ function PostList({ posts, pageSize = 9 }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/PostList.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 89,
                                     columnNumber: 21
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/PostList.tsx",
-                                lineNumber: 98,
+                                lineNumber: 83,
                                 columnNumber: 17
                             }, this);
                         }
@@ -928,12 +933,12 @@ function PostList({ posts, pageSize = 9 }) {
                                     children: "…"
                                 }, void 0, false, {
                                     fileName: "[project]/components/PostList.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 104,
                                     columnNumber: 19
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/PostList.tsx",
-                                lineNumber: 118,
+                                lineNumber: 103,
                                 columnNumber: 17
                             }, this);
                         }
@@ -947,24 +952,24 @@ function PostList({ posts, pageSize = 9 }) {
                             children: "»"
                         }, void 0, false, {
                             fileName: "[project]/components/PostList.tsx",
-                            lineNumber: 131,
+                            lineNumber: 116,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/PostList.tsx",
-                        lineNumber: 130,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/PostList.tsx",
-                lineNumber: 77,
+                lineNumber: 62,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/PostList.tsx",
-        lineNumber: 21,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
@@ -998,21 +1003,47 @@ function Home({ posts }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "container",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                style: {
+                    justifyContent: "center"
+                },
+                buttons: [
+                    {
+                        label: "Home",
+                        href: "/index"
+                    },
+                    {
+                        label: "Posts",
+                        href: "/posts"
+                    },
+                    {
+                        label: "Tags",
+                        href: "/tags"
+                    },
+                    {
+                        label: "Now",
+                        href: "/now"
+                    },
+                    {
+                        label: "About",
+                        href: "/about"
+                    }
+                ]
+            }, void 0, false, {
                 fileName: "[project]/pages/posts.tsx",
                 lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AvatarSection$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/posts.tsx",
-                lineNumber: 15,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PostList$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 posts: posts
             }, void 0, false, {
                 fileName: "[project]/pages/posts.tsx",
-                lineNumber: 16,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]

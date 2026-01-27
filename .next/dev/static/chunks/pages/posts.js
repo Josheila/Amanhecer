@@ -6,8 +6,8 @@ __turbopack_load_page_chunks__("/posts", [
   "static/chunks/62cdd_next_link_8787c27d.js",
   "static/chunks/5e54f_react-dom_4d21b075._.js",
   "static/chunks/node_modules__pnpm_f4116989._.js",
-  "static/chunks/[root-of-the-server]__2afab545._.js",
-  "static/chunks/styles_0fd89b6e._.css",
+  "static/chunks/[root-of-the-server]__b1b3d5dc._.js",
+  "static/chunks/styles_f77c3a6a._.css",
   "static/chunks/pages_posts_2da965e7._.js",
-  "static/chunks/turbopack-pages_posts_dd8cb924._.js"
+  "static/chunks/turbopack-pages_posts_7d4611f9._.js"
 ])

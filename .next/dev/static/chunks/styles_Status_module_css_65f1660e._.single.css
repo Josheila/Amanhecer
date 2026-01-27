@@ -1,0 +1,95 @@
+/* [project]/styles/Status.module.css [client] (css) */
+.Status-module__mYkSqG__statusList {
+  width: 100%;
+  display: grid;
+}
+
+.Status-module__mYkSqG__statusCard {
+  border: 1px solid var(--color-gray-200);
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+}
+
+.Status-module__mYkSqG__statusCard p {
+  color: var(--color-gray-500);
+  margin: 0;
+  font-size: .9rem;
+  font-weight: 550;
+}
+
+.Status-module__mYkSqG__statusCard small {
+  color: var(--color-gray-400);
+  font-size: .75rem;
+}
+
+.Status-module__mYkSqG__pageNumbers {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Status-module__mYkSqG__pageNumber {
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-000);
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  transition: all .2s;
+  display: flex;
+}
+
+.Status-module__mYkSqG__pageNumber:hover:not(:disabled) {
+  background-color: var(--color-gray-200);
+}
+
+.Status-module__mYkSqG__pageNumber:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.Status-module__mYkSqG__current {
+  border-color: var(--color-gray-300);
+  background-color: var(--color-gray-100);
+  cursor: default;
+  border-radius: 20px;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.Status-module__mYkSqG__dots {
+  cursor: default;
+  background: none;
+  border: none;
+}
+
+.Status-module__mYkSqG__prev, .Status-module__mYkSqG__next {
+  color: var(--color-gray-300);
+  font-weight: 400;
+}
+
+.Status-module__mYkSqG__pageNavForm {
+  align-items: center;
+  gap: .3rem;
+  display: flex;
+}
+
+.Status-module__mYkSqG__pageInput {
+  border: 1px solid var(--color-gray-300);
+  text-align: center;
+  border-radius: 4px;
+  width: 3rem;
+  padding: .3rem .5rem;
+}
+
+/*# sourceMappingURL=styles_Status_module_css_65f1660e._.single.css.map*/

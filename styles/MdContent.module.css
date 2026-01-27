@@ -1,0 +1,88 @@
+/* MdContent.module.css */
+
+/* Markdown 容器整体 */
+.mdContent {
+  line-height: 1.1;
+  white-space: pre-line; /* 支持 \n 换行 */
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+}
+
+/* 段落 */
+.mdContent p {
+  margin: 0rem 0;
+}
+
+/* 标题 */
+.mdContent h1 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--color-gray-300);
+}
+.mdContent h2 {
+  font-size: 1.3rem;
+  margin: 0.8rem 0 0.4rem;
+  color: var(--color-gray-300);
+}
+.mdContent h3 {
+  font-size: 1.2rem;
+  margin: 0.6rem 0 0.3rem;
+  color: var(--color-gray-300);
+}
+.mdContent h4 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0 0;
+  color: var(--color-gray-300);
+}
+.mdContent h5 {
+  font-size: 1rem;
+  margin: 0.6rem 0 0.3rem;
+  color: var(--color-gray-300);
+}
+.mdContent h6 {
+  font-size: 1rem;
+  margin: 0.6rem 0 0.3rem;
+  color: var(--color-gray-300);
+}
+.mdContent h7 {
+  font-size: 1rem;
+  margin: 0.6rem 0 0.3rem;
+  color: var(--color-gray-300);
+}
+
+/* 列表 */
+.mdContent ul,
+.mdContent ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+/* 链接 */
+.mdContent a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+/* 代码块 */
+.mdContent pre {
+  background-color: #ca4e4e;
+  padding: 0.75rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.mdContent code {
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-100);
+  padding: 0rem 0rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+/* 图片 */
+.mdContent img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}

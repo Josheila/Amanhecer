@@ -1,34 +1,22 @@
 /* /styles/globals.css */
 
 html,
+/* =========================
+   字体
+   ========================= */
 body {
   font-family:
-    Lucida Grande,
-    Lucida Sans Unicode,
-    Lucida Sans,
-    Geneva,
-    Verdana,
-    Helvetica,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    NotoColorEmoji,
-    Noto Color Emoji,
-    Segoe UI Symbol,
-    Android Emoji,
-    EmojiSymbols,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Helvetica Neue,
-    Noto Sans,
-    sans-serif;
+    "Calibri", Helvetica, Arial, sans-serif, "Microsoft YaHei", "微软雅黑";
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* =========================
+   顶层容器
+   ========================= */
 
 .container {
   /* width: 60%; */
@@ -38,7 +26,10 @@ a {
   padding: 0 1rem; /* 两侧留白 */
 }
 
-/* 全局 CSS 变量 */
+/* =========================
+   全局 CSS 变量
+   ========================= */
+
 :root {
   /* 主色调 */
   --color-primary: #1e90ff;
@@ -71,13 +62,4 @@ a {
   --color-warning: #ffc107;
   --color-error: #dc3545;
   --color-info: #17a2b8;
-}
-
-/* 可选：全局基础样式示例 */
-body {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
 }

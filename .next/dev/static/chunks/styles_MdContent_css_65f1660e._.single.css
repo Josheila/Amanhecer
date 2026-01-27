@@ -1,0 +1,58 @@
+/* [project]/styles/MdContent.css [client] (css) */
+.mdContent {
+  white-space: pre-line;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mdContent p {
+  margin: .5rem 0;
+}
+
+.mdContent h1 {
+  margin: 1rem 0 .5rem;
+  font-size: 1.8rem;
+}
+
+.mdContent h2 {
+  margin: .8rem 0 .4rem;
+  font-size: 1.5rem;
+}
+
+.mdContent h3 {
+  margin: .6rem 0 .3rem;
+  font-size: 1.2rem;
+}
+
+.mdContent ul, .mdContent ol {
+  margin: .5rem 0;
+  padding-left: 1.5rem;
+}
+
+.mdContent a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.mdContent pre {
+  background-color: #ca4e4e;
+  border-radius: 8px;
+  padding: .75rem;
+  overflow-x: auto;
+}
+
+.mdContent code {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: .2rem .4rem;
+  font-family: monospace;
+}
+
+.mdContent img {
+  border-radius: 8px;
+  max-width: 100%;
+  margin: .5rem 0;
+}
+
+/*# sourceMappingURL=styles_MdContent_css_65f1660e._.single.css.map*/

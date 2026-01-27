@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "d1300c07c7bc64516a5d3107e50445b4",
-    "previewModeSigningKey": "bf2b574c7fb9ff90e5a167b96aef425a74666a521f0f12341f394edd3b96a516",
-    "previewModeEncryptionKey": "1a48530fa6a68939675ec8dac0677c1e7cee83824e1e5b52e94027c7b13dbd83"
-  }
-}
+{"version":4,"routes":{"/cozydiary/260127":{},"/posts/post_1":{}},"dynamicRoutes":{"/cozydiary/[diary]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/cozydiary/[diary]","routeRegex":"^\\/cozydiary\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/posts/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/posts/[slug]","routeRegex":"^\\/posts\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"981d3ee293aeb49f7b878cec516e356e","previewModeSigningKey":"9e5ce372d66898d1f7b246913bcd9b27f4c882ac700ab21e451bb8a109bea3da","previewModeEncryptionKey":"29081fd6d741e80e473f023787f03a5c619f49bf6bd77f7afb5a3e50cdae106f"}}

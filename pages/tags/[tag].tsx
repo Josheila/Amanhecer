@@ -1,7 +1,7 @@
 // pages/tags/[tag].tsx
 import { GetStaticPaths, GetStaticProps } from "next";
 import { getAllPosts, Post } from "../../lib/posts";
-import PostList from "../../components/PostList";
+import BlogList from "../../components/BlogList";
 import Header from "../../components/Header";
 import { tagMap } from "../../lib/tags";
 
@@ -13,10 +13,20 @@ interface TagPageProps {
 export default function TagPage({ tag, posts }: TagPageProps) {
   return (
     <div className="container" style={{ maxWidth: "640px", margin: "0 auto" }}>
-      <Header buttons={[{ label: "Posts", href: "/posts" }]} />
+      <Header
+        buttons={[
+          // { label: "Home", href: "/" },
+          { label: "Posts", href: "/posts" },
+          // { label: "CozyDiary", href: "/cozydiary" },
+          // { label: "Status", href: "/status" },
+          { label: "Tags", href: "/tags" },
+          // { label: "Now", href: "/now" },
+          // { label: "About", href: "/about" },
+        ]}
+      />
       <main style={{ marginTop: "2rem" }}>
         <h1>Tag: {tagMap[tag] || tag}</h1>
-        <PostList posts={posts} />
+        <BlogList items={posts} />
       </main>
     </div>
   );

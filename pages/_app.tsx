@@ -1,19 +1,22 @@
 // pages/_app.tsx
 import "../styles/globals.css";
-import ScrollToTop from "../components/ScrollToTop";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import ScrollToTop from "../components/ScrollToTop";
+import CopyRight from "../components/CopyRight";
+import styles from "../styles/Layout.module.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <title>KuromiPiPi</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className={styles.container}>
+      {/* 页面主体 */}
+      <main className={styles.main}>
+        <Component {...pageProps} />
+        <ScrollToTop />
+      </main>
 
-      <Component {...pageProps} />
-      <ScrollToTop />
-    </>
+      {/* 全局页脚 */}
+      <CopyRight />
+    </div>
   );
 }

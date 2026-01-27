@@ -32,6 +32,14 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
         label: "Tags",
         href: "/tags"
     },
@@ -56,22 +64,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 22,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }

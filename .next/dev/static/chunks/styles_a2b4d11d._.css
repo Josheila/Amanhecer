@@ -1,0 +1,133 @@
+/* [project]/styles/Header.module.css [client] (css) */
+.Header-module__vcZAwq__header {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.Header-module__vcZAwq__navButtons {
+  gap: 10px;
+  display: flex;
+}
+
+.Header-module__vcZAwq__navButton {
+  letter-spacing: .05em;
+  cursor: pointer;
+  border: 1px solid var(--color-gray-200);
+  background-color: var(--color-gray-100);
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  color: var(--color-gray-400);
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem 1rem;
+  font-weight: 500;
+  transition: all .15s;
+  display: flex;
+  position: relative;
+}
+
+.Header-module__vcZAwq__navButton:hover {
+  background-color: var(--color-gray-200);
+}
+
+.Header-module__vcZAwq__navButton:focus {
+  outline: none;
+}
+
+.Header-module__vcZAwq__navButton:active {
+  background-color: var(--color-gray-200);
+  transform: scale(.985)translateY(.5px);
+}
+
+.Header-module__vcZAwq__navText {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.Header-module__vcZAwq__myHeaderOverride {
+  justify-content: center;
+}
+
+/* [project]/styles/MdContent.module.css [client] (css) */
+.MdContent-module__jlgNAa__mdContent {
+  white-space: pre-line;
+  color: var(--color-gray-500);
+  font-size: .9rem;
+  line-height: 1.1;
+}
+
+.MdContent-module__jlgNAa__mdContent p {
+  margin: 0 0;
+}
+
+.MdContent-module__jlgNAa__mdContent h1 {
+  color: var(--color-gray-300);
+  margin: 1rem 0 .5rem;
+  font-size: 1.4rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h2 {
+  color: var(--color-gray-300);
+  margin: .8rem 0 .4rem;
+  font-size: 1.3rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h3 {
+  color: var(--color-gray-300);
+  margin: .6rem 0 .3rem;
+  font-size: 1.2rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h4 {
+  color: var(--color-gray-300);
+  margin: 1.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h5, .MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
+  color: var(--color-gray-300);
+  margin: .6rem 0 .3rem;
+  font-size: 1rem;
+}
+
+.MdContent-module__jlgNAa__mdContent ul, .MdContent-module__jlgNAa__mdContent ol {
+  margin: .5rem 0;
+  padding-left: 1.5rem;
+}
+
+.MdContent-module__jlgNAa__mdContent a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.MdContent-module__jlgNAa__mdContent pre {
+  background-color: #ca4e4e;
+  border-radius: 8px;
+  padding: .75rem;
+  overflow-x: auto;
+}
+
+.MdContent-module__jlgNAa__mdContent code {
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-100);
+  border-radius: 4px;
+  padding: 0;
+  font-family: monospace;
+  font-size: .8rem;
+}
+
+.MdContent-module__jlgNAa__mdContent img {
+  border-radius: 8px;
+  max-width: 100%;
+  margin: .5rem 0;
+}
+
+/*# sourceMappingURL=styles_a2b4d11d._.css.map*/

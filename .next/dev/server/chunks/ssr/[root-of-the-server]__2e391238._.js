@@ -32,6 +32,14 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
         label: "Tags",
         href: "/tags"
     },
@@ -56,22 +64,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 22,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -155,18 +163,29 @@ const tagMap = {
 "use strict";
 
 // /lib/date.ts
-__turbopack_context__.s([
+/**
+ * 格式化日期
+ * @param dateStr - 日期字符串
+ * @param type - 格式类型：1 = Jan 24, 26 (默认), 2 = 20-01-02 23:44
+ */ __turbopack_context__.s([
     "formatDate",
     ()=>formatDate
 ]);
-function formatDate(dateStr) {
+function formatDate(dateStr, type = 1) {
     const date = new Date(dateStr);
-    const year = date.getFullYear() % 100; // 取年份后两位
-    const month = date.toLocaleString("en-US", {
+    const year = (date.getFullYear() % 100).toString().padStart(2, "0"); // 20
+    const monthNum = (date.getMonth() + 1).toString().padStart(2, "0"); // 01
+    const day = date.getDate().toString().padStart(2, "0"); // 02
+    if (type === 2) {
+        const hours = date.getHours().toString().padStart(2, "0"); // 23
+        const minutes = date.getMinutes().toString().padStart(2, "0"); // 44
+        return `${year}-${monthNum}-${day} ${hours}:${minutes}`;
+    }
+    // type === 1
+    const monthText = date.toLocaleString("en-US", {
         month: "short"
-    }); // Jan, Feb...
-    const day = date.getDate();
-    return `${month} ${day}, ${year.toString().padStart(2, "0")}`;
+    }); // Jan
+    return `${monthText} ${day}, ${year}`;
 }
 }),
 "[project]/pages/posts/[slug].tsx [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -190,10 +209,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx_
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$posts$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/posts.ts [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tags$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/tags.ts [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/date.ts [ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__ = __turbopack_context__.i("[externals]/remark-gfm [external] (remark-gfm, esm_import, [project]/node_modules/.pnpm/remark-gfm@4.0.1/node_modules/remark-gfm)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
-    __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__
+    __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__,
+    __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__
 ]);
-[__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+[__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__, __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+;
 ;
 ;
 ;
@@ -207,14 +229,21 @@ function PostPage({ post }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                 buttons: [
+                    // { label: "Home", href: "/" },
                     {
                         label: "Posts",
                         href: "/posts"
+                    },
+                    // { label: "CozyDiary", href: "/cozydiary" },
+                    // { label: "Status", href: "/status" },
+                    {
+                        label: "Tags",
+                        href: "/tags"
                     }
                 ]
             }, void 0, false, {
                 fileName: "[project]/pages/posts/[slug].tsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
@@ -232,15 +261,8 @@ function PostPage({ post }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 22,
+                        lineNumber: 33,
                         columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
-                        children: post.title
-                    }, void 0, false, {
-                        fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 35,
-                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                         style: {
@@ -251,24 +273,31 @@ function PostPage({ post }) {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 36,
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
+                        children: post.title
+                    }, void 0, false, {
+                        fileName: "[project]/pages/posts/[slug].tsx",
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                        style: {
-                            color: "var(--color-gray-500)",
-                            fontSize: "14px"
-                        },
+                        className: "mdContent",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
+                            remarkPlugins: [
+                                __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__["default"]
+                            ],
                             children: post.content
                         }, void 0, false, {
                             fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 46,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 45,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -305,7 +334,7 @@ function PostPage({ post }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/posts/[slug].tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 83,
                                                 columnNumber: 21
                                             }, this),
                                             " ",
@@ -313,34 +342,34 @@ function PostPage({ post }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/posts/[slug].tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 70,
                                         columnNumber: 19
                                     }, this)
                                 }, tag, false, {
                                     fileName: "[project]/pages/posts/[slug].tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 69,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 52,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 51,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/posts/[slug].tsx",
-                lineNumber: 20,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/posts/[slug].tsx",
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }

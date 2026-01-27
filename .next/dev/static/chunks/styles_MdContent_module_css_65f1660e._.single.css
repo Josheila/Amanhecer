@@ -1,0 +1,75 @@
+/* [project]/styles/MdContent.module.css [client] (css) */
+.MdContent-module__jlgNAa__mdContent {
+  white-space: pre-line;
+  color: var(--color-gray-500);
+  font-size: .9rem;
+  line-height: 1.1;
+}
+
+.MdContent-module__jlgNAa__mdContent p {
+  margin: 0 0;
+}
+
+.MdContent-module__jlgNAa__mdContent h1 {
+  color: var(--color-gray-300);
+  margin: 1rem 0 .5rem;
+  font-size: 1.4rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h2 {
+  color: var(--color-gray-300);
+  margin: .8rem 0 .4rem;
+  font-size: 1.3rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h3 {
+  color: var(--color-gray-300);
+  margin: .6rem 0 .3rem;
+  font-size: 1.2rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h4 {
+  color: var(--color-gray-300);
+  margin: 1.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h5, .MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
+  color: var(--color-gray-300);
+  margin: .6rem 0 .3rem;
+  font-size: 1rem;
+}
+
+.MdContent-module__jlgNAa__mdContent ul, .MdContent-module__jlgNAa__mdContent ol {
+  margin: .5rem 0;
+  padding-left: 1.5rem;
+}
+
+.MdContent-module__jlgNAa__mdContent a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.MdContent-module__jlgNAa__mdContent pre {
+  background-color: #ca4e4e;
+  border-radius: 8px;
+  padding: .75rem;
+  overflow-x: auto;
+}
+
+.MdContent-module__jlgNAa__mdContent code {
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-100);
+  border-radius: 4px;
+  padding: 0;
+  font-family: monospace;
+  font-size: .8rem;
+}
+
+.MdContent-module__jlgNAa__mdContent img {
+  border-radius: 8px;
+  max-width: 100%;
+  margin: .5rem 0;
+}
+
+/*# sourceMappingURL=styles_MdContent_module_css_65f1660e._.single.css.map*/

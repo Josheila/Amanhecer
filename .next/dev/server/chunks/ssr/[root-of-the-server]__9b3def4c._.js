@@ -38,6 +38,14 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
+        label: "CozyDiary",
+        href: "/cozydiary"
+    },
+    {
         label: "Tags",
         href: "/tags"
     },
@@ -62,22 +70,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 22,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -86,18 +94,29 @@ function Header({ buttons = [
 "use strict";
 
 // /lib/date.ts
-__turbopack_context__.s([
+/**
+ * 格式化日期
+ * @param dateStr - 日期字符串
+ * @param type - 格式类型：1 = Jan 24, 26 (默认), 2 = 20-01-02 23:44
+ */ __turbopack_context__.s([
     "formatDate",
     ()=>formatDate
 ]);
-function formatDate(dateStr) {
+function formatDate(dateStr, type = 1) {
     const date = new Date(dateStr);
-    const year = date.getFullYear() % 100; // 取年份后两位
-    const month = date.toLocaleString("en-US", {
+    const year = (date.getFullYear() % 100).toString().padStart(2, "0"); // 20
+    const monthNum = (date.getMonth() + 1).toString().padStart(2, "0"); // 01
+    const day = date.getDate().toString().padStart(2, "0"); // 02
+    if (type === 2) {
+        const hours = date.getHours().toString().padStart(2, "0"); // 23
+        const minutes = date.getMinutes().toString().padStart(2, "0"); // 44
+        return `${year}-${monthNum}-${day} ${hours}:${minutes}`;
+    }
+    // type === 1
+    const monthText = date.toLocaleString("en-US", {
         month: "short"
-    }); // Jan, Feb...
-    const day = date.getDate();
-    return `${month} ${day}, ${year.toString().padStart(2, "0")}`;
+    }); // Jan
+    return `${monthText} ${day}, ${year}`;
 }
 }),
 "[project]/pages/now.tsx [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -139,11 +158,29 @@ function NowPage({ post }) {
                     {
                         label: "Home",
                         href: "/"
+                    },
+                    {
+                        label: "Posts",
+                        href: "/posts"
+                    },
+                    {
+                        label: "CozyDiary",
+                        href: "/cozydiary"
+                    },
+                    {
+                        label: "Moment",
+                        href: "/moment"
+                    },
+                    // { label: "Tags", href: "/tags" },
+                    // { label: "Now", href: "/now" },
+                    {
+                        label: "About",
+                        href: "/about"
                     }
                 ]
             }, void 0, false, {
                 fileName: "[project]/pages/now.tsx",
-                lineNumber: 27,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
@@ -164,14 +201,14 @@ function NowPage({ post }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 31,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
                         children: post.title
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 45,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -183,7 +220,7 @@ function NowPage({ post }) {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 46,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -195,18 +232,18 @@ function NowPage({ post }) {
                             children: post.content
                         }, void 0, false, {
                             fileName: "[project]/pages/now.tsx",
-                            lineNumber: 56,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 55,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/now.tsx",
-                lineNumber: 29,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]

@@ -23,8 +23,17 @@ interface NowPageProps {
 export default function NowPage({ post }: NowPageProps) {
   return (
     <div className="container">
-      {/* Header: 直接显示 Posts 按钮 */}
-      <Header buttons={[{ label: "Home", href: "/" }]} />
+      <Header
+        buttons={[
+          { label: "Home", href: "/" },
+          { label: "Posts", href: "/posts" },
+          { label: "CozyDiary", href: "/cozydiary" },
+          { label: "Moment", href: "/moment" },
+          // { label: "Tags", href: "/tags" },
+          // { label: "Now", href: "/now" },
+          { label: "About", href: "/about" },
+        ]}
+      />
 
       <main style={{ marginTop: "2rem" }}>
         {post.cover && (

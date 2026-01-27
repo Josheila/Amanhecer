@@ -11,6 +11,8 @@ export default function Header({
   buttons = [
     { label: "Home", href: "/" },
     { label: "Posts", href: "/posts" },
+    { label: "CozyDiary", href: "/cozydiary" },
+    { label: "CozyDiary", href: "/cozydiary" },
     { label: "Tags", href: "/tags" },
     { label: "Now", href: "/now" },
     { label: "About", href: "/about" },

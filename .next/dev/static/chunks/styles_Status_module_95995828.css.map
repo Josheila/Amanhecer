@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Documents/Amanhecer/styles/Status.module.css"],"sourcesContent":[".statusPage {\n  max-width: 600px;\n  margin: 2rem auto;\n  padding: 0 1rem;\n  display: grid;\n  gap: 1rem;\n}\n\n.statusCard {\n  padding: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 8px;\n  background: #fafafa;\n  word-wrap: break-word;\n}\n\n.statusCard p {\n  margin: 0;\n}\n\n.statusCard small {\n  display: block;\n  margin-top: 0.5rem;\n  font-size: 0.75rem;\n  color: #666;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;;;AAQA;;;;AAIA"}}]
+}
