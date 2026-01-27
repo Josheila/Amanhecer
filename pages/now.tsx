@@ -28,7 +28,7 @@ export default function NowPage({ post }: NowPageProps) {
           { label: "Home", href: "/" },
           { label: "Posts", href: "/posts" },
           { label: "CozyDiary", href: "/cozydiary" },
-          { label: "Moments", href: "/moment" },
+          { label: "Moments", href: "/moments" },
           // { label: "Tags", href: "/tags" },
           // { label: "Now", href: "/now" },
           { label: "About", href: "/about" },

@@ -71,10 +71,10 @@ type PagesPageConfig = {
   type __Unused = __Check
 }
 
-// Validate ../../../pages/moment.tsx
+// Validate ../../../pages/moments.tsx
 {
   type __IsExpected<Specific extends PagesPageConfig> = Specific
-  const handler = {} as typeof import("../../../pages/moment.js")
+  const handler = {} as typeof import("../../../pages/moments.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

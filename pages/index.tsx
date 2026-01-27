@@ -16,7 +16,7 @@ export default function Home({ posts }: HomeProps) {
         buttons={[
           { label: "Posts", href: "/posts" },
           { label: "CozyDiary", href: "/cozydiary" },
-          { label: "Moments", href: "/moment" },
+          { label: "Moments", href: "/moments" },
           { label: "Now", href: "/now" },
           { label: "About", href: "/about" },
         ]}

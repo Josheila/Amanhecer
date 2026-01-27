@@ -36,8 +36,8 @@ function Header({ buttons = [
         href: "/cozydiary"
     },
     {
-        label: "CozyDiary",
-        href: "/cozydiary"
+        label: "Moment",
+        href: "/moment"
     },
     {
         label: "Tags",
@@ -174,8 +174,8 @@ function Home({ posts }) {
                         href: "/cozydiary"
                     },
                     {
-                        label: "Moment",
-                        href: "/moment"
+                        label: "Moments",
+                        href: "/moments"
                     },
                     {
                         label: "Now",
