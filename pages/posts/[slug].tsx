@@ -24,6 +24,7 @@ export default function PostPage({ post }: PostPageProps) {
           // { label: "CozyDiary", href: "/cozydiary" },
           // { label: "Status", href: "/status" },
           { label: "Tags", href: "/tags" },
+          // { label: "Moments", href: "/moment" },
           // { label: "Now", href: "/now" },
           // { label: "About", href: "/about" },
         ]}

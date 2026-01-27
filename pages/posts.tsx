@@ -17,7 +17,7 @@ export default function PostsPage({ posts }: PostsPageProps) {
           { label: "Home", href: "/" },
           // { label: "Posts", href: "/posts" },
           { label: "CozyDiary", href: "/cozydiary" },
-          { label: "Moment", href: "/moment" },
+          { label: "Moments", href: "/moment" },
           // { label: "Tags", href: "/tags" },
           { label: "Now", href: "/now" },
           { label: "About", href: "/about" },

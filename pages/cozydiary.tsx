@@ -17,7 +17,7 @@ export default function CozyDiary({ diaries }: CozyDiaryProps) {
           { label: "Home", href: "/" },
           { label: "Posts", href: "/posts" },
           // { label: "CozyDiary", href: "/cozydiary" },
-          { label: "Status", href: "/status" },
+          { label: "Moments", href: "/moment" },
           // { label: "Tags", href: "/tags" },
           { label: "Now", href: "/now" },
           { label: "About", href: "/about" },

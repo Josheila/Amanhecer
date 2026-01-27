@@ -12,7 +12,7 @@ export default function Header({
     { label: "Home", href: "/" },
     { label: "Posts", href: "/posts" },
     { label: "CozyDiary", href: "/cozydiary" },
-    { label: "CozyDiary", href: "/cozydiary" },
+    { label: "Moment", href: "/moment" },
     { label: "Tags", href: "/tags" },
     { label: "Now", href: "/now" },
     { label: "About", href: "/about" },
