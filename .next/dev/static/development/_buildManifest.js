@@ -1,12 +1,6 @@
 self.__BUILD_MANIFEST = {
-  "/": [
-    "static/chunks/pages/index.js"
-  ],
   "/cozydiary": [
     "static/chunks/pages/cozydiary.js"
-  ],
-  "/posts": [
-    "static/chunks/pages/posts.js"
   ],
   "__rewrites": {
     "afterFiles": [],

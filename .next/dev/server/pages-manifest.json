@@ -1,7 +1,5 @@
 {
-  "/": "pages/index.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/cozydiary": "pages/cozydiary.js",
-  "/posts": "pages/posts.js"
+  "/cozydiary": "pages/cozydiary.js"
 }

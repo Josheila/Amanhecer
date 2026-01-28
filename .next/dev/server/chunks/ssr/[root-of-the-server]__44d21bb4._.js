@@ -288,8 +288,8 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                         },
                         children: viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                             style: {
-                                border: "1px solid var(--color-gray-3)",
-                                borderRadius: "10px",
+                                border: "1px solid var(--color-gray-4)",
+                                borderRadius: "8px",
                                 overflow: "hidden",
                                 cursor: "pointer",
                                 display: "flex",
@@ -330,7 +330,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                                 margin: "0 0 0.5rem 0",
                                                 fontWeight: 400,
                                                 fontSize: "1rem",
-                                                color: "var(--color-gray-500)",
+                                                color: "var(--color-gray-8)",
                                                 height: "2.5rem",
                                                 overflow: "hidden",
                                                 textOverflow: "ellipsis"
@@ -345,7 +345,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                             style: {
                                                 margin: 0,
                                                 fontSize: "0.9rem",
-                                                color: "var(--color-gray-400)"
+                                                color: "var(--color-gray-6)"
                                             },
                                             children: [
                                                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(item.date),
@@ -369,7 +369,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             columnNumber: 17
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                             style: {
-                                borderBottom: "0.5px solid var(--color-gray-200)",
+                                borderBottom: "0.5px solid var(--color-gray-2)",
                                 padding: "0.5rem 4px",
                                 cursor: "pointer",
                                 display: "grid",
@@ -381,7 +381,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                     style: {
                                         fontWeight: 400,
-                                        color: "var(--color-gray-500)"
+                                        color: "var(--color-gray-8)"
                                     },
                                     children: item.title
                                 }, void 0, false, {

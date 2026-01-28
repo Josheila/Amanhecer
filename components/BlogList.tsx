@@ -75,8 +75,8 @@ export default function BlogList({
               {viewMode === "card" ? (
                 <div
                   style={{
-                    border: "1px solid var(--color-gray-3)",
-                    borderRadius: "10px",
+                    border: "1px solid var(--color-gray-4)",
+                    borderRadius: "8px",
                     overflow: "hidden",
                     cursor: "pointer",
                     display: "flex",
@@ -109,7 +109,7 @@ export default function BlogList({
                         margin: "0 0 0.5rem 0",
                         fontWeight: 400,
                         fontSize: "1rem",
-                        color: "var(--color-gray-500)",
+                        color: "var(--color-gray-8)",
                         height: "2.5rem", // 固定高度
                         overflow: "hidden", // 太长的文字截断
                         textOverflow: "ellipsis", // 显示省略号
@@ -121,7 +121,7 @@ export default function BlogList({
                       style={{
                         margin: 0,
                         fontSize: "0.9rem",
-                        color: "var(--color-gray-400)",
+                        color: "var(--color-gray-6)",
                       }}
                     >
                       {formatDate(item.date)} {/* ✅ 用 formatDate */}
@@ -131,7 +131,7 @@ export default function BlogList({
               ) : (
                 <div
                   style={{
-                    borderBottom: "0.5px solid var(--color-gray-200)",
+                    borderBottom: "0.5px solid var(--color-gray-2)",
                     padding: "0.5rem 4px",
                     cursor: "pointer",
                     display: "grid",
@@ -141,7 +141,7 @@ export default function BlogList({
                   }}
                 >
                   <span
-                    style={{ fontWeight: 400, color: "var(--color-gray-500)" }}
+                    style={{ fontWeight: 400, color: "var(--color-gray-8)" }}
                   >
                     {item.title}
                   </span>
