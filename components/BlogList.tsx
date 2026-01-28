@@ -75,7 +75,7 @@ export default function BlogList({
               {viewMode === "card" ? (
                 <div
                   style={{
-                    border: "1px solid var(--color-gray-200)",
+                    border: "1px solid var(--color-gray-3)",
                     borderRadius: "10px",
                     overflow: "hidden",
                     cursor: "pointer",
@@ -98,6 +98,7 @@ export default function BlogList({
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
+                          // borderRadius: "10px",
                         }}
                       />
                     </div>
@@ -109,6 +110,9 @@ export default function BlogList({
                         fontWeight: 400,
                         fontSize: "1rem",
                         color: "var(--color-gray-500)",
+                        height: "2.5rem", // 固定高度
+                        overflow: "hidden", // 太长的文字截断
+                        textOverflow: "ellipsis", // 显示省略号
                       }}
                     >
                       {item.title}

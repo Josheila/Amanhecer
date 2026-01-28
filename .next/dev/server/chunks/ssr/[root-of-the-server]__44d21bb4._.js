@@ -288,7 +288,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                         },
                         children: viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                             style: {
-                                border: "1px solid var(--color-gray-200)",
+                                border: "1px solid var(--color-gray-3)",
                                 borderRadius: "10px",
                                 overflow: "hidden",
                                 cursor: "pointer",
@@ -330,12 +330,15 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                                 margin: "0 0 0.5rem 0",
                                                 fontWeight: 400,
                                                 fontSize: "1rem",
-                                                color: "var(--color-gray-500)"
+                                                color: "var(--color-gray-500)",
+                                                height: "2.5rem",
+                                                overflow: "hidden",
+                                                textOverflow: "ellipsis"
                                             },
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 107,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -350,13 +353,13 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 120,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 106,
                                     columnNumber: 19
                                 }, this)
                             ]
@@ -383,7 +386,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: item.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 143,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -397,13 +400,13 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 148,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 128,
+                            lineNumber: 132,
                             columnNumber: 17
                         }, this)
                     }, item.slug, false, {
@@ -428,12 +431,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "«"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 163,
+                            lineNumber: 167,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 162,
+                        lineNumber: 166,
                         columnNumber: 11
                     }, this),
                     Array.from({
@@ -446,7 +449,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 185,
                                     columnNumber: 21
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].pageNumber,
@@ -454,12 +457,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 189,
                                     columnNumber: 21
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 179,
+                                lineNumber: 183,
                                 columnNumber: 17
                             }, this);
                         }
@@ -470,12 +473,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: "…"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 202,
                                     columnNumber: 19
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 197,
+                                lineNumber: 201,
                                 columnNumber: 17
                             }, this);
                         }
@@ -489,18 +492,18 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "»"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 208,
+                            lineNumber: 212,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 207,
+                        lineNumber: 211,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 161,
+                lineNumber: 165,
                 columnNumber: 9
             }, this)
         ]

@@ -25,19 +25,6 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/pages__app_2da965e7._.js",
       "static/chunks/turbopack-pages__app_fd7cb78f._.js"
     ],
-    "/_error": [
-      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
-      "static/chunks/62cdd_next_dist_shared_lib_2edf5031._.js",
-      "static/chunks/62cdd_next_dist_client_819bece2._.js",
-      "static/chunks/62cdd_next_dist_56fa06d3._.js",
-      "static/chunks/62cdd_next_error_8d566a3d.js",
-      "static/chunks/[next]_entry_page-loader_ts_4578ddf9._.js",
-      "static/chunks/5e54f_react-dom_4d21b075._.js",
-      "static/chunks/node_modules__pnpm_fd60bec7._.js",
-      "static/chunks/[root-of-the-server]__092393de._.js",
-      "static/chunks/pages__error_2da965e7._.js",
-      "static/chunks/turbopack-pages__error_992bcee4._.js"
-    ],
     "/cozydiary": [
       "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
       "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
@@ -51,47 +38,6 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/pages_cozydiary_2da965e7._.js",
       "static/chunks/turbopack-pages_cozydiary_8e2218d2._.js"
     ],
-    "/cozydiary/[diary]": [
-      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
-      "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
-      "static/chunks/62cdd_next_dist_client_ca58a90a._.js",
-      "static/chunks/62cdd_next_dist_cef891fc._.js",
-      "static/chunks/62cdd_next_33fb60f4._.js",
-      "static/chunks/5e54f_react-dom_4d21b075._.js",
-      "static/chunks/b5ecd_micromark-core-commonmark_dev_lib_f7b16d9d._.js",
-      "static/chunks/node_modules__pnpm_d810ab38._.js",
-      "static/chunks/[root-of-the-server]__96c6f405._.js",
-      "static/chunks/styles_a2b4d11d._.css",
-      "static/chunks/pages_cozydiary_[diary]_tsx_2da965e7._.js",
-      "static/chunks/turbopack-pages_cozydiary_[diary]_tsx_0fdccc2d._.js"
-    ],
-    "/moments": [
-      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
-      "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
-      "static/chunks/62cdd_next_dist_client_ca58a90a._.js",
-      "static/chunks/62cdd_next_dist_cef891fc._.js",
-      "static/chunks/62cdd_next_3f91076f._.js",
-      "static/chunks/5e54f_react-dom_4d21b075._.js",
-      "static/chunks/node_modules__pnpm_f4116989._.js",
-      "static/chunks/[root-of-the-server]__b37db9c2._.js",
-      "static/chunks/styles_cb57dd6c._.css",
-      "static/chunks/pages_moments_2da965e7._.js",
-      "static/chunks/turbopack-pages_moments_eb1a8bbf._.js"
-    ],
-    "/now": [
-      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
-      "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
-      "static/chunks/62cdd_next_dist_client_ca58a90a._.js",
-      "static/chunks/62cdd_next_dist_cef891fc._.js",
-      "static/chunks/62cdd_next_3f91076f._.js",
-      "static/chunks/5e54f_react-dom_4d21b075._.js",
-      "static/chunks/b5ecd_micromark-core-commonmark_dev_lib_f7b16d9d._.js",
-      "static/chunks/node_modules__pnpm_0b4b392d._.js",
-      "static/chunks/[root-of-the-server]__5d0f4ceb._.js",
-      "static/chunks/styles_Header_module_042f6c35.css",
-      "static/chunks/pages_now_2da965e7._.js",
-      "static/chunks/turbopack-pages_now_cb8c58ca._.js"
-    ],
     "/posts": [
       "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
       "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
@@ -104,19 +50,6 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/styles_f77c3a6a._.css",
       "static/chunks/pages_posts_2da965e7._.js",
       "static/chunks/turbopack-pages_posts_a55c5f82._.js"
-    ],
-    "/tags": [
-      "static/chunks/62cdd_next_dist_compiled_ba9b9f49._.js",
-      "static/chunks/62cdd_next_dist_shared_lib_b1ff29d9._.js",
-      "static/chunks/62cdd_next_dist_client_ca58a90a._.js",
-      "static/chunks/62cdd_next_dist_cef891fc._.js",
-      "static/chunks/62cdd_next_3f91076f._.js",
-      "static/chunks/5e54f_react-dom_4d21b075._.js",
-      "static/chunks/node_modules__pnpm_f4116989._.js",
-      "static/chunks/[root-of-the-server]__f25d527a._.js",
-      "static/chunks/styles_Header_module_042f6c35.css",
-      "static/chunks/pages_tags_2da965e7._.js",
-      "static/chunks/turbopack-pages_tags_2fa4eadc._.js"
     ]
   },
   "devFiles": [],
