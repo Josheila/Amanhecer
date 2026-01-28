@@ -5,14 +5,23 @@ self.__BUILD_MANIFEST = {
   "/_error": [
     "static/chunks/pages/_error.js"
   ],
-  "/about": [
-    "static/chunks/pages/about.js"
+  "/cozydiary": [
+    "static/chunks/pages/cozydiary.js"
+  ],
+  "/cozydiary/[diary]": [
+    "static/chunks/pages/cozydiary/[diary].js"
   ],
   "/moments": [
     "static/chunks/pages/moments.js"
   ],
   "/now": [
     "static/chunks/pages/now.js"
+  ],
+  "/posts": [
+    "static/chunks/pages/posts.js"
+  ],
+  "/tags": [
+    "static/chunks/pages/tags.js"
   ],
   "__rewrites": {
     "afterFiles": [],
@@ -23,7 +32,6 @@ self.__BUILD_MANIFEST = {
     "/",
     "/_app",
     "/_error",
-    "/about",
     "/cozydiary",
     "/cozydiary/[diary]",
     "/moments",

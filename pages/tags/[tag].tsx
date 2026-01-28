@@ -15,13 +15,12 @@ export default function TagPage({ tag, posts }: TagPageProps) {
     <div className="container" style={{ maxWidth: "640px", margin: "0 auto" }}>
       <Header
         buttons={[
-          // { label: "Home", href: "/" },
-          { label: "Posts", href: "/posts" },
-          // { label: "CozyDiary", href: "/cozydiary" },
-          // { label: "Status", href: "/status" },
-          { label: "Tags", href: "/tags" },
-          // { label: "Now", href: "/now" },
-          // { label: "About", href: "/about" },
+          // { label: "HOME", href: "/" },
+          { label: "POSTS", href: "/posts" },
+          // { label: "COZYDIARY", href: "/cozydiary" },
+          // { label: "MOMENTS", href: "/moments" },
+          { label: "TAGS", href: "/tags" },
+          // { label: "NOW", href: "/now" },
         ]}
       />
       <main style={{ marginTop: "2rem" }}>

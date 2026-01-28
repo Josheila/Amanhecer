@@ -19,14 +19,12 @@ export default function PostPage({ post }: PostPageProps) {
     <div className="container">
       <Header
         buttons={[
-          // { label: "Home", href: "/" },
-          { label: "Posts", href: "/posts" },
-          // { label: "CozyDiary", href: "/cozydiary" },
-          // { label: "Status", href: "/status" },
-          { label: "Tags", href: "/tags" },
-          // { label: "Moments", href: "/moments" },
-          // { label: "Now", href: "/now" },
-          // { label: "About", href: "/about" },
+          // { label: "HOME", href: "/" },
+          { label: "POSTS", href: "/posts" },
+          // { label: "COZYDIARY", href: "/cozydiary" },
+          // { label: "MOMENTS", href: "/moments" },
+          { label: "TAGS", href: "/tags" },
+          // { label: "NOW", href: "/now" },
         ]}
       />
       {/* 文章内容 */}

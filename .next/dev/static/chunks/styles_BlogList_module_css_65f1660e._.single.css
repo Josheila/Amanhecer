@@ -45,7 +45,7 @@
 
 .BlogList-module__YLJmxG__iconButton:hover {
   opacity: 1;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-gray-1);
   transform: scale(1.1);
 }
 
@@ -57,8 +57,8 @@
 }
 
 .BlogList-module__YLJmxG__pageButton {
-  border: 1px solid var(--color-gray-300);
-  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-3);
+  background-color: var(--color-gray-0);
   color: var(--color-gray-400);
   cursor: pointer;
   border-radius: 10px;
@@ -71,11 +71,11 @@
 }
 
 .BlogList-module__YLJmxG__pageButton:hover:not(:disabled) {
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-2);
 }
 
 .BlogList-module__YLJmxG__pageButton:active:not(:disabled) {
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-2);
   transform: scale(.985)translateY(.5px);
 }
 
@@ -104,8 +104,8 @@
 }
 
 .BlogList-module__YLJmxG__pageNumber {
-  border: 1px solid var(--color-gray-300);
-  background-color: var(--color-gray-000);
+  border: 1px solid var(--color-gray-3);
+  background-color: var(--color-gray-0);
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 20px;
@@ -119,7 +119,7 @@
 }
 
 .BlogList-module__YLJmxG__pageNumber:hover:not(:disabled) {
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-2);
 }
 
 .BlogList-module__YLJmxG__pageNumber:disabled {
@@ -128,8 +128,8 @@
 }
 
 .BlogList-module__YLJmxG__current {
-  border-color: var(--color-gray-300);
-  background-color: var(--color-gray-100);
+  border-color: var(--color-gray-3);
+  background-color: var(--color-gray-1);
   cursor: default;
   border-radius: 20px;
   padding: .4rem .7rem;
@@ -144,7 +144,7 @@
 }
 
 .BlogList-module__YLJmxG__prev, .BlogList-module__YLJmxG__next {
-  color: var(--color-gray-300);
+  color: var(--color-gray-3);
   font-weight: 400;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .BlogList-module__YLJmxG__pageInput {
-  border: 1px solid var(--color-gray-300);
+  border: 1px solid var(--color-gray-3);
   text-align: center;
   border-radius: 4px;
   width: 3rem;

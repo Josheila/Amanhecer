@@ -464,7 +464,7 @@ function triggerUpdate(msg) {
 }),
 "[project]/status.json (json)", ((__turbopack_context__) => {
 
-__turbopack_context__.v([{"date":"2026-01-27 23:12","content":"ontem só fui dormir às cinco da manhã, hoje tô morrendo… \n mas quando chega de madrugada, fico toda elétrica de novo 😵‍💫"}]);}),
+__turbopack_context__.v([{"date":"2026-01-27 23:12","content":"ontem só fui dormir às cinco da manhã, hoje tô morrendo… \n mas quando chega de madrugada, fico toda elétrica de novo 😵‍💫"},{"date":"2026-01-28 12:34","content":"\"besteira\" tem \"best\" dentro, então até a besteira parece algo bom.\n \"abandonada\" tem \"nada\", e isso me faz sentir que ser deixada também não é nada demais."}]);}),
 "[project]/lib/date.ts [client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -683,6 +683,7 @@ __turbopack_context__.v({
   "navButton": "Header-module__vcZAwq__navButton",
   "navButtons": "Header-module__vcZAwq__navButtons",
   "navText": "Header-module__vcZAwq__navText",
+  "selected": "Header-module__vcZAwq__selected",
 });
 }),
 "[project]/components/Header.tsx [client] (ecmascript)", ((__turbopack_context__) => {
@@ -694,71 +695,82 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/link.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/router.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/Header.module.css [client] (css module)");
+;
+var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
-        label: "CozyDiary",
+        label: "COZYDIARY",
         href: "/cozydiary"
     },
     {
-        label: "Moment",
-        href: "/moment"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
-    },
-    {
-        label: "About",
-        href: "/about"
     }
 ], style }) {
+    _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].header,
         style: style,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButtons,
-            children: buttons.map((btn)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+            children: buttons.map((btn)=>{
+                // 判断当前路由是否等于按钮 href
+                const isSelected = router.pathname === btn.href;
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     href: btn.href,
+                    passHref: true,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButton,
+                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButton} ${isSelected ? __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].selected : ""}`,
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 27,
-                        columnNumber: 13
+                        lineNumber: 33,
+                        columnNumber: 15
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 26,
-                    columnNumber: 11
-                }, this))
+                    lineNumber: 32,
+                    columnNumber: 13
+                }, this);
+            })
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 24,
+            lineNumber: 26,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 23,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
+_s(Header, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = Header;
 var _c;
 __turbopack_context__.k.register(_c, "Header");
@@ -809,7 +821,7 @@ function AvatarSection() {
                 children: "quero amanhecer, entardecer e anoitecer com você"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 23,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
@@ -856,26 +868,25 @@ function StatusPage() {
                 // style={{ justifyContent: "center" }}
                 buttons: [
                     {
-                        label: "Home",
+                        label: "HOME",
                         href: "/"
                     },
                     {
-                        label: "Posts",
+                        label: "POSTS",
                         href: "/posts"
                     },
                     {
-                        label: "CozyDiary",
+                        label: "COZYDIARY",
                         href: "/cozydiary"
                     },
-                    // { label: "Moments", href: "/moments" },
-                    //   { label: "Tags", href: "/tags" },
                     {
-                        label: "Now",
-                        href: "/now"
+                        label: "MOMENTS",
+                        href: "/moments"
                     },
+                    // { label: "TAGS", href: "/tags" },
                     {
-                        label: "About",
-                        href: "/about"
+                        label: "NOW",
+                        href: "/now"
                     }
                 ]
             }, void 0, false, {
@@ -885,7 +896,7 @@ function StatusPage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AvatarSection$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/moments.tsx",
-                lineNumber: 24,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -894,12 +905,12 @@ function StatusPage() {
                     statuses: statuses
                 }, void 0, false, {
                     fileName: "[project]/pages/moments.tsx",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/moments.tsx",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 7
             }, this)
         ]

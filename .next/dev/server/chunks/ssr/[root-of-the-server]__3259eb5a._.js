@@ -7,6 +7,7 @@ __turbopack_context__.v({
   "navButton": "Header-module__vcZAwq__navButton",
   "navButtons": "Header-module__vcZAwq__navButtons",
   "navText": "Header-module__vcZAwq__navText",
+  "selected": "Header-module__vcZAwq__selected",
 });
 }),
 "[project]/components/Header.tsx [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -24,32 +25,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
-        label: "CozyDiary",
+        label: "COZYDIARY",
         href: "/cozydiary"
     },
     {
-        label: "Moment",
-        href: "/moment"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
-    },
-    {
-        label: "About",
-        href: "/about"
     }
 ], style }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("header", {
@@ -64,22 +61,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 27,
+                        lineNumber: 26,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 24,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 23,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
@@ -127,7 +124,7 @@ function AvatarSection() {
                 children: "quero amanhecer, entardecer e anoitecer com você"
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 23,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
@@ -166,24 +163,25 @@ function Home({ posts }) {
                 },
                 buttons: [
                     {
-                        label: "Posts",
+                        label: "HOME",
+                        href: "/"
+                    },
+                    {
+                        label: "POSTS",
                         href: "/posts"
                     },
                     {
-                        label: "CozyDiary",
+                        label: "COZYDIARY",
                         href: "/cozydiary"
                     },
                     {
-                        label: "Moments",
+                        label: "MOMENTS",
                         href: "/moments"
                     },
+                    // { label: "TAGS", href: "/tags" },
                     {
-                        label: "Now",
+                        label: "NOW",
                         href: "/now"
-                    },
-                    {
-                        label: "About",
-                        href: "/about"
                     }
                 ]
             }, void 0, false, {

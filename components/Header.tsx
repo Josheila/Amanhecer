@@ -1,32 +1,43 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
 
 interface HeaderProps {
   buttons?: { label: string; href: string }[];
-  style?: React.CSSProperties; // ✅ 允许外部传 style
-  className?: string; // 可选 className 支持
+  style?: React.CSSProperties;
+  className?: string;
 }
 
 export default function Header({
   buttons = [
-    { label: "Home", href: "/" },
-    { label: "Posts", href: "/posts" },
-    { label: "CozyDiary", href: "/cozydiary" },
-    { label: "Moment", href: "/moment" },
-    { label: "Tags", href: "/tags" },
-    { label: "Now", href: "/now" },
-    { label: "About", href: "/about" },
+    { label: "HOME", href: "/" },
+    { label: "POSTS", href: "/posts" },
+    { label: "COZYDIARY", href: "/cozydiary" },
+    { label: "MOMENTS", href: "/moments" },
+    { label: "TAGS", href: "/tags" },
+    { label: "NOW", href: "/now" },
   ],
   style,
 }: HeaderProps) {
+  const router = useRouter();
+
   return (
     <header className={styles.header} style={style}>
       <nav className={styles.navButtons}>
-        {buttons.map((btn) => (
-          <Link key={btn.href} href={btn.href}>
-            <button className={styles.navButton}>{btn.label}</button>
-          </Link>
-        ))}
+        {buttons.map((btn) => {
+          // 判断当前路由是否等于按钮 href
+          const isSelected = router.pathname === btn.href;
+
+          return (
+            <Link key={btn.href} href={btn.href} passHref>
+              <button
+                className={`${styles.navButton} ${isSelected ? styles.selected : ""}`}
+              >
+                {btn.label}
+              </button>
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );

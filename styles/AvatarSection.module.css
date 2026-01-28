@@ -9,14 +9,13 @@
   margin-bottom: 1rem;
 }
 
-.avatarSection p {
-  font-size: 1rem; /* 改大字号，比如默认是 1rem */
-  color: var(--color-gray-500); /* 可选，设置颜色 */
+.avatarSection h1 {
+  font-size: 2rem; /* 改大字号，比如默认是 1rem */
+  color: var(--color-gray-9); /* 可选，设置颜色 */
   margin-top: 0.5rem; /* 可选，和标题保持间距 */
 }
-
-.avatarSection h1 {
-  font-size: 1.5rem; /* 改大字号，比如默认是 1rem */
-  color: var(--color-gray-600); /* 可选，设置颜色 */
+.avatarSection p {
+  font-size: 1rem; /* 改大字号，比如默认是 1rem */
+  color: var(--color-gray-7); /* 可选，设置颜色 */
   margin-top: 0.5rem; /* 可选，和标题保持间距 */
 }

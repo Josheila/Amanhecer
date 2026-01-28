@@ -24,11 +24,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
@@ -36,19 +36,19 @@ function Header({ buttons = [
         href: "/cozydiary"
     },
     {
-        label: "CozyDiary",
-        href: "/cozydiary"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
     },
     {
-        label: "About",
+        label: "ME",
         href: "/about"
     }
 ], style }) {
@@ -194,8 +194,9 @@ function Tags({ tags }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                 buttons: [
+                    // { label: "HOME", href: "/" },
                     {
-                        label: "Posts",
+                        label: "POSTS",
                         href: "/posts"
                     }
                 ]
@@ -216,7 +217,7 @@ function Tags({ tags }) {
                         children: "Tags"
                     }, void 0, false, {
                         fileName: "[project]/pages/tags.tsx",
-                        lineNumber: 21,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -269,31 +270,31 @@ function Tags({ tags }) {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/pages/tags.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 78,
                                             columnNumber: 19
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tags$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["tagMap"][tag.name] || tag.name
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/tags.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 52,
                                     columnNumber: 17
                                 }, this)
                             }, tag.name, false, {
                                 fileName: "[project]/pages/tags.tsx",
-                                lineNumber: 41,
+                                lineNumber: 51,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/pages/tags.tsx",
-                        lineNumber: 23,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/tags.tsx",
-                lineNumber: 20,
+                lineNumber: 30,
                 columnNumber: 7
             }, this)
         ]

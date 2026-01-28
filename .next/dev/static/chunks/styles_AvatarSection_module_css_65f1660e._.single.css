@@ -11,16 +11,16 @@
   margin-bottom: 1rem;
 }
 
-.AvatarSection-module__6tOn5G__avatarSection p {
-  color: var(--color-gray-500);
+.AvatarSection-module__6tOn5G__avatarSection h1 {
+  color: var(--color-gray-9);
   margin-top: .5rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
-.AvatarSection-module__6tOn5G__avatarSection h1 {
-  color: var(--color-gray-600);
+.AvatarSection-module__6tOn5G__avatarSection p {
+  color: var(--color-gray-7);
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles_AvatarSection_module_css_65f1660e._.single.css.map*/

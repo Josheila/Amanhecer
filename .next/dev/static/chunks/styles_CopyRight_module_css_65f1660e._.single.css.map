@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/CopyRight.module.css"],"sourcesContent":["/* styles/CopyRight.module.css */\n.copyright {\n  text-align: center;\n  font-size: 0.9rem;\n  color: #666;\n  margin: 2rem 0;\n}\n\n.withLove {\n  margin: 0 0.3rem; /* Emoji 和文字间距 */\n}\n\n.author {\n  font-weight: bold;\n}\n"],"names":[],"mappings":"AACA;;;;;;;AAOA;;;;AAIA"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/CopyRight.module.css"],"sourcesContent":["/* styles/CopyRight.module.css */\n.copyright {\n  text-align: center;\n  font-size: 0.9rem;\n  color: #666;\n  margin: 2rem 0;\n}\n\n.withLove {\n  margin: 0 0.3rem; /* Emoji 和文字间距 */\n}\n\n.author {\n  font-weight: normal;\n}\n"],"names":[],"mappings":"AACA;;;;;;;AAOA;;;;AAIA"}}]
 }

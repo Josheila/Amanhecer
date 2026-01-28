@@ -28,13 +28,12 @@ export default function DiaryPage({ diary }: DiaryPageProps) {
     <div className="container" style={{ padding: "1rem" }}>
       <Header
         buttons={[
-          // { label: "Home", href: "/" },
-          // { label: "Posts", href: "/posts" },
-          { label: "CozyDiary", href: "/cozydiary" },
-          // { label: "Moments", href: "/moments" },
-          // { label: "Tags", href: "/tags" },
-          // { label: "Now", href: "/now" },
-          // { label: "About", href: "/about" },
+          // { label: "HOME", href: "/" },
+          // { label: "POSTS", href: "/posts" },
+          { label: "COZYDIARY", href: "/cozydiary" },
+          // { label: "MOMENTS", href: "/moments" },
+          // { label: "TAGS", href: "/tags" },
+          // { label: "NOW", href: "/now" },
         ]}
       />
       {diary.cover && (

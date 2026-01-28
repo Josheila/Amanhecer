@@ -1,7 +1,7 @@
 module.exports = [
 "[project]/status.json (json)", ((__turbopack_context__) => {
 
-__turbopack_context__.v([{"date":"2026-01-27 23:12","content":"ontem só fui dormir às cinco da manhã, hoje tô morrendo… \n mas quando chega de madrugada, fico toda elétrica de novo 😵‍💫"}]);}),
+__turbopack_context__.v([{"date":"2026-01-27 23:12","content":"ontem só fui dormir às cinco da manhã, hoje tô morrendo… \n mas quando chega de madrugada, fico toda elétrica de novo 😵‍💫"},{"date":"2026-01-28 12:34","content":"\"besteira\" tem \"best\" dentro, então até a besteira parece algo bom.\n \"abandonada\" tem \"nada\", e isso me faz sentir que ser deixada também não é nada demais."}]);}),
 "[project]/lib/date.ts [ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -225,11 +225,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
@@ -237,19 +237,19 @@ function Header({ buttons = [
         href: "/cozydiary"
     },
     {
-        label: "Moment",
-        href: "/moment"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
     },
     {
-        label: "About",
+        label: "ME",
         href: "/about"
     }
 ], style }) {
@@ -369,25 +369,25 @@ function StatusPage() {
                 // style={{ justifyContent: "center" }}
                 buttons: [
                     {
-                        label: "Home",
+                        label: "HOME",
                         href: "/"
                     },
                     {
-                        label: "Posts",
+                        label: "POSTS",
                         href: "/posts"
                     },
                     {
-                        label: "CozyDiary",
+                        label: "COZYDIARY",
                         href: "/cozydiary"
                     },
-                    // { label: "Moments", href: "/moments" },
-                    //   { label: "Tags", href: "/tags" },
+                    // { label: "MOMENTS", href: "/moments" },
+                    // { label: "TAGS", href: "/tags" },
                     {
-                        label: "Now",
+                        label: "NOW",
                         href: "/now"
                     },
                     {
-                        label: "About",
+                        label: "ME",
                         href: "/about"
                     }
                 ]

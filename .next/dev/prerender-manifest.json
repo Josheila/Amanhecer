@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "195a57337649af11e31ab845d07df7b4",
-    "previewModeSigningKey": "ab776519adfc3a9626dfa675db8d6e60334a12ced202a9eacb4c94e78658cc81",
-    "previewModeEncryptionKey": "68ee158d3f01d225645b4e314171d658e51bce6a4964b4efae691dcc4edd0656"
-  }
-}
+{"version":4,"routes":{"/cozydiary/260128":{},"/cozydiary/260127":{}},"dynamicRoutes":{"/cozydiary/[diary]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/cozydiary/[diary]","routeRegex":"^\\/cozydiary\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"a4e6a166ad0bf145267dc01ba5cdb0ab","previewModeSigningKey":"b272f6481a9caf0bdebcebb5ba8d88d659fa7e85cee8fa48a5b6aebc0814eaee","previewModeEncryptionKey":"aac3fb320618267e86783f60c82f03c8a9d90facf0b9e9414892f62520ccb9eb"}}

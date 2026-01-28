@@ -1,41 +1,42 @@
 /* [project]/styles/MdContent.module.css [client] (css) */
 .MdContent-module__jlgNAa__mdContent {
   white-space: pre-line;
-  color: var(--color-gray-500);
+  color: var(--color-gray-7);
   font-size: .9rem;
   line-height: 1.1;
 }
 
 .MdContent-module__jlgNAa__mdContent p {
-  margin: 0 0;
+  margin: .8rem 0;
+  line-height: 1;
 }
 
 .MdContent-module__jlgNAa__mdContent h1 {
-  color: var(--color-gray-300);
+  color: var(--color-gray-6);
   margin: 1rem 0 .5rem;
   font-size: 1.4rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h2 {
-  color: var(--color-gray-300);
+  color: var(--color-gray-6);
   margin: .8rem 0 .4rem;
   font-size: 1.3rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h3 {
-  color: var(--color-gray-300);
+  color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
   font-size: 1.2rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h4 {
-  color: var(--color-gray-300);
+  color: var(--color-gray-6);
   margin: 1.5rem 0 0;
   font-size: 1.1rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h5, .MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
-  color: var(--color-gray-300);
+  color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
   font-size: 1rem;
 }
@@ -46,8 +47,11 @@
 }
 
 .MdContent-module__jlgNAa__mdContent a {
-  color: #1e90ff;
   text-decoration: underline;
+}
+
+.MdContent-module__jlgNAa__mdContent a:hover {
+  opacity: .8;
 }
 
 .MdContent-module__jlgNAa__mdContent pre {
@@ -58,10 +62,11 @@
 }
 
 .MdContent-module__jlgNAa__mdContent code {
-  background-color: var(--color-gray-300);
-  color: var(--color-gray-100);
+  background-color: var(--color-gray-3);
+  color: var(--color-gray-7);
   border-radius: 4px;
-  padding: 0;
+  margin: 0 1px;
+  padding: 0 3px;
   font-family: monospace;
   font-size: .8rem;
 }

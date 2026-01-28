@@ -13,6 +13,7 @@ __turbopack_context__.v({
   "navButton": "Header-module__vcZAwq__navButton",
   "navButtons": "Header-module__vcZAwq__navButtons",
   "navText": "Header-module__vcZAwq__navText",
+  "selected": "Header-module__vcZAwq__selected",
 });
 }),
 "[project]/components/Header.tsx [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -30,32 +31,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
-        label: "CozyDiary",
+        label: "COZYDIARY",
         href: "/cozydiary"
     },
     {
-        label: "Moment",
-        href: "/moment"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
-    },
-    {
-        label: "About",
-        href: "/about"
     }
 ], style }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("header", {
@@ -70,22 +67,22 @@ function Header({ buttons = [
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 27,
+                        lineNumber: 26,
                         columnNumber: 13
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 24,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 23,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
@@ -156,26 +153,25 @@ function NowPage({ post }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                 buttons: [
                     {
-                        label: "Home",
+                        label: "HOME",
                         href: "/"
                     },
                     {
-                        label: "Posts",
+                        label: "POSTS",
                         href: "/posts"
                     },
                     {
-                        label: "CozyDiary",
+                        label: "COZYDIARY",
                         href: "/cozydiary"
                     },
                     {
-                        label: "Moments",
+                        label: "MOMENTS",
                         href: "/moments"
                     },
-                    // { label: "Tags", href: "/tags" },
-                    // { label: "Now", href: "/now" },
+                    // { label: "TAGS", href: "/tags" },
                     {
-                        label: "About",
-                        href: "/about"
+                        label: "NOW",
+                        href: "/now"
                     }
                 ]
             }, void 0, false, {
@@ -201,14 +197,14 @@ function NowPage({ post }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
                         children: post.title
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 54,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -220,7 +216,7 @@ function NowPage({ post }) {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 55,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -232,18 +228,18 @@ function NowPage({ post }) {
                             children: post.content
                         }, void 0, false, {
                             fileName: "[project]/pages/now.tsx",
-                            lineNumber: 65,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/now.tsx",
-                        lineNumber: 64,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/now.tsx",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]

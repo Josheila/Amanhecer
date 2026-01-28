@@ -15,7 +15,16 @@ export default function Tags({ tags }: TagsPageProps) {
 
   return (
     <div className="container" style={{ maxWidth: "640px", margin: "0 auto" }}>
-      <Header buttons={[{ label: "Posts", href: "/posts" }]} />
+      <Header
+        buttons={[
+          // { label: "HOME", href: "/" },
+          { label: "POSTS", href: "/posts" },
+          // { label: "COZYDIARY", href: "/cozydiary" },
+          // { label: "MOMENTS", href: "/moments" },
+          // { label: "TAGS", href: "/tags" },
+          // { label: "NOW", href: "/now" },
+        ]}
+      />
 
       <main style={{ marginTop: "2rem" }}>
         <h1 style={{ color: "var(--color-gray-500)" }}>Tags</h1>

@@ -22,19 +22,27 @@
   padding: 0.25rem 1rem;
   min-height: 1.75rem;
   min-width: 1.75rem;
-  border: 1px solid var(--color-gray-200);
-  background-color: var(--color-gray-100);
-  border-radius: 20px; /* 圆角10 */
+  border: 1px solid var(--color-gray-4); /* 按钮边框 */
+  background-color: var(--color-gray-2); /* 按钮底色 */
+  border-radius: 15px; /* 圆角 */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: var(--color-gray-400);
+  color: var(--color-gray-7); /* 文字颜色 */
   -webkit-tap-highlight-color: transparent; /* 去掉移动端点击蓝色高亮 */
 }
 
+/* 新增选中状态 */
+.navButton.selected {
+  background-color: var(--color-gray-4); /* 选中按钮底色 */
+  color: var(--color-gray-9); /* 文字颜色可加深或者变亮 */
+  /* border-color: var(--color-gray-6); 边框加深 */
+  /*box-shadow: 0 0 0 2px var(--color-gray-4);  可选：轻微高亮边框 */
+}
+
 .navButton:hover {
-  background-color: var(--color-gray-200); /* hover 状态 */
+  background-color: var(--color-gray-3);
 }
 
 .navButton:focus {
@@ -43,7 +51,7 @@
 
 .navButton:active {
   transform: scale(0.985) translateY(0.5px);
-  background-color: var(--color-gray-200); /* active 状态 */
+  /* background-color: var(--color-gray-2); */
 }
 
 .navText {

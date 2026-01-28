@@ -30,11 +30,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2
 ;
 function Header({ buttons = [
     {
-        label: "Home",
+        label: "HOME",
         href: "/"
     },
     {
-        label: "Posts",
+        label: "POSTS",
         href: "/posts"
     },
     {
@@ -42,19 +42,19 @@ function Header({ buttons = [
         href: "/cozydiary"
     },
     {
-        label: "Moment",
-        href: "/moment"
+        label: "MOMENTS",
+        href: "/moments"
     },
     {
-        label: "Tags",
+        label: "TAGS",
         href: "/tags"
     },
     {
-        label: "Now",
+        label: "NOW",
         href: "/now"
     },
     {
-        label: "About",
+        label: "ME",
         href: "/about"
     }
 ], style }) {
@@ -125,24 +125,24 @@ function AboutPage({ post }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                 buttons: [
                     {
-                        label: "Home",
+                        label: "HOME",
                         href: "/"
                     },
                     {
-                        label: "Posts",
+                        label: "POSTS",
                         href: "/posts"
                     },
                     {
-                        label: "CozyDiary",
+                        label: "COZYDIARY",
                         href: "/cozydiary"
                     },
                     {
-                        label: "Moments",
+                        label: "MOMENTS",
                         href: "/moments"
                     },
-                    // { label: "Tags", href: "/tags" },
+                    // { label: "TAGS", href: "/tags" },
                     {
-                        label: "Now",
+                        label: "NOW",
                         href: "/now"
                     }
                 ]
