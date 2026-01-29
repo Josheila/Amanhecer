@@ -2,7 +2,7 @@
 .copyright {
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-secondary);
   margin: 2rem 0;
 }
 

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/Tage.module.css"],"sourcesContent":[".main {\n  margin-top: 2rem;\n}\n\n.title {\n  color: var(--color-gray-500);\n}\n\n.tagCloud {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 1rem;\n  background-image: url(\"/images/tags-heatmap.png\");\n  background-size: cover;\n  background-position: center;\n  border-radius: 10px;\n  padding: 1rem;\n  min-height: 400px;\n}\n\n.tagItem {\n  cursor: pointer;\n  font-weight: 500;\n  transition: background-color 0.2s, transform 0.2s;\n  background-color: rgba(255, 255, 255, 0.7);\n  color: var(--color-gray-400);\n  padding: 0.2rem 0.5rem;\n  border-radius: 6px;\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n  gap: 0.2rem;\n}\n\n.tagItem:hover {\n  background-color: rgba(220, 220, 220, 0.8);\n  transform: scale(1.1);\n}\n\n.icon {\n  width: 1em;\n  height: 1em;\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;AAIA;;;;;;;;;;;;;AAaA;;;;;;;;;;;;;;AAcA;;;;;AAKA"}}]
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Post } from "../lib/posts";
 import { Diary } from "../lib/diary";
 import { formatDate } from "../lib/date";
@@ -7,12 +7,10 @@ import styles from "../styles/BlogList.module.css";
 type BlogItem = Post | Diary;
 
 interface BlogListProps {
-  items: Post[] | Diary[];
+  items: BlogItem[];
   pageSize?: number;
   defaultView?: "card" | "list";
 }
-
-const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
 export default function BlogList({
   items,
@@ -21,6 +19,15 @@ export default function BlogList({
 }: BlogListProps) {
   const [viewMode, setViewMode] = useState<"card" | "list">(defaultView);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // 判断是否移动端
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const totalPages = Math.ceil(items.length / pageSize);
   const startIndex = (currentPage - 1) * pageSize;
@@ -28,7 +35,7 @@ export default function BlogList({
 
   return (
     <div>
-      {/* 切换视图按钮 */}
+      {/* 视图切换按钮 */}
       <div className={styles.viewSwitch}>
         <img
           src="/icon/view_gallery.svg"
@@ -46,121 +53,50 @@ export default function BlogList({
 
       {/* 列表内容 */}
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            viewMode === "card"
-              ? isMobile
-                ? "repeat(2, 1fr)"
-                : "repeat(3, 1fr)"
-              : "1fr",
-          gap: "1rem",
-        }}
+        className={viewMode === "card" ? styles.cardGrid : styles.listGrid}
+        style={
+          viewMode === "card" && isMobile
+            ? { gridTemplateColumns: "repeat(2, 1fr)" }
+            : undefined
+        }
       >
         {paginatedItems.map((item: BlogItem) => {
-          // 类型守卫
           if (!("slug" in item)) return null;
-
           const href =
             "summary" in item
               ? `/posts/${item.slug}`
               : `/cozydiary/${item.slug}`;
 
-          return (
+          return viewMode === "card" ? (
             <a
               key={item.slug}
               href={href}
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              {viewMode === "card" ? (
-                <div
-                  style={{
-                    border: "1px solid var(--color-gray-4)",
-                    borderRadius: "8px",
-                    overflow: "hidden",
-                    cursor: "pointer",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  {item.cover && (
-                    <div
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <img
-                        src={item.cover}
-                        alt={item.title}
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          // borderRadius: "10px",
-                        }}
-                      />
-                    </div>
-                  )}
-                  <div style={{ padding: "0.5rem 1rem" }}>
-                    <h3
-                      style={{
-                        margin: "0 0 0.5rem 0",
-                        fontWeight: 400,
-                        fontSize: "1rem",
-                        color: "var(--color-gray-8)",
-                        height: "2.5rem", // 固定高度
-                        overflow: "hidden", // 太长的文字截断
-                        textOverflow: "ellipsis", // 显示省略号
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: "0.9rem",
-                        color: "var(--color-gray-6)",
-                      }}
-                    >
-                      {formatDate(item.date)} {/* ✅ 用 formatDate */}
-                    </p>
-                  </div>
+              <div className={styles.cardItem}>
+                {item.cover && <img src={item.cover} alt={item.title} />}
+                <div className={styles.cardContent}>
+                  <h3 className={styles.cardTitle}>{item.title}</h3>
+                  <p className={styles.cardDate}>{formatDate(item.date)}</p>
                 </div>
-              ) : (
-                <div
-                  style={{
-                    borderBottom: "0.5px solid var(--color-gray-2)",
-                    padding: "0.5rem 4px",
-                    cursor: "pointer",
-                    display: "grid",
-                    gridTemplateColumns: "1fr auto",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <span
-                    style={{ fontWeight: 400, color: "var(--color-gray-8)" }}
-                  >
-                    {item.title}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "0.9rem",
-                      color: "var(--color-gray-400)",
-                    }}
-                  >
-                    {formatDate(item.date)} {/* ✅ 用 formatDate */}
-                  </span>
-                </div>
-              )}
+              </div>
+            </a>
+          ) : (
+            <a
+              key={item.slug}
+              href={href}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className={styles.listItem}>
+                <span className={styles.listTitle}>{item.title}</span>
+                <span className={styles.listDate}>{formatDate(item.date)}</span>
+              </div>
             </a>
           );
         })}
       </div>
 
-      {/* 翻页 */}
+      {/* 分页 */}
       {totalPages > 1 && (
         <ul className={styles.pageNumbers}>
           <li>

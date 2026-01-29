@@ -640,7 +640,7 @@ function AvatarSection() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "quero amanhecer, entardecer e anoitecer com você"
+                        children: "quero amanhecer, entardecer e anoitecer com você :)"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
                         lineNumber: 25,

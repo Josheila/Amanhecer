@@ -49,10 +49,14 @@ a {
   --color-surface: #f8f8f8;
 
   /* 文本 */
-  --color-text-primary: #222222;
-  --color-text-secondary: #555555;
+  --color-text-primary: var(--color-gray-7);
+  --color-text-secondary: var(--color-gray-6);
   --color-text-muted: #888888;
   --color-text-inverted: #ffffff;
+  --color-transparent: var(--color-gray-2);
+
+  /* 组件/细节 */
+  --color-code-block-bg: #ca4e4e;
 
   /* 边框 */
   --color-border: #e0e0e0;

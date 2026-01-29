@@ -1,7 +1,7 @@
 /* [project]/styles/CopyRight.module.css [client] (css) */
 .CopyRight-module__o3jFdW__copyright {
   text-align: center;
-  color: #666;
+  color: var(--color-text-secondary);
   margin: 2rem 0;
   font-size: .9rem;
 }

@@ -1,0 +1,44 @@
+/* [project]/styles/Tags.module.css [client] (css) */
+.Tags-module__ba7cKq__main {
+  margin-top: 2rem;
+}
+
+.Tags-module__ba7cKq__title {
+  color: var(--color-gray-7);
+}
+
+.Tags-module__ba7cKq__tagCloud {
+  background-color: var(--color-gray-1);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: .5rem;
+  min-height: 400px;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.Tags-module__ba7cKq__tagItem {
+  cursor: pointer;
+  color: var(--color-gray-7);
+  white-space: nowrap;
+  border-radius: 6px;
+  align-items: center;
+  gap: .2rem;
+  padding: .2rem .5rem;
+  font-weight: 500;
+  transition: background-color .2s, transform .2s;
+  display: flex;
+}
+
+.Tags-module__ba7cKq__tagItem:hover {
+  background-color: #dcdcdccc;
+  transform: scale(1.1);
+}
+
+.Tags-module__ba7cKq__icon {
+  width: 1em;
+  height: 1em;
+}
+
+/*# sourceMappingURL=styles_Tags_module_css_65f1660e._.single.css.map*/

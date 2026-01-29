@@ -186,7 +186,7 @@ function AvatarSection() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                        children: "quero amanhecer, entardecer e anoitecer com você"
+                        children: "quero amanhecer, entardecer e anoitecer com você :)"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
                         lineNumber: 25,
@@ -238,21 +238,22 @@ function formatDate(dateStr, type = 1) {
 "[project]/styles/BlogList.module.css [ssr] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "cardContent": "BlogList-module__YLJmxG__cardContent",
+  "cardDate": "BlogList-module__YLJmxG__cardDate",
   "cardGrid": "BlogList-module__YLJmxG__cardGrid",
+  "cardItem": "BlogList-module__YLJmxG__cardItem",
+  "cardTitle": "BlogList-module__YLJmxG__cardTitle",
   "current": "BlogList-module__YLJmxG__current",
   "dots": "BlogList-module__YLJmxG__dots",
   "iconButton": "BlogList-module__YLJmxG__iconButton",
+  "listDate": "BlogList-module__YLJmxG__listDate",
   "listGrid": "BlogList-module__YLJmxG__listGrid",
+  "listItem": "BlogList-module__YLJmxG__listItem",
+  "listTitle": "BlogList-module__YLJmxG__listTitle",
   "next": "BlogList-module__YLJmxG__next",
-  "pageButton": "BlogList-module__YLJmxG__pageButton",
-  "pageInfo": "BlogList-module__YLJmxG__pageInfo",
-  "pageInput": "BlogList-module__YLJmxG__pageInput",
-  "pageNavForm": "BlogList-module__YLJmxG__pageNavForm",
   "pageNumber": "BlogList-module__YLJmxG__pageNumber",
   "pageNumbers": "BlogList-module__YLJmxG__pageNumbers",
-  "pagination": "BlogList-module__YLJmxG__pagination",
   "prev": "BlogList-module__YLJmxG__prev",
-  "toggle": "BlogList-module__YLJmxG__toggle",
   "viewSwitch": "BlogList-module__YLJmxG__viewSwitch",
 });
 }),
@@ -271,10 +272,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module
 ;
 ;
 ;
-const isMobile = ("TURBOPACK compile-time value", "undefined") !== "undefined" && window.innerWidth < 768;
 function BlogList({ items, pageSize = 9, defaultView = "card" }) {
     const [viewMode, setViewMode] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(defaultView);
     const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(1);
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        // 判断是否移动端
+        const handleResize = ()=>setIsMobile(window.innerWidth < 768);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
     const totalPages = Math.ceil(items.length / pageSize);
     const startIndex = (currentPage - 1) * pageSize;
     const paginatedItems = items.slice(startIndex, startIndex + pageSize);
@@ -290,7 +298,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                         onClick: ()=>setViewMode("card")
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 33,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -300,163 +308,115 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                         onClick: ()=>setViewMode("list")
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 39,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 32,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                style: {
-                    display: "grid",
-                    gridTemplateColumns: viewMode === "card" ? ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "repeat(3, 1fr)" : "1fr",
-                    gap: "1rem"
-                },
+                className: viewMode === "card" ? __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].cardGrid : __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].listGrid,
+                style: viewMode === "card" && isMobile ? {
+                    gridTemplateColumns: "repeat(2, 1fr)"
+                } : undefined,
                 children: paginatedItems.map((item)=>{
-                    // 类型守卫
                     if (!("slug" in item)) return null;
                     const href = "summary" in item ? `/posts/${item.slug}` : `/cozydiary/${item.slug}`;
-                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
+                    return viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                         href: href,
                         style: {
                             textDecoration: "none",
                             color: "inherit"
                         },
-                        children: viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                            style: {
-                                border: "1px solid var(--color-gray-4)",
-                                borderRadius: "8px",
-                                overflow: "hidden",
-                                cursor: "pointer",
-                                display: "flex",
-                                flexDirection: "column"
-                            },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].cardItem,
                             children: [
-                                item.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    style: {
-                                        height: "100%",
-                                        width: "100%",
-                                        overflow: "hidden"
-                                    },
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
-                                        src: item.cover,
-                                        alt: item.title,
-                                        style: {
-                                            width: "100%",
-                                            height: "100%",
-                                            objectFit: "cover"
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/BlogList.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 23
-                                    }, this)
+                                item.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                    src: item.cover,
+                                    alt: item.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 87,
-                                    columnNumber: 21
+                                    lineNumber: 77,
+                                    columnNumber: 32
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    style: {
-                                        padding: "0.5rem 1rem"
-                                    },
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].cardContent,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            style: {
-                                                margin: "0 0 0.5rem 0",
-                                                fontWeight: 400,
-                                                fontSize: "1rem",
-                                                color: "var(--color-gray-8)",
-                                                height: "2.5rem",
-                                                overflow: "hidden",
-                                                textOverflow: "ellipsis"
-                                            },
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].cardTitle,
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 107,
-                                            columnNumber: 21
+                                            lineNumber: 79,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                            style: {
-                                                margin: 0,
-                                                fontSize: "0.9rem",
-                                                color: "var(--color-gray-6)"
-                                            },
-                                            children: [
-                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(item.date),
-                                                " "
-                                            ]
-                                        }, void 0, true, {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].cardDate,
+                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(item.date)
+                                        }, void 0, false, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 120,
-                                            columnNumber: 21
+                                            lineNumber: 80,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 106,
-                                    columnNumber: 19
+                                    lineNumber: 78,
+                                    columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BlogList.tsx",
                             lineNumber: 76,
-                            columnNumber: 17
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                            style: {
-                                borderBottom: "0.5px solid var(--color-gray-2)",
-                                padding: "0.5rem 4px",
-                                cursor: "pointer",
-                                display: "grid",
-                                gridTemplateColumns: "1fr auto",
-                                alignItems: "center",
-                                justifyContent: "space-between"
-                            },
+                            columnNumber: 15
+                        }, this)
+                    }, item.slug, false, {
+                        fileName: "[project]/components/BlogList.tsx",
+                        lineNumber: 71,
+                        columnNumber: 13
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
+                        href: href,
+                        style: {
+                            textDecoration: "none",
+                            color: "inherit"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].listItem,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        fontWeight: 400,
-                                        color: "var(--color-gray-8)"
-                                    },
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].listTitle,
                                     children: item.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 143,
-                                    columnNumber: 19
+                                    lineNumber: 91,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        fontSize: "0.9rem",
-                                        color: "var(--color-gray-400)"
-                                    },
-                                    children: [
-                                        (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(item.date),
-                                        " "
-                                    ]
-                                }, void 0, true, {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].listDate,
+                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(item.date)
+                                }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 148,
-                                    columnNumber: 19
+                                    lineNumber: 92,
+                                    columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 132,
-                            columnNumber: 17
+                            lineNumber: 90,
+                            columnNumber: 15
                         }, this)
                     }, item.slug, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 70,
+                        lineNumber: 85,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 48,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -470,12 +430,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "«"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 167,
+                            lineNumber: 103,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 166,
+                        lineNumber: 102,
                         columnNumber: 11
                     }, this),
                     Array.from({
@@ -488,7 +448,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 121,
                                     columnNumber: 21
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].pageNumber,
@@ -496,12 +456,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 125,
                                     columnNumber: 21
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 183,
+                                lineNumber: 119,
                                 columnNumber: 17
                             }, this);
                         }
@@ -512,12 +472,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: "…"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 138,
                                     columnNumber: 19
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 201,
+                                lineNumber: 137,
                                 columnNumber: 17
                             }, this);
                         }
@@ -531,24 +491,24 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "»"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 212,
+                            lineNumber: 148,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 211,
+                        lineNumber: 147,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 165,
+                lineNumber: 101,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/BlogList.tsx",
-        lineNumber: 30,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }

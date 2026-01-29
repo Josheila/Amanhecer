@@ -6,6 +6,9 @@ import Header from "../components/Header";
 import ReactMarkdown from "react-markdown";
 import { formatDate } from "../lib/date";
 import SEO from "../components/SEO";
+import remarkGfm from "remark-gfm";
+import remarkBreaks from "remark-breaks";
+import styles from "../styles/MdContent.module.css";
 
 interface Post {
   title: string;
@@ -37,7 +40,7 @@ export default function NowPage({ post }: NowPageProps) {
           ]}
         />
 
-        <main style={{ marginTop: "2rem" }}>
+        <main>
           {post.cover && (
             <img
               src={post.cover}
@@ -47,13 +50,12 @@ export default function NowPage({ post }: NowPageProps) {
                 // height: "250px",
                 aspectRatio: "1 / 1",
                 objectFit: "cover",
-                borderRadius: "10px",
+                borderRadius: "16px",
                 marginBottom: "1rem",
               }}
             />
           )}
 
-          <h1>{post.title}</h1>
           <p
             style={{
               color: "var(--color-gray-400)",
@@ -63,8 +65,11 @@ export default function NowPage({ post }: NowPageProps) {
           >
             {formatDate(post.date)}
           </p>
-          <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+          <h1>{post.title}</h1>
+          <div className={styles.mdContent}>
+            <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
+              {post.content}
+            </ReactMarkdown>
           </div>
         </main>
       </div>

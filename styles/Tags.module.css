@@ -1,0 +1,53 @@
+.main {
+  margin-top: 2rem;
+}
+
+.main {
+  margin-top: 2rem;
+}
+
+/* 页面标题 */
+.title {
+  color: var(--color-gray-7);
+}
+
+/* 标签云容器（带热力图背景） */
+.tagCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-color: var(--color-gray-1);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+/* 单个标签 */
+.tagItem {
+  cursor: pointer;
+  font-weight: 500;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+  /* background-color: var(--color-gray-1); */
+  color: var(--color-gray-7);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* 标签悬浮高亮 */
+.tagItem:hover {
+  background-color: rgba(220, 220, 220, 0.8);
+  transform: scale(1.1);
+}
+
+/* 标签图标尺寸 */
+.icon {
+  width: 1em;
+  height: 1em;
+}

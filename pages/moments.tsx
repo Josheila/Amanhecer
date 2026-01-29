@@ -1,6 +1,6 @@
 import statusData from "../status.json"; // 根目录 status.json
-import Status from "../components/Status";
-import styles from "../styles/Status.module.css";
+import Status from "../components/Moments";
+import styles from "../styles/Moments.module.css";
 import Header from "../components/Header";
 import AvatarSection from "../components/AvatarSection";
 import SEO from "../components/SEO";

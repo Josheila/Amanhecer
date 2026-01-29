@@ -26,10 +26,12 @@ a {
   --color-accent: #ffd93d;
   --color-background: #fff;
   --color-surface: #f8f8f8;
-  --color-text-primary: #222;
-  --color-text-secondary: #555;
+  --color-text-primary: var(--color-gray-7);
+  --color-text-secondary: var(--color-gray-6);
   --color-text-muted: #888;
   --color-text-inverted: #fff;
+  --color-transparent: var(--color-gray-2);
+  --color-code-block-bg: #ca4e4e;
   --color-border: #e0e0e0;
   --color-red-1: #fff1f0;
   --color-red-2: #ffccc7;

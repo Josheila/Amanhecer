@@ -1,0 +1,209 @@
+/* [project]/styles/Moments.module.css [client] (css) */
+.Moments-module__2EPtZq__statusList {
+  width: 100%;
+  display: grid;
+}
+
+.Moments-module__2EPtZq__statusCard {
+  border: 0px solid var(--color-gray-8);
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Moments-module__2EPtZq__statusCard p {
+  color: var(--color-gray-7);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.Moments-module__2EPtZq__statusCard small {
+  color: var(--color-gray-6);
+  font-size: .9rem;
+}
+
+.Moments-module__2EPtZq__pageNumbers {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Moments-module__2EPtZq__pageNumber {
+  border: 1px solid var(--color-gray-3);
+  background-color: var(--color-gray-0);
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  transition: all .2s;
+  display: flex;
+}
+
+.Moments-module__2EPtZq__pageNumber:hover:not(:disabled) {
+  background-color: var(--color-gray-2);
+}
+
+.Moments-module__2EPtZq__pageNumber:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.Moments-module__2EPtZq__current {
+  color: var(--color-gray-7);
+  background-color: var(--color-gray-7);
+  cursor: default;
+  border-radius: 20px;
+  padding: .4rem .7rem;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.Moments-module__2EPtZq__dots {
+  cursor: default;
+  background: none;
+  border: none;
+}
+
+.Moments-module__2EPtZq__prev, .Moments-module__2EPtZq__next {
+  color: var(--color-gray-3);
+  font-weight: 400;
+}
+
+.Moments-module__2EPtZq__pageNavForm {
+  align-items: center;
+  gap: .3rem;
+  display: flex;
+}
+
+.Moments-module__2EPtZq__pageInput {
+  border: 1px solid var(--color-gray-3);
+  text-align: center;
+  border-radius: 4px;
+  width: 3rem;
+  padding: .3rem .5rem;
+}
+
+/* [project]/styles/Header.module.css [client] (css) */
+.Header-module__vcZAwq__header {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.Header-module__vcZAwq__topRow {
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.Header-module__vcZAwq__menuButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.Header-module__vcZAwq__menu {
+  background: var(--color-gray-1);
+  z-index: 1000;
+  text-align: right;
+  color: var(--color-text-primary);
+  -webkit-tap-highlight-color: var(--color-transparent);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  border-radius: 8px;
+  outline: none;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: .5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 1rem;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.Header-module__vcZAwq__menuItem {
+  text-align: right;
+  color: var(--color-gray-7);
+  cursor: pointer;
+  -webkit-tap-highlight-color: var(--color-transparent);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding: .4rem 0;
+  font-size: 1rem;
+  transition: background .2s, color .2s;
+}
+
+.Header-module__vcZAwq__menuItem:focus, .Header-module__vcZAwq__menuItem:active {
+  color: var(--color-gray-9);
+  background: none;
+}
+
+.Header-module__vcZAwq__menuItem:hover {
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-9);
+}
+
+.Header-module__vcZAwq__selected {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* [project]/styles/AvatarSection.module.css [client] (css) */
+.AvatarSection-module__6tOn5G__avatarSection {
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.AvatarSection-module__6tOn5G__avatar {
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.AvatarSection-module__6tOn5G__avatarText {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  display: flex;
+}
+
+.AvatarSection-module__6tOn5G__avatarText h1 {
+  color: var(--color-gray-9);
+  margin: 0 0 .5rem;
+  font-size: 1.6rem;
+}
+
+.AvatarSection-module__6tOn5G__avatarText p {
+  color: var(--color-gray-6);
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=styles_ce017831._.css.map*/

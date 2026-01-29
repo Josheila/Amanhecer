@@ -1,63 +1,76 @@
 /* [project]/styles/Header.module.css [client] (css) */
 .Header-module__vcZAwq__header {
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  display: flex;
-}
-
-.Header-module__vcZAwq__navButtons {
-  gap: 10px;
-  display: flex;
-}
-
-.Header-module__vcZAwq__navButton {
-  letter-spacing: .05em;
-  cursor: pointer;
-  border: 1px solid var(--color-gray-4);
-  background-color: var(--color-gray-2);
-  min-width: 1.75rem;
-  min-height: 1.75rem;
-  color: var(--color-gray-7);
-  -webkit-tap-highlight-color: transparent;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  padding: .25rem 1rem;
-  font-weight: 500;
-  transition: all .15s;
-  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
-.Header-module__vcZAwq__navButton.Header-module__vcZAwq__selected {
-  background-color: var(--color-gray-4);
-  color: var(--color-gray-9);
+.Header-module__vcZAwq__topRow {
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
 }
 
-.Header-module__vcZAwq__navButton:hover {
-  background-color: var(--color-gray-3);
+.Header-module__vcZAwq__menuButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 2rem;
 }
 
-.Header-module__vcZAwq__navButton:focus {
+.Header-module__vcZAwq__menu {
+  background: var(--color-gray-1);
+  z-index: 1000;
+  text-align: right;
+  -webkit-tap-highlight-color: var(--color-transparent);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  border-radius: 8px;
   outline: none;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: .5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 1rem;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
 }
 
-.Header-module__vcZAwq__navButton:active {
-  transform: scale(.985)translateY(.5px);
-}
-
-.Header-module__vcZAwq__navText {
-  text-align: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.Header-module__vcZAwq__menuItem {
+  text-align: right;
+  color: var(--color-gray-7);
+  cursor: pointer;
+  -webkit-tap-highlight-color: var(--color-transparent);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding: .4rem 0;
   font-size: 1rem;
-  overflow: hidden;
+  transition: background .2s, color .2s;
 }
 
-.Header-module__vcZAwq__myHeaderOverride {
-  justify-content: center;
+.Header-module__vcZAwq__menuItem:focus, .Header-module__vcZAwq__menuItem:active {
+  color: var(--color-gray-9);
+  background: none;
+}
+
+.Header-module__vcZAwq__menuItem:hover {
+  background-color: var(--color-gray-3);
+  color: var(--color-gray-7);
+}
+
+.Header-module__vcZAwq__selected {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* [project]/styles/MdContent.module.css [client] (css) */
@@ -65,39 +78,49 @@
   white-space: pre-line;
   color: var(--color-gray-7);
   font-size: .9rem;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .MdContent-module__jlgNAa__mdContent p {
-  margin: .8rem 0;
+  margin: 0 0;
   line-height: 1;
+}
+
+.MdContent-module__jlgNAa__mdContent p + p {
+  margin-top: 1.4rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h1 {
   color: var(--color-gray-6);
   margin: 1rem 0 .5rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h2 {
   color: var(--color-gray-6);
   margin: .8rem 0 .4rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h3 {
   color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h4 {
   color: var(--color-gray-6);
   margin: 1.5rem 0 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
-.MdContent-module__jlgNAa__mdContent h5, .MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
+.MdContent-module__jlgNAa__mdContent h5 {
+  color: var(--color-gray-6);
+  margin: .6rem 0 .3rem;
+  font-size: 2rem;
+}
+
+.MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
   color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
   font-size: 1rem;
@@ -117,7 +140,7 @@
 }
 
 .MdContent-module__jlgNAa__mdContent pre {
-  background-color: #ca4e4e;
+  background-color: var(--color-code-block-bg);
   border-radius: 8px;
   padding: .75rem;
   overflow-x: auto;

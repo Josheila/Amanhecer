@@ -11,24 +11,27 @@
   cursor: pointer;
   object-fit: cover;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 .AvatarSection-module__6tOn5G__avatarText {
   flex-direction: column;
   justify-content: center;
+  padding-left: 15px;
   display: flex;
 }
 
 .AvatarSection-module__6tOn5G__avatarText h1 {
+  color: var(--color-gray-7);
   margin: 0 0 .5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .AvatarSection-module__6tOn5G__avatarText p {
-  color: var(--color-gray-500, #666);
-  margin: 0;
+  color: var(--color-gray-6);
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=styles_AvatarSection_module_css_65f1660e._.single.css.map*/

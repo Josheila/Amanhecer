@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import { getAllPosts, Post } from "../lib/posts";
 import { tagMap } from "../lib/tags";
 import SEO from "../components/SEO";
+import styles from "../styles/Tags.module.css";
 
 interface TagsPageProps {
   tags: { name: string; count: number }[];
@@ -20,7 +21,7 @@ export default function Tags({ tags }: TagsPageProps) {
 
       <div
         className="container"
-        style={{ maxWidth: "640px", margin: "0 auto" }}
+        // style={{ maxWidth: "640px", margin: "0 auto" }}
       >
         <Header
           buttons={[
@@ -33,58 +34,23 @@ export default function Tags({ tags }: TagsPageProps) {
           ]}
         />
 
-        <main style={{ marginTop: "2rem" }}>
-          <h1 style={{ color: "var(--color-gray-500)" }}>Tags</h1>
+        <main className={styles.main}>
+          <h1 className={styles.title}>Tags</h1>
 
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "0.5rem",
-              marginTop: "1rem",
-              backgroundImage: "url('/images/tags-heatmap.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              borderRadius: "10px",
-              padding: "1rem",
-              minHeight: "400px",
-            }}
-          >
+          <div className={styles.tagCloud}>
             {sortedTags.map((tag) => {
               const fontSize = 0.8 + (tag.count / maxCount) * 1.5; // 0.8rem ~ 2.3rem
 
               return (
                 <Link key={tag.name} href={`/tags/${tag.name}`}>
                   <div
-                    style={{
-                      cursor: "pointer",
-                      fontSize: `${fontSize}rem`,
-                      fontWeight: 500,
-                      transition: "background-color 0.2s, transform 0.2s",
-                      backgroundColor: "rgba(255,255,255,0.7)",
-                      color: "var(--color-gray-400)",
-                      padding: "0.2rem 0.5rem",
-                      borderRadius: "6px",
-                      whiteSpace: "nowrap",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.2rem",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor =
-                        "rgba(220,220,220,0.8)";
-                      e.currentTarget.style.transform = "scale(1.1)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor =
-                        "rgba(255,255,255,0.7)";
-                      e.currentTarget.style.transform = "scale(1)";
-                    }}
+                    className={styles.tagItem}
+                    style={{ fontSize: `${fontSize}rem` }}
                   >
                     <img
                       src="/icon/pound.svg"
                       alt="#"
-                      style={{ width: "1em", height: "1em" }}
+                      className={styles.icon}
                     />
                     {tagMap[tag.name] || tag.name}
                   </div>

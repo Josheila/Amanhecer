@@ -22,7 +22,7 @@ export default function AvatarSection() {
       />
       <div className={styles.avatarText}>
         <h1>KuromiPiPi 🐱</h1>
-        <p>quero amanhecer, entardecer e anoitecer com você</p>
+        <p>quero amanhecer, entardecer e anoitecer com você :)</p>
       </div>
     </section>
   );

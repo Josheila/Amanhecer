@@ -8,8 +8,8 @@
 
 /* 头像 */
 .avatar {
-  width: 120px; /* 可以自己调大小 */
-  height: 120px;
+  width: 130px; /* 可以自己调大小 */
+  height: 130px;
   border-radius: 50%; /* 圆形头像 */
   cursor: pointer; /* 点击提示 */
   object-fit: cover; /* 图片裁剪 */
@@ -20,14 +20,18 @@
   display: flex;
   flex-direction: column; /* 垂直排列 h1 和 p */
   justify-content: center; /* 垂直居中 */
+  padding-left: 15px;
 }
 
 .avatarText h1 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--color-gray-7);
 }
 
 .avatarText p {
   margin: 0;
-  color: var(--color-gray-500, #666);
+  color: var(--color-gray-6);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
 }

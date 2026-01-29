@@ -1,0 +1,47 @@
+/* [project]/styles/Tage.module.css [client] (css) */
+.Tage-module__EDqnya__main {
+  margin-top: 2rem;
+}
+
+.Tage-module__EDqnya__title {
+  color: var(--color-gray-500);
+}
+
+.Tage-module__EDqnya__tagCloud {
+  background-image: url("/images/tags-heatmap.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: .5rem;
+  min-height: 400px;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.Tage-module__EDqnya__tagItem {
+  cursor: pointer;
+  color: var(--color-gray-400);
+  white-space: nowrap;
+  background-color: #ffffffb3;
+  border-radius: 6px;
+  align-items: center;
+  gap: .2rem;
+  padding: .2rem .5rem;
+  font-weight: 500;
+  transition: background-color .2s, transform .2s;
+  display: flex;
+}
+
+.Tage-module__EDqnya__tagItem:hover {
+  background-color: #dcdcdccc;
+  transform: scale(1.1);
+}
+
+.Tage-module__EDqnya__icon {
+  width: 1em;
+  height: 1em;
+}
+
+/*# sourceMappingURL=styles_Tage_module_css_65f1660e._.single.css.map*/

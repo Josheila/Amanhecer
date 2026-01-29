@@ -35,14 +35,14 @@
   flex-direction: column;
   gap: 0.5rem;
 
-  background: var(--color-gray-1, #fff);
+  background: var(--color-gray-1);
   border-radius: 8px;
   z-index: 1000;
   text-align: right; /* ✅ 菜单项右对齐 */
 
   /* 移动端点击不变色 */
-  color: var(--color-text, #333);
-  -webkit-tap-highlight-color: transparent;
+  /* color: var(--color-gray-7); */
+  -webkit-tap-highlight-color: var(--color-transparent);
   outline: none;
   user-select: none;
   -webkit-touch-callout: none;
@@ -55,20 +55,30 @@
   border: none;
   padding: 0.4rem 0;
   font-size: 1rem;
+  color: var(--color-gray-7);
   cursor: pointer;
 
-  color: var(--color-text, #333);
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: var(--color-transparent);
   outline: none;
   user-select: none;
   -webkit-touch-callout: none;
+
+  transition:
+    background 0.2s,
+    color 0.2s; /* 平滑过渡 */
 }
 
 /* 点击或聚焦状态 */
 .menuItem:focus,
 .menuItem:active {
-  color: var(--color-text, #333);
+  color: var(--color-gray-9);
   background: none;
+}
+
+/* hover 高亮 */
+.menuItem:hover {
+  background-color: var(--color-gray-3); /* 浅灰背景，可换颜色 */
+  color: var(--color-gray-7); /* 确保文字颜色不变蓝 */
 }
 
 /* 当前页高亮 */
