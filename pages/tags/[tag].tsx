@@ -4,6 +4,7 @@ import { getAllPosts, Post } from "../../lib/posts";
 import BlogList from "../../components/BlogList";
 import Header from "../../components/Header";
 import { tagMap } from "../../lib/tags";
+import SEO from "../../components/SEO";
 
 interface TagPageProps {
   tag: string;
@@ -12,22 +13,28 @@ interface TagPageProps {
 
 export default function TagPage({ tag, posts }: TagPageProps) {
   return (
-    <div className="container" style={{ maxWidth: "640px", margin: "0 auto" }}>
-      <Header
-        buttons={[
-          // { label: "HOME", href: "/" },
-          { label: "POSTS", href: "/posts" },
-          // { label: "COZYDIARY", href: "/cozydiary" },
-          // { label: "MOMENTS", href: "/moments" },
-          { label: "TAGS", href: "/tags" },
-          // { label: "NOW", href: "/now" },
-        ]}
-      />
-      <main style={{ marginTop: "2rem" }}>
-        <h1>Tag: {tagMap[tag] || tag}</h1>
-        <BlogList items={posts} />
-      </main>
-    </div>
+    <>
+      <SEO title="TAG - KuromiPiPi" />
+      <div
+        className="container"
+        style={{ maxWidth: "640px", margin: "0 auto" }}
+      >
+        <Header
+          buttons={[
+            // { label: "HOME", href: "/" },
+            { label: "POSTS", href: "/posts" },
+            // { label: "COZYDIARY", href: "/cozydiary" },
+            // { label: "MOMENTS", href: "/moments" },
+            { label: "TAGS", href: "/tags" },
+            // { label: "NOW", href: "/now" },
+          ]}
+        />
+        <main style={{ marginTop: "2rem" }}>
+          <h1>Tag: {tagMap[tag] || tag}</h1>
+          <BlogList items={posts} />
+        </main>
+      </div>
+    </>
   );
 }
 

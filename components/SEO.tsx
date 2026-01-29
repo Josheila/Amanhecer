@@ -6,13 +6,13 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description }: SEOProps) {
-  const defaultTitle = "KKuromiPiPi";
-  const defaultDescription = "我的博客，记录日常和思考";
+  const defaultTitle = "KuromiPiPi";
+  const defaultDescription = "";
 
   return (
     <Head>
       {/* 页面标题 */}
-      <title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
+      <title>{title || defaultTitle}</title>
 
       {/* 页面描述 */}
       <meta name="description" content={description || defaultDescription} />

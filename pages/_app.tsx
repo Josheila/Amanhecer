@@ -9,15 +9,18 @@ import styles from "../styles/Layout.module.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={styles.container}>
-      {/* 页面主体 */}
-      <main className={styles.main}>
-        <Component {...pageProps} />
-        <ScrollToTop />
-      </main>
-      {/* 全局页脚 */}
-      <CopyRight />
+    <>
       <SEO /> {/* 默认 SEO */}
-    </div>
+      <div className={styles.container}>
+        {/* 页面主体 */}
+        <main className={styles.main}>
+          <Component {...pageProps} />
+          <ScrollToTop />
+        </main>
+        {/* 全局页脚 */}
+        <CopyRight />
+        {/* SEO */}
+      </div>
+    </>
   );
 }

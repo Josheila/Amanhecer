@@ -243,6 +243,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5
 var __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__ = __turbopack_context__.i("[externals]/remark-gfm [external] (remark-gfm, esm_import, [project]/node_modules/.pnpm/remark-gfm@4.0.1/node_modules/remark-gfm)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/MdContent.module.css [ssr] (css module)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__ = __turbopack_context__.i("[externals]/remark-breaks [external] (remark-breaks, esm_import, [project]/node_modules/.pnpm/remark-breaks@4.0.0/node_modules/remark-breaks)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SEO$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/SEO.tsx [ssr] (ecmascript)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__,
     __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__,
@@ -259,156 +260,168 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 ;
+;
 function PostPage({ post }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-        className: "container",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                buttons: [
-                    // { label: "HOME", href: "/" },
-                    {
-                        label: "POSTS",
-                        href: "/posts"
-                    },
-                    // { label: "COZYDIARY", href: "/cozydiary" },
-                    // { label: "MOMENTS", href: "/moments" },
-                    {
-                        label: "TAGS",
-                        href: "/tags"
-                    }
-                ]
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SEO$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                title: `${post.title} - KuromiPiPi | KKuromiPiPi`
             }, void 0, false, {
                 fileName: "[project]/pages/posts/[slug].tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                className: "container",
                 children: [
-                    post.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
-                        src: post.cover,
-                        alt: post.title,
-                        style: {
-                            width: "50%",
-                            // height: "250px",
-                            aspectRatio: "1 / 1",
-                            objectFit: "cover",
-                            borderRadius: "16px",
-                            marginBottom: "1rem"
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 33,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                        style: {
-                            color: "var(--color-gray-400)",
-                            fontSize: "16px",
-                            marginBottom: "1rem"
-                        },
-                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
-                    }, void 0, false, {
-                        fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
-                        children: post.title
-                    }, void 0, false, {
-                        fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].mdContent,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
-                            remarkPlugins: [
-                                __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__["default"],
-                                __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__["default"]
-                            ],
-                            children: post.content
-                        }, void 0, false, {
-                            fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 59,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 58,
-                        columnNumber: 9
-                    }, this),
-                    post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                        style: {
-                            marginTop: "2rem"
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                            style: {
-                                display: "flex",
-                                gap: "0.5rem",
-                                flexWrap: "wrap"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        buttons: [
+                            // { label: "HOME", href: "/" },
+                            {
+                                label: "POSTS",
+                                href: "/posts"
                             },
-                            children: post.tags.map((tag)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    href: `/tags/${tag}`,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                        style: {
-                                            padding: "0.25rem 0.5rem",
-                                            borderRadius: "5px",
-                                            // backgroundColor: "#f0f0f0",
-                                            cursor: "pointer",
-                                            fontSize: "0.85rem",
-                                            color: "#706F6C",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            gap: "0.2rem"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
-                                                src: "/icon/pound.svg",
-                                                alt: "#",
-                                                style: {
-                                                    width: "1em",
-                                                    height: "1em"
-                                                }
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/posts/[slug].tsx",
-                                                lineNumber: 83,
-                                                columnNumber: 21
-                                            }, this),
-                                            " ",
-                                            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tags$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["tagMap"][tag] || tag
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/pages/posts/[slug].tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 19
-                                    }, this)
-                                }, tag, false, {
-                                    fileName: "[project]/pages/posts/[slug].tsx",
-                                    lineNumber: 69,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 67,
-                            columnNumber: 13
-                        }, this)
+                            // { label: "COZYDIARY", href: "/cozydiary" },
+                            // { label: "MOMENTS", href: "/moments" },
+                            {
+                                label: "TAGS",
+                                href: "/tags"
+                            }
+                        ]
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 66,
-                        columnNumber: 11
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
+                        children: [
+                            post.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                src: post.cover,
+                                alt: post.title,
+                                style: {
+                                    width: "50%",
+                                    // height: "250px",
+                                    aspectRatio: "1 / 1",
+                                    objectFit: "cover",
+                                    borderRadius: "16px",
+                                    marginBottom: "1rem"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/pages/posts/[slug].tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                style: {
+                                    color: "var(--color-gray-400)",
+                                    fontSize: "16px",
+                                    marginBottom: "1rem"
+                                },
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
+                            }, void 0, false, {
+                                fileName: "[project]/pages/posts/[slug].tsx",
+                                lineNumber: 50,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
+                                children: post.title
+                            }, void 0, false, {
+                                fileName: "[project]/pages/posts/[slug].tsx",
+                                lineNumber: 59,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].mdContent,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
+                                    remarkPlugins: [
+                                        __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__["default"],
+                                        __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__["default"]
+                                    ],
+                                    children: post.content
+                                }, void 0, false, {
+                                    fileName: "[project]/pages/posts/[slug].tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/pages/posts/[slug].tsx",
+                                lineNumber: 61,
+                                columnNumber: 11
+                            }, this),
+                            post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                style: {
+                                    marginTop: "2rem"
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        display: "flex",
+                                        gap: "0.5rem",
+                                        flexWrap: "wrap"
+                                    },
+                                    children: post.tags.map((tag)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: `/tags/${tag}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    padding: "0.25rem 0.5rem",
+                                                    borderRadius: "5px",
+                                                    // backgroundColor: "#f0f0f0",
+                                                    cursor: "pointer",
+                                                    fontSize: "0.85rem",
+                                                    color: "#706F6C",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: "0.2rem"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                                        src: "/icon/pound.svg",
+                                                        alt: "#",
+                                                        style: {
+                                                            width: "1em",
+                                                            height: "1em"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/posts/[slug].tsx",
+                                                        lineNumber: 86,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    " ",
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tags$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["tagMap"][tag] || tag
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/pages/posts/[slug].tsx",
+                                                lineNumber: 73,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, tag, false, {
+                                            fileName: "[project]/pages/posts/[slug].tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 19
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/pages/posts/[slug].tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/pages/posts/[slug].tsx",
+                                lineNumber: 69,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/pages/posts/[slug].tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/posts/[slug].tsx",
-                lineNumber: 31,
+                lineNumber: 22,
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/pages/posts/[slug].tsx",
-        lineNumber: 19,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
 const getStaticPaths = async ()=>{
     const posts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$posts$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["getAllPosts"])();

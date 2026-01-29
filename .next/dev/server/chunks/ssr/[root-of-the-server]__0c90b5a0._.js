@@ -220,12 +220,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$modul
 var __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__ = __turbopack_context__.i("[externals]/react-markdown [external] (react-markdown, esm_import, [project]/node_modules/.pnpm/react-markdown@10.1.0_@types+react@19.2.9_react@19.2.3/node_modules/react-markdown)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__ = __turbopack_context__.i("[externals]/remark-gfm [external] (remark-gfm, esm_import, [project]/node_modules/.pnpm/remark-gfm@4.0.1/node_modules/remark-gfm)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__ = __turbopack_context__.i("[externals]/remark-breaks [external] (remark-breaks, esm_import, [project]/node_modules/.pnpm/remark-breaks@4.0.0/node_modules/remark-breaks)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SEO$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/SEO.tsx [ssr] (ecmascript)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__,
     __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__,
     __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__
 ]);
 [__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__, __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__, __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+;
 ;
 ;
 ;
@@ -243,7 +245,7 @@ function DiaryPage({ diary }) {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/pages/cozydiary/[diary].tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 12
         }, this);
     }
@@ -252,102 +254,113 @@ function DiaryPage({ diary }) {
             children: "Diary not found"
         }, void 0, false, {
             fileName: "[project]/pages/cozydiary/[diary].tsx",
-            lineNumber: 24,
+            lineNumber: 25,
             columnNumber: 12
         }, this);
     }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-        className: "container",
-        style: {
-            padding: "1rem"
-        },
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                buttons: [
-                    // { label: "HOME", href: "/" },
-                    // { label: "POSTS", href: "/posts" },
-                    {
-                        label: "COZYDIARY",
-                        href: "/cozydiary"
-                    }
-                ]
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SEO$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                title: `${diary.title} - KuromiPiPi | KKuromiPiPi`
             }, void 0, false, {
                 fileName: "[project]/pages/cozydiary/[diary].tsx",
-                lineNumber: 29,
-                columnNumber: 7
-            }, this),
-            diary.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                style: {
-                    marginBottom: "1rem"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
-                    src: diary.cover,
-                    alt: diary.title,
-                    style: {
-                        maxHeight: "400px",
-                        objectFit: "cover",
-                        width: "50%",
-                        // height: "250px",
-                        aspectRatio: "1 / 1",
-                        borderRadius: "16px",
-                        marginBottom: "1rem"
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/pages/cozydiary/[diary].tsx",
-                    lineNumber: 41,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/pages/cozydiary/[diary].tsx",
-                lineNumber: 40,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                style: {
-                    color: "var(--color-gray-400)",
-                    marginBottom: "1rem"
-                },
-                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(diary.date)
-            }, void 0, false, {
-                fileName: "[project]/pages/cozydiary/[diary].tsx",
-                lineNumber: 57,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
-                style: {
-                    fontSize: "1.7rem",
-                    marginBottom: "2rem"
-                },
-                children: diary.title
-            }, void 0, false, {
-                fileName: "[project]/pages/cozydiary/[diary].tsx",
-                lineNumber: 60,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].mdContent,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
-                    remarkPlugins: [
-                        __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__["default"],
-                        __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__["default"]
-                    ],
-                    children: diary.content
-                }, void 0, false, {
-                    fileName: "[project]/pages/cozydiary/[diary].tsx",
-                    lineNumber: 64,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                className: "container",
+                style: {
+                    padding: "1rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        buttons: [
+                            // { label: "HOME", href: "/" },
+                            // { label: "POSTS", href: "/posts" },
+                            {
+                                label: "COZYDIARY",
+                                href: "/cozydiary"
+                            }
+                        ]
+                    }, void 0, false, {
+                        fileName: "[project]/pages/cozydiary/[diary].tsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, this),
+                    diary.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                        style: {
+                            marginBottom: "1rem"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                            src: diary.cover,
+                            alt: diary.title,
+                            style: {
+                                maxHeight: "400px",
+                                objectFit: "cover",
+                                width: "50%",
+                                // height: "250px",
+                                aspectRatio: "1 / 1",
+                                borderRadius: "16px",
+                                marginBottom: "1rem"
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/pages/cozydiary/[diary].tsx",
+                            lineNumber: 44,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/pages/cozydiary/[diary].tsx",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                        style: {
+                            color: "var(--color-gray-400)",
+                            marginBottom: "1rem"
+                        },
+                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["formatDate"])(diary.date)
+                    }, void 0, false, {
+                        fileName: "[project]/pages/cozydiary/[diary].tsx",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
+                        style: {
+                            fontSize: "1.7rem",
+                            marginBottom: "2rem"
+                        },
+                        children: diary.title
+                    }, void 0, false, {
+                        fileName: "[project]/pages/cozydiary/[diary].tsx",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$MdContent$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].mdContent,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$markdown__$5b$external$5d$__$28$react$2d$markdown$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$markdown$40$10$2e$1$2e$0_$40$types$2b$react$40$19$2e$2$2e$9_react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2d$markdown$29$__["default"], {
+                            remarkPlugins: [
+                                __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$gfm__$5b$external$5d$__$28$remark$2d$gfm$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$gfm$40$4$2e$0$2e$1$2f$node_modules$2f$remark$2d$gfm$29$__["default"],
+                                __TURBOPACK__imported__module__$5b$externals$5d2f$remark$2d$breaks__$5b$external$5d$__$28$remark$2d$breaks$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$remark$2d$breaks$40$4$2e$0$2e$0$2f$node_modules$2f$remark$2d$breaks$29$__["default"]
+                            ],
+                            children: diary.content
+                        }, void 0, false, {
+                            fileName: "[project]/pages/cozydiary/[diary].tsx",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/pages/cozydiary/[diary].tsx",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/pages/cozydiary/[diary].tsx",
-                lineNumber: 63,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/pages/cozydiary/[diary].tsx",
-        lineNumber: 28,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
 const getStaticPaths = async ()=>{
     const diaries = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$diary$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["getAllDiaries"])(); // 读取 CozyDiary 文件夹所有日记

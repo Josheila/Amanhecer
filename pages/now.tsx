@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import Header from "../components/Header";
 import ReactMarkdown from "react-markdown";
 import { formatDate } from "../lib/date";
+import SEO from "../components/SEO";
 
 interface Post {
   title: string;
@@ -22,49 +23,52 @@ interface NowPageProps {
 
 export default function NowPage({ post }: NowPageProps) {
   return (
-    <div className="container">
-      <Header
-        buttons={[
-          { label: "HOME", href: "/" },
-          { label: "POSTS", href: "/posts" },
-          { label: "COZYDIARY", href: "/cozydiary" },
-          { label: "MOMENTS", href: "/moments" },
-          // { label: "TAGS", href: "/tags" },
-          { label: "NOW", href: "/now" },
-        ]}
-      />
+    <>
+      <SEO title="NOW - KuromiPiPi" />
+      <div className="container">
+        <Header
+          buttons={[
+            { label: "HOME", href: "/" },
+            { label: "POSTS", href: "/posts" },
+            { label: "COZYDIARY", href: "/cozydiary" },
+            { label: "MOMENTS", href: "/moments" },
+            // { label: "TAGS", href: "/tags" },
+            { label: "NOW", href: "/now" },
+          ]}
+        />
 
-      <main style={{ marginTop: "2rem" }}>
-        {post.cover && (
-          <img
-            src={post.cover}
-            alt={post.title}
+        <main style={{ marginTop: "2rem" }}>
+          {post.cover && (
+            <img
+              src={post.cover}
+              alt={post.title}
+              style={{
+                width: "50%",
+                // height: "250px",
+                aspectRatio: "1 / 1",
+                objectFit: "cover",
+                borderRadius: "10px",
+                marginBottom: "1rem",
+              }}
+            />
+          )}
+
+          <h1>{post.title}</h1>
+          <p
             style={{
-              width: "50%",
-              // height: "250px",
-              aspectRatio: "1 / 1",
-              objectFit: "cover",
-              borderRadius: "10px",
+              color: "var(--color-gray-400)",
+              fontSize: "16px",
               marginBottom: "1rem",
             }}
-          />
-        )}
-
-        <h1>{post.title}</h1>
-        <p
-          style={{
-            color: "var(--color-gray-400)",
-            fontSize: "16px",
-            marginBottom: "1rem",
-          }}
-        >
-          {formatDate(post.date)}
-        </p>
-        <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-        </div>
-      </main>
-    </div>
+          >
+            {formatDate(post.date)}
+          </p>
+          <div style={{ color: "var(--color-gray-500)", fontSize: "14px" }}>
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
 

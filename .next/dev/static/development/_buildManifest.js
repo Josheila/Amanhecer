@@ -2,11 +2,11 @@ self.__BUILD_MANIFEST = {
   "/": [
     "static/chunks/pages/index.js"
   ],
-  "/_error": [
-    "static/chunks/pages/_error.js"
-  ],
   "/cozydiary": [
     "static/chunks/pages/cozydiary.js"
+  ],
+  "/cozydiary/[diary]": [
+    "static/chunks/pages/cozydiary/[diary].js"
   ],
   "/moments": [
     "static/chunks/pages/moments.js"
@@ -19,9 +19,6 @@ self.__BUILD_MANIFEST = {
   ],
   "/posts/[slug]": [
     "static/chunks/pages/posts/[slug].js"
-  ],
-  "/tags": [
-    "static/chunks/pages/tags.js"
   ],
   "/tags/[tag]": [
     "static/chunks/pages/tags/[tag].js"
