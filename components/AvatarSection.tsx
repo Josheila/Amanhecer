@@ -19,10 +19,11 @@ export default function AvatarSection() {
         alt="Avatar"
         className={styles.avatar}
         onClick={toggleAvatar} // 点击切换
-        style={{ cursor: "pointer" }} // 鼠标提示可点击
       />
-      <h1>KuromiPiPi 🐱</h1>
-      <p>quero amanhecer, entardecer e anoitecer com você</p>
+      <div className={styles.avatarText}>
+        <h1>KuromiPiPi 🐱</h1>
+        <p>quero amanhecer, entardecer e anoitecer com você</p>
+      </div>
     </section>
   );
 }
