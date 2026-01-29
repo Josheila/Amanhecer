@@ -18,7 +18,10 @@ interface PostPageProps {
 export default function PostPage({ post }: PostPageProps) {
   return (
     <>
-      <SEO title={`${post.title} - KuromiPiPi | KKuromiPiPi`} />
+      <SEO
+        title={`${post.title} - KuromiPiPi | KKuromiPiPi`}
+        description={post.summary}
+      />
       <div className="container">
         <Header
           buttons={[

@@ -21,6 +21,8 @@ export default function Home({ posts }: HomeProps) {
           // { label: "TAGS", href: "/tags" },
           { label: "NOW", href: "/now" },
         ]}
+        hideToggle={true}
+        defaultOpen={true}
       />
     </div>
   );

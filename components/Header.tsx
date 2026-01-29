@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import styles from "../styles/Header.module.css";
 
 interface HeaderProps {
   buttons?: { label: string; href: string }[];
   style?: React.CSSProperties;
-  className?: string;
+  defaultOpen?: boolean; // 是否默认展开
+  hideToggle?: boolean; // 是否隐藏 ☰ 按钮
 }
 
 export default function Header({
@@ -18,27 +20,48 @@ export default function Header({
     { label: "NOW", href: "/now" },
   ],
   style,
+  defaultOpen = false,
+  hideToggle = false,
 }: HeaderProps) {
   const router = useRouter();
+  const [open, setOpen] = useState(defaultOpen);
 
   return (
     <header className={styles.header} style={style}>
-      <nav className={styles.navButtons}>
-        {buttons.map((btn) => {
-          // 判断当前路由是否等于按钮 href
-          const isSelected = router.pathname === btn.href;
+      {/* 顶部行 */}
+      <div className={styles.topRow}>
+        {!hideToggle && (
+          <button
+            className={styles.menuButton}
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            💭
+          </button>
+        )}
+      </div>
 
-          return (
-            <Link key={btn.href} href={btn.href} passHref>
-              <button
-                className={`${styles.navButton} ${isSelected ? styles.selected : ""}`}
-              >
-                {btn.label}
-              </button>
-            </Link>
-          );
-        })}
-      </nav>
+      {/* 菜单 */}
+      {open && (
+        <nav className={styles.menu}>
+          {buttons.map((btn) => {
+            const isSelected = router.pathname === btn.href;
+
+            return (
+              <Link key={btn.href} href={btn.href}>
+                <button
+                  className={`${styles.menuItem} ${
+                    isSelected ? styles.selected : ""
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  {btn.label}
+                </button>
+              </Link>
+            );
+          })}
+        </nav>
+      )}
     </header>
   );
 }

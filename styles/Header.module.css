@@ -1,67 +1,58 @@
-/* components/Header.module.css */
-
 .header {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: flex-end; /* 右对齐 */
-  align-items: center; /* 垂直居中 */
-  gap: 1rem; /* 可选：按钮间距 */
+  position: relative; /* 菜单悬浮的定位锚点 */
+  margin-top: 1rem; /* 距离页面顶部 */
+  margin-bottom: 2rem; /* 底部间距 */
 }
 
-.navButtons {
-  display: flex;
-  gap: 10px; /* 按钮间距 */
-}
-
-.navButton {
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: all 0.15s;
-  position: relative;
-  padding: 0.25rem 1rem;
-  min-height: 1.75rem;
-  min-width: 1.75rem;
-  border: 1px solid var(--color-gray-4); /* 按钮边框 */
-  background-color: var(--color-gray-2); /* 按钮底色 */
-  border-radius: 15px; /* 圆角 */
+/* 顶部行：菜单按钮和 logo */
+.topRow {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  color: var(--color-gray-7); /* 文字颜色 */
-  -webkit-tap-highlight-color: transparent; /* 去掉移动端点击蓝色高亮 */
+  justify-content: flex-start; /* 左对齐 */
+  gap: 0.5rem; /* logo 与按钮间距，可调整 */
 }
 
-/* 新增选中状态 */
-.navButton.selected {
-  background-color: var(--color-gray-4); /* 选中按钮底色 */
-  color: var(--color-gray-9); /* 文字颜色可加深或者变亮 */
-  /* border-color: var(--color-gray-6); 边框加深 */
-  /*box-shadow: 0 0 0 2px var(--color-gray-4);  可选：轻微高亮边框 */
+/* 菜单按钮 */
+.menuButton {
+  font-size: 2rem; /* 放大图标 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* 去掉默认内边距，左对齐 */
 }
 
-.navButton:hover {
-  background-color: var(--color-gray-3);
+/* 菜单悬浮层 */
+.menu {
+  position: absolute; /* 脱离文档流，悬浮显示 */
+  top: 100%; /* 紧贴按钮底部 */
+  left: 0; /* 左对齐按钮 */
+  margin-top: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  background: var(--color-gray-1);
+  border: 1px;
+  border-color: var(--color-gray-6);
+  /* padding: 0.75rem 1rem; */
+  border-radius: 8px;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
+  z-index: 1000;
 }
 
-.navButton:focus {
-  outline: none; /* 去掉聚焦时的蓝色轮廓 */
-}
-
-.navButton:active {
-  transform: scale(0.985) translateY(0.5px);
-  /* background-color: var(--color-gray-2); */
-}
-
-.navText {
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* 菜单项 */
+.menuItem {
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.4rem 0;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-.myHeaderOverride {
-  justify-content: center;
+/* 当前页高亮 */
+.selected {
+  font-weight: 600;
+  text-decoration: underline;
 }
