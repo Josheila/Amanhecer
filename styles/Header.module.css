@@ -20,7 +20,6 @@
   cursor: pointer;
   padding: 0; /* 去掉默认内边距，左对齐 */
 }
-
 /* 菜单悬浮层 */
 .menu {
   position: absolute; /* 脱离文档流，悬浮显示 */
@@ -49,6 +48,9 @@
   padding: 0.4rem 0;
   font-size: 1rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* iOS / Android */
+  outline: none; /* 去掉点击时虚线框 */
+  user-select: none; /* 防止选中文字时出现背景 */
 }
 
 /* 当前页高亮 */
