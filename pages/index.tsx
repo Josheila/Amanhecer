@@ -10,7 +10,6 @@ interface HomeProps {
 export default function Home({ posts }: HomeProps) {
   return (
     <div className="container">
-      <AvatarSection />
       <Header
         style={{ justifyContent: "center" }}
         buttons={[
@@ -21,9 +20,10 @@ export default function Home({ posts }: HomeProps) {
           // { label: "TAGS", href: "/tags" },
           { label: "NOW", href: "/now" },
         ]}
-        hideToggle={true}
-        defaultOpen={true}
+        // hideToggle={true}
+        // defaultOpen={true}
       />
+      <AvatarSection />
     </div>
   );
 }

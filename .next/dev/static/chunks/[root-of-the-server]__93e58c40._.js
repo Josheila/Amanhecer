@@ -466,7 +466,6 @@ function triggerUpdate(msg) {
 
 __turbopack_context__.v({
   "header": "Header-module__vcZAwq__header",
-  "logo": "Header-module__vcZAwq__logo",
   "menu": "Header-module__vcZAwq__menu",
   "menuButton": "Header-module__vcZAwq__menuButton",
   "menuItem": "Header-module__vcZAwq__menuItem",
@@ -531,7 +530,7 @@ function Header({ buttons = [
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].menuButton,
                     onClick: ()=>setOpen(!open),
                     "aria-label": "Toggle menu",
-                    children: "🍝"
+                    children: "💭"
                 }, void 0, false, {
                     fileName: "[project]/components/Header.tsx",
                     lineNumber: 34,

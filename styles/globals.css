@@ -30,7 +30,7 @@ a {
   margin: 0 auto; /* 居中 */
   max-width: 750px; /* 可选，防止屏幕太宽 */
   /* min-width: 300px; 可选，防止太窄 */
-  padding: 0 1rem; /* 两侧留白 */
+  padding: 20px 1rem; /* 两侧留白 */
   /* background-color: var(--color-gray-0);  */
 }
 

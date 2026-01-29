@@ -2,6 +2,12 @@ self.__BUILD_MANIFEST = {
   "/": [
     "static/chunks/pages/index.js"
   ],
+  "/cozydiary": [
+    "static/chunks/pages/cozydiary.js"
+  ],
+  "/moments": [
+    "static/chunks/pages/moments.js"
+  ],
   "/now": [
     "static/chunks/pages/now.js"
   ],

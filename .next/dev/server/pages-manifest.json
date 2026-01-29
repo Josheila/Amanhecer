@@ -2,6 +2,8 @@
   "/": "pages/index.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/cozydiary": "pages/cozydiary.js",
+  "/moments": "pages/moments.js",
   "/now": "pages/now.js",
   "/posts": "pages/posts.js"
 }

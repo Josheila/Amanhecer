@@ -1,21 +1,33 @@
 .avatarSection {
-  text-align: center;
-  margin: 2rem 0;
-}
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; /* 头像和文字垂直居中对齐 */
+  gap: 1rem; /* 左右间距，可调 */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.avatarSection h1 {
-  font-size: 2rem; /* 改大字号，比如默认是 1rem */
-  color: var(--color-gray-9); /* 可选，设置颜色 */
-  margin-top: 0.5rem; /* 可选，和标题保持间距 */
+/* 头像 */
+.avatar {
+  width: 120px; /* 可以自己调大小 */
+  height: 120px;
+  border-radius: 50%; /* 圆形头像 */
+  cursor: pointer; /* 点击提示 */
+  object-fit: cover; /* 图片裁剪 */
 }
-.avatarSection p {
-  font-size: 1rem; /* 改大字号，比如默认是 1rem */
-  color: var(--color-gray-7); /* 可选，设置颜色 */
-  margin-top: 0.5rem; /* 可选，和标题保持间距 */
+
+/* 文字部分 */
+.avatarText {
+  display: flex;
+  flex-direction: column; /* 垂直排列 h1 和 p */
+  justify-content: center; /* 垂直居中 */
+}
+
+.avatarText h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.avatarText p {
+  margin: 0;
+  color: var(--color-gray-500, #666);
 }

@@ -1,26 +1,34 @@
 /* [project]/styles/AvatarSection.module.css [client] (css) */
 .AvatarSection-module__6tOn5G__avatarSection {
-  text-align: center;
-  margin: 2rem 0;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
 }
 
 .AvatarSection-module__6tOn5G__avatar {
+  cursor: pointer;
+  object-fit: cover;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 1rem;
+  width: 120px;
+  height: 120px;
 }
 
-.AvatarSection-module__6tOn5G__avatarSection h1 {
-  color: var(--color-gray-9);
-  margin-top: .5rem;
-  font-size: 2rem;
+.AvatarSection-module__6tOn5G__avatarText {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
 }
 
-.AvatarSection-module__6tOn5G__avatarSection p {
-  color: var(--color-gray-7);
-  margin-top: .5rem;
-  font-size: 1rem;
+.AvatarSection-module__6tOn5G__avatarText h1 {
+  margin: 0 0 .5rem;
+  font-size: 1.5rem;
+}
+
+.AvatarSection-module__6tOn5G__avatarText p {
+  color: var(--color-gray-500, #666);
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles_AvatarSection_module_css_65f1660e._.single.css.map*/

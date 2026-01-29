@@ -1,56 +1,74 @@
 .header {
-  position: relative; /* 菜单悬浮的定位锚点 */
-  margin-top: 1rem; /* 距离页面顶部 */
-  margin-bottom: 2rem; /* 底部间距 */
+  position: relative; /* 菜单悬浮锚点 */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* 顶部行：菜单按钮和 logo */
+/* 顶部行：菜单按钮 */
 .topRow {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* 左对齐 */
-  gap: 0.5rem; /* logo 与按钮间距，可调整 */
+  justify-content: flex-end; /* 右对齐按钮 */
+  gap: 0.5rem;
 }
 
 /* 菜单按钮 */
 .menuButton {
-  font-size: 2rem; /* 放大图标 */
+  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0; /* 去掉默认内边距，左对齐 */
+  padding: 0;
 }
+
 /* 菜单悬浮层 */
 .menu {
-  position: absolute; /* 脱离文档流，悬浮显示 */
-  top: 100%; /* 紧贴按钮底部 */
-  left: 0; /* 左对齐按钮 */
+  position: absolute;
+  top: 100%;
+  right: 0; /* 右对齐菜单 */
   margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 
-  background: var(--color-gray-1);
-  border: 1px;
-  border-color: var(--color-gray-6);
-  /* padding: 0.75rem 1rem; */
+  background: var(--color-gray-1, #fff);
   border-radius: 8px;
-  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
   z-index: 1000;
+  text-align: right; /* ✅ 菜单项右对齐 */
+
+  /* 移动端点击不变色 */
+  color: var(--color-text, #333);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* 菜单项 */
 .menuItem {
-  text-align: left;
+  text-align: right; /* ✅ 菜单文字右对齐 */
   background: none;
   border: none;
   padding: 0.4rem 0;
   font-size: 1rem;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent; /* iOS / Android */
-  outline: none; /* 去掉点击时虚线框 */
-  user-select: none; /* 防止选中文字时出现背景 */
+
+  color: var(--color-text, #333);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* 点击或聚焦状态 */
+.menuItem:focus,
+.menuItem:active {
+  color: var(--color-text, #333);
+  background: none;
 }
 
 /* 当前页高亮 */
