@@ -66,7 +66,7 @@ self.__SERVER_FILES_MANIFEST={
       "qualities": [
         75
       ],
-      "unoptimized": false
+      "unoptimized": true
     },
     "devIndicators": {
       "position": "bottom-left"
@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/sheilazhai/Documents/Amanhecer",
+    "outputFileTracingRoot": "/Users/sheilazhai/Library/Mobile Documents/com~apple~CloudDocs/Amanhecer",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,11 +293,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "/Users/sheilazhai/Documents/Amanhecer"
+      "root": "/Users/sheilazhai/Library/Mobile Documents/com~apple~CloudDocs/Amanhecer"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/sheilazhai/Documents/Amanhecer",
+  "appDir": "/Users/sheilazhai/Library/Mobile Documents/com~apple~CloudDocs/Amanhecer",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

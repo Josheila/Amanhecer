@@ -1,0 +1,58 @@
+/* =========================
+   分页容器
+   ========================= */
+.pageNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* 单个页码/按钮 */
+.pageNumber {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-gray-3);
+  border-radius: 20px;
+  background-color: var(--color-gray-0);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  box-sizing: border-box;
+}
+
+.pageNumber:hover:not(:disabled) {
+  background-color: var(--color-gray-2);
+}
+
+.pageNumber:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* 当前页 */
+.current {
+  font-weight: 500;
+  background-color: var(--color-gray-1);
+  cursor: default;
+}
+
+/* 省略号 */
+.dots {
+  cursor: default;
+  background: none;
+  border: none;
+}
+
+/* 上一页/下一页 */
+.prev,
+.next {
+  font-weight: 400;
+  color: var(--color-gray-3);
+}

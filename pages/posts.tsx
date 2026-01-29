@@ -2,11 +2,11 @@ import { GetStaticProps } from "next";
 import Header from "../components/Header";
 import AvatarSection from "../components/AvatarSection";
 import BlogList from "../components/BlogList"; // ✅ 改成 BlogList
-import { getAllPosts, Post } from "../lib/posts";
+import { getAllPostsMeta, PostMeta } from "../lib/posts";
 import SEO from "../components/SEO";
 
 interface PostsPageProps {
-  posts: Post[];
+  posts: PostMeta[];
 }
 
 export default function PostsPage({ posts }: PostsPageProps) {
@@ -34,7 +34,7 @@ export default function PostsPage({ posts }: PostsPageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(); // 读取 posts 目录下所有 Markdown 文件
+  const posts = getAllPostsMeta(); // 读取 posts 目录下所有 Markdown 元数据
 
   return {
     props: {

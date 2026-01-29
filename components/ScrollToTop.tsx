@@ -1,5 +1,6 @@
 // /components/ScrollToTop.tsx
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -44,10 +45,11 @@ export default function ScrollToTop() {
       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#f2f2f2")}
       aria-label="Scroll to top"
     >
-      <img
+      <Image
         src="/icon/arrow_up.svg"
-        // alt="↑"
-        style={{ width: "50%", height: "50%" }}
+        alt="↑"
+        width={20}
+        height={20}
       />
     </button>
   );

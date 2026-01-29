@@ -1,10 +1,17 @@
-import { useState, useEffect } from "react";
-import { Post } from "../lib/posts";
-import { Diary } from "../lib/diary";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { PostMeta } from "../lib/posts";
+import { DiaryMeta } from "../lib/diary";
 import { formatDate } from "../lib/date";
 import styles from "../styles/BlogList.module.css";
+import { BLUR_DATA_URL } from "../lib/blur";
 
-type BlogItem = Post | Diary;
+const BlogListControls = dynamic(() => import("./BlogListControls"));
+const BlogListPagination = dynamic(() => import("./BlogListPagination"));
+
+type BlogItem = PostMeta | DiaryMeta;
 
 interface BlogListProps {
   items: BlogItem[];
@@ -19,15 +26,6 @@ export default function BlogList({
 }: BlogListProps) {
   const [viewMode, setViewMode] = useState<"card" | "list">(defaultView);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // 判断是否移动端
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const totalPages = Math.ceil(items.length / pageSize);
   const startIndex = (currentPage - 1) * pageSize;
@@ -35,32 +33,13 @@ export default function BlogList({
 
   return (
     <div>
-      {/* 视图切换按钮 */}
-      <div className={styles.viewSwitch}>
-        <img
-          src="/icon/view_gallery.svg"
-          alt="卡片视图"
-          className={styles.iconButton}
-          onClick={() => setViewMode("card")}
-        />
-        <img
-          src="/icon/view_list.svg"
-          alt="列表视图"
-          className={styles.iconButton}
-          onClick={() => setViewMode("list")}
-        />
-      </div>
-
+      <BlogListControls
+        viewMode={viewMode}
+        onViewModeChange={(mode) => setViewMode(mode)}
+      />
       {/* 列表内容 */}
-      <div
-        className={viewMode === "card" ? styles.cardGrid : styles.listGrid}
-        style={
-          viewMode === "card" && isMobile
-            ? { gridTemplateColumns: "repeat(2, 1fr)" }
-            : undefined
-        }
-      >
-        {paginatedItems.map((item: BlogItem) => {
+      <div className={viewMode === "card" ? styles.cardGrid : styles.listGrid}>
+        {paginatedItems.map((item: BlogItem, index) => {
           if (!("slug" in item)) return null;
           const href =
             "summary" in item
@@ -68,93 +47,43 @@ export default function BlogList({
               : `/cozydiary/${item.slug}`;
 
           return viewMode === "card" ? (
-            <a
-              key={item.slug}
-              href={href}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link key={item.slug} href={href} className={styles.link}>
               <div className={styles.cardItem}>
-                {item.cover && <img src={item.cover} alt={item.title} />}
+                {item.cover && (
+                  <Image
+                    src={item.cover}
+                    alt={item.title}
+                    width={600}
+                    height={600}
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className={styles.cardImage}
+                    priority={index === 0}
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
+                  />
+                )}
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{item.title}</h3>
                   <p className={styles.cardDate}>{formatDate(item.date)}</p>
                 </div>
               </div>
-            </a>
+            </Link>
           ) : (
-            <a
-              key={item.slug}
-              href={href}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link key={item.slug} href={href} className={styles.link}>
               <div className={styles.listItem}>
                 <span className={styles.listTitle}>{item.title}</span>
                 <span className={styles.listDate}>{formatDate(item.date)}</span>
               </div>
-            </a>
+            </Link>
           );
         })}
       </div>
 
-      {/* 分页 */}
-      {totalPages > 1 && (
-        <ul className={styles.pageNumbers}>
-          <li>
-            <button
-              className={`${styles.pageNumber} ${styles.prev}`}
-              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-              disabled={currentPage === 1}
-            >
-              «
-            </button>
-          </li>
-
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
-            if (
-              page === 1 ||
-              page === totalPages ||
-              (page >= currentPage - 1 && page <= currentPage + 1)
-            ) {
-              return (
-                <li key={page}>
-                  {page === currentPage ? (
-                    <span className={`${styles.pageNumber} ${styles.current}`}>
-                      {page}
-                    </span>
-                  ) : (
-                    <button
-                      className={styles.pageNumber}
-                      onClick={() => setCurrentPage(page)}
-                    >
-                      {page}
-                    </button>
-                  )}
-                </li>
-              );
-            }
-            if (page === currentPage - 2 || page === currentPage + 2) {
-              return (
-                <li key={page}>
-                  <span className={`${styles.pageNumber} ${styles.dots}`}>
-                    …
-                  </span>
-                </li>
-              );
-            }
-            return null;
-          })}
-
-          <li>
-            <button
-              className={`${styles.pageNumber} ${styles.next}`}
-              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-              disabled={currentPage === totalPages}
-            >
-              »
-            </button>
-          </li>
-        </ul>
-      )}
+      <BlogListPagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </div>
   );
 }

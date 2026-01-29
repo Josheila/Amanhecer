@@ -3,16 +3,12 @@
   white-space: pre-line;
   color: var(--color-gray-7);
   font-size: .9rem;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .MdContent-module__jlgNAa__mdContent p {
   margin: 0 0;
-  line-height: 1;
-}
-
-.MdContent-module__jlgNAa__mdContent p + p {
-  margin-top: 1.4rem;
+  line-height: 1.4;
 }
 
 .MdContent-module__jlgNAa__mdContent h1 {
@@ -29,31 +25,55 @@
 
 .MdContent-module__jlgNAa__mdContent h3 {
   color: var(--color-gray-6);
-  margin: .6rem 0 .3rem;
+  margin: .3rem 0 0;
   font-size: 1.4rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h4 {
   color: var(--color-gray-6);
-  margin: 1.5rem 0 0;
+  margin: .3rem 0 0;
   font-size: 1.3rem;
 }
 
 .MdContent-module__jlgNAa__mdContent h5 {
   color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
-.MdContent-module__jlgNAa__mdContent h6, .MdContent-module__jlgNAa__mdContent h7 {
+.MdContent-module__jlgNAa__mdContent h6 {
   color: var(--color-gray-6);
   margin: .6rem 0 .3rem;
   font-size: 1rem;
 }
 
+.MdContent-module__jlgNAa__mdContent h1 + p, .MdContent-module__jlgNAa__mdContent h2 + p, .MdContent-module__jlgNAa__mdContent h3 + p, .MdContent-module__jlgNAa__mdContent h4 + p, .MdContent-module__jlgNAa__mdContent h5 + p, .MdContent-module__jlgNAa__mdContent h6 + p {
+  margin-top: 0;
+}
+
 .MdContent-module__jlgNAa__mdContent ul, .MdContent-module__jlgNAa__mdContent ol {
-  margin: .5rem 0;
-  padding-left: 1.5rem;
+  margin: 0;
+  padding-left: 8px;
+}
+
+.MdContent-module__jlgNAa__mdContent li {
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.2;
+}
+
+.MdContent-module__jlgNAa__mdContent li > p {
+  margin: 0;
+}
+
+.MdContent-module__jlgNAa__mdContent br {
+  height: 0;
+  line-height: 0;
+  display: none;
+}
+
+.MdContent-module__jlgNAa__mdContent p + ul, .MdContent-module__jlgNAa__mdContent p + ol, .MdContent-module__jlgNAa__mdContent ul + p, .MdContent-module__jlgNAa__mdContent p + p, .MdContent-module__jlgNAa__mdContent ol + p {
+  margin-top: 0;
 }
 
 .MdContent-module__jlgNAa__mdContent a {

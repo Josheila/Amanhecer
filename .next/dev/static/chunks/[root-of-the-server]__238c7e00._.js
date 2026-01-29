@@ -500,16 +500,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/styles/Moments.module.css [client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "current": "Moments-module__2EPtZq__current",
-  "dots": "Moments-module__2EPtZq__dots",
-  "next": "Moments-module__2EPtZq__next",
-  "pageInput": "Moments-module__2EPtZq__pageInput",
-  "pageNavForm": "Moments-module__2EPtZq__pageNavForm",
-  "pageNumber": "Moments-module__2EPtZq__pageNumber",
-  "pageNumbers": "Moments-module__2EPtZq__pageNumbers",
-  "prev": "Moments-module__2EPtZq__prev",
-  "statusCard": "Moments-module__2EPtZq__statusCard",
-  "statusList": "Moments-module__2EPtZq__statusList",
 });
 }),
 "[project]/components/Moments.tsx [client] (ecmascript)", ((__turbopack_context__) => {
@@ -817,9 +807,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 // /components/AvatarSection.tsx
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/image.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/AvatarSection.module.css [client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 function AvatarSection() {
@@ -832,14 +824,17 @@ function AvatarSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].avatarSection,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 src: avatar,
                 alt: "Avatar",
+                width: 130,
+                height: 130,
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].avatar,
-                onClick: toggleAvatar
+                onClick: toggleAvatar,
+                priority: true
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -849,26 +844,26 @@ function AvatarSection() {
                         children: "KuromiPiPi 🐱"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
-                        lineNumber: 24,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "quero amanhecer, entardecer e anoitecer com você :)"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
-                        lineNumber: 25,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AvatarSection.tsx",
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }

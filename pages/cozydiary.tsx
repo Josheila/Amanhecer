@@ -2,11 +2,11 @@ import { GetStaticProps } from "next";
 import Header from "../components/Header";
 import AvatarSection from "../components/AvatarSection";
 import BlogList from "../components/BlogList";
-import { getAllDiaries, Diary } from "../lib/diary";
+import { getAllDiariesMeta, DiaryMeta } from "../lib/diary";
 import SEO from "../components/SEO";
 
 interface CozyDiaryProps {
-  diaries: Diary[];
+  diaries: DiaryMeta[];
 }
 
 export default function CozyDiary({ diaries }: CozyDiaryProps) {
@@ -33,7 +33,7 @@ export default function CozyDiary({ diaries }: CozyDiaryProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const diaries = getAllDiaries(); // 自动读取 CozyDiary 目录下所有 Markdown 文件
+  const diaries = getAllDiariesMeta(); // 自动读取 CozyDiary 目录下所有 Markdown 元数据
 
   return {
     props: {

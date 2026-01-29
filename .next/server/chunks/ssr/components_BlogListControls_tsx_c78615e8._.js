@@ -1,0 +1,3 @@
+module.exports=[83463,a=>{"use strict";var b=a.i(8171),c=a.i(94204),d=a.i(53041);function e({viewMode:a,onViewModeChange:e}){return(0,b.jsxs)("div",{className:d.default.viewSwitch,children:[(0,b.jsx)(c.default,{src:"/icon/view_gallery.svg",alt:"卡片视图",width:22,height:22,className:d.default.iconButton,onClick:()=>e("card")}),(0,b.jsx)(c.default,{src:"/icon/view_list.svg",alt:"列表视图",width:22,height:22,className:d.default.iconButton,onClick:()=>e("list")})]})}a.s(["default",()=>e])},38135,a=>{a.n(a.i(83463))}];
+
+//# sourceMappingURL=components_BlogListControls_tsx_c78615e8._.js.map

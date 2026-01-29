@@ -604,9 +604,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 // /components/AvatarSection.tsx
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/image.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/AvatarSection.module.css [client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 function AvatarSection() {
@@ -619,14 +621,17 @@ function AvatarSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].avatarSection,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 src: avatar,
                 alt: "Avatar",
+                width: 130,
+                height: 130,
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$AvatarSection$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].avatar,
-                onClick: toggleAvatar
+                onClick: toggleAvatar,
+                priority: true
             }, void 0, false, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -636,26 +641,26 @@ function AvatarSection() {
                         children: "KuromiPiPi 🐱"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
-                        lineNumber: 24,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "quero amanhecer, entardecer e anoitecer com você :)"
                     }, void 0, false, {
                         fileName: "[project]/components/AvatarSection.tsx",
-                        lineNumber: 25,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AvatarSection.tsx",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AvatarSection.tsx",
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -705,11 +710,16 @@ __turbopack_context__.v({
   "cardContent": "BlogList-module__YLJmxG__cardContent",
   "cardDate": "BlogList-module__YLJmxG__cardDate",
   "cardGrid": "BlogList-module__YLJmxG__cardGrid",
+  "cardImage": "BlogList-module__YLJmxG__cardImage",
   "cardItem": "BlogList-module__YLJmxG__cardItem",
   "cardTitle": "BlogList-module__YLJmxG__cardTitle",
+  "coverBox": "BlogList-module__YLJmxG__coverBox",
+  "coverImage": "BlogList-module__YLJmxG__coverImage",
+  "coverWrapper": "BlogList-module__YLJmxG__coverWrapper",
   "current": "BlogList-module__YLJmxG__current",
   "dots": "BlogList-module__YLJmxG__dots",
   "iconButton": "BlogList-module__YLJmxG__iconButton",
+  "link": "BlogList-module__YLJmxG__link",
   "listDate": "BlogList-module__YLJmxG__listDate",
   "listGrid": "BlogList-module__YLJmxG__listGrid",
   "listItem": "BlogList-module__YLJmxG__listItem",
@@ -730,6 +740,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/image.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/date.ts [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/BlogList.module.css [client] (css module)");
 ;
@@ -737,24 +749,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+;
 function BlogList({ items, pageSize = 9, defaultView = "card" }) {
     _s();
     const [viewMode, setViewMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(defaultView);
     const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(1);
-    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "BlogList.useEffect": ()=>{
-            // 判断是否移动端
-            const handleResize = {
-                "BlogList.useEffect.handleResize": ()=>setIsMobile(window.innerWidth < 768)
-            }["BlogList.useEffect.handleResize"];
-            handleResize();
-            window.addEventListener("resize", handleResize);
-            return ({
-                "BlogList.useEffect": ()=>window.removeEventListener("resize", handleResize)
-            })["BlogList.useEffect"];
-        }
-    }["BlogList.useEffect"], []);
     const totalPages = Math.ceil(items.length / pageSize);
     const startIndex = (currentPage - 1) * pageSize;
     const paginatedItems = items.slice(startIndex, startIndex + pageSize);
@@ -763,56 +763,59 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].viewSwitch,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "/icon/view_gallery.svg",
                         alt: "卡片视图",
+                        width: 22,
+                        height: 22,
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].iconButton,
                         onClick: ()=>setViewMode("card")
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 40,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "/icon/view_list.svg",
                         alt: "列表视图",
+                        width: 22,
+                        height: 22,
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].iconButton,
                         onClick: ()=>setViewMode("list")
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 46,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 39,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: viewMode === "card" ? __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardGrid : __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].listGrid,
-                style: viewMode === "card" && isMobile ? {
-                    gridTemplateColumns: "repeat(2, 1fr)"
-                } : undefined,
-                children: paginatedItems.map((item)=>{
+                children: paginatedItems.map((item, index)=>{
                     if (!("slug" in item)) return null;
                     const href = "summary" in item ? `/posts/${item.slug}` : `/cozydiary/${item.slug}`;
-                    return viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                    return viewMode === "card" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                         href: href,
-                        style: {
-                            textDecoration: "none",
-                            color: "inherit"
-                        },
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].link,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardItem,
                             children: [
-                                item.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                item.cover && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: item.cover,
-                                    alt: item.title
+                                    alt: item.title,
+                                    width: 600,
+                                    height: 600,
+                                    sizes: "(max-width: 768px) 50vw, 33vw",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardImage,
+                                    priority: index === 0
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 77,
-                                    columnNumber: 32
+                                    lineNumber: 64,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardContent,
@@ -822,7 +825,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 75,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -830,31 +833,28 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["formatDate"])(item.date)
                                         }, void 0, false, {
                                             fileName: "[project]/components/BlogList.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 76,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 74,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 76,
+                            lineNumber: 62,
                             columnNumber: 15
                         }, this)
                     }, item.slug, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 71,
+                        lineNumber: 61,
                         columnNumber: 13
-                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                         href: href,
-                        style: {
-                            textDecoration: "none",
-                            color: "inherit"
-                        },
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].link,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].listItem,
                             children: [
@@ -863,7 +863,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: item.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 91,
+                                    lineNumber: 83,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -871,24 +871,24 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["formatDate"])(item.date)
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 84,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 90,
+                            lineNumber: 82,
                             columnNumber: 15
                         }, this)
                     }, item.slug, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 85,
+                        lineNumber: 81,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 55,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -902,12 +902,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "«"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 103,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 102,
+                        lineNumber: 94,
                         columnNumber: 11
                     }, this),
                     Array.from({
@@ -920,7 +920,7 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 113,
                                     columnNumber: 21
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$BlogList$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].pageNumber,
@@ -928,12 +928,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: page
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 117,
                                     columnNumber: 21
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 119,
+                                lineNumber: 111,
                                 columnNumber: 17
                             }, this);
                         }
@@ -944,12 +944,12 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                                     children: "…"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BlogList.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 130,
                                     columnNumber: 19
                                 }, this)
                             }, page, false, {
                                 fileName: "[project]/components/BlogList.tsx",
-                                lineNumber: 137,
+                                lineNumber: 129,
                                 columnNumber: 17
                             }, this);
                         }
@@ -963,28 +963,28 @@ function BlogList({ items, pageSize = 9, defaultView = "card" }) {
                             children: "»"
                         }, void 0, false, {
                             fileName: "[project]/components/BlogList.tsx",
-                            lineNumber: 148,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BlogList.tsx",
-                        lineNumber: 147,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BlogList.tsx",
-                lineNumber: 101,
+                lineNumber: 93,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/BlogList.tsx",
-        lineNumber: 37,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
-_s(BlogList, "J4mU5MAWtJ2nU6eZQb0p70Z31Z0=");
+_s(BlogList, "N62LI+v3svWJ6lkfAxXjCMG6M+Y=");
 _c = BlogList;
 var _c;
 __turbopack_context__.k.register(_c, "BlogList");

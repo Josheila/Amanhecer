@@ -1,4 +1,6 @@
-/* styles/CopyRight.module.css */
+/* =========================
+   页脚版权信息
+   ========================= */
 .copyright {
   text-align: center;
   font-size: 0.9rem;
@@ -6,10 +8,12 @@
   margin: 2rem 0;
 }
 
+/* 小图标间距 */
 .withLove {
   margin: 0 0.3rem; /* Emoji 和文字间距 */
 }
 
+/* 作者名 */
 .author {
   font-weight: normal;
 }

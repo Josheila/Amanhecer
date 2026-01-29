@@ -2,16 +2,12 @@
   margin-top: 2rem;
 }
 
-.main {
-  margin-top: 2rem;
-}
-
 /* 页面标题 */
 .title {
   color: var(--color-gray-7);
 }
 
-/* 标签云容器（带热力图背景） */
+/* 标签云容器（纯色背景） */
 .tagCloud {
   display: flex;
   flex-wrap: wrap;

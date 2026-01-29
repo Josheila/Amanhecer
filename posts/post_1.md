@@ -6,8 +6,16 @@ tags: ["milestone"]
 cover: "/images/cover_1.jpg"
 ---
 
-搭了一天网站，终于有了雏形
-第一篇依旧来庆祝blog诞生啦！
+搭了一天網頁，終於有了雛形
+第一篇依舊來慶祝blog誕生啦！🥹✨
 
-Depois de um dia inteiro montando o site, ele finalmente começou a ganhar forma.
-Nada mais justo do que o primeiro post ser para comemorar o aniversário do blog 🥹✨
+翻了一下紀錄
+
+- 第一次是20-03-19搭在GitHub Page
+- 第二次是23-01-16用hexo搭在本地
+- 這是第三次，沒有用現成的模板，從0開始寫的
+
+說到這裡，我之前是一個會被工具綁架的人
+我會為了用到某個功能，而改變我的需求
+比如用哪個app的時候，就會把教程都看完，而不是有了困惑才去找解法
+也會瞻前顧後想要有80分才開始，現在只想要50分，想要立刻開始

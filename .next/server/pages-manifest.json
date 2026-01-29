@@ -3,5 +3,13 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/cozydiary": "pages/cozydiary.js",
+  "/cozydiary/[diary]": "pages/cozydiary/[diary].js",
+  "/moments": "pages/moments.html",
+  "/now": "pages/now.js",
+  "/posts": "pages/posts.js",
+  "/posts/[slug]": "pages/posts/[slug].js",
+  "/tags": "pages/tags.js",
+  "/tags/[tag]": "pages/tags/[tag].js",
   "/404": "pages/404.html"
 }

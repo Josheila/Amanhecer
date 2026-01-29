@@ -1,6 +1,6 @@
 // pages/tags/[tag].tsx
 import { GetStaticPaths, GetStaticProps } from "next";
-import { getAllPosts, Post } from "../../lib/posts";
+import { getAllPostsMeta, PostMeta } from "../../lib/posts";
 import BlogList from "../../components/BlogList";
 import Header from "../../components/Header";
 import { tagMap } from "../../lib/tags";
@@ -8,7 +8,7 @@ import SEO from "../../components/SEO";
 
 interface TagPageProps {
   tag: string;
-  posts: Post[];
+  posts: PostMeta[];
 }
 
 export default function TagPage({ tag, posts }: TagPageProps) {
@@ -39,7 +39,7 @@ export default function TagPage({ tag, posts }: TagPageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = getAllPosts();
+  const posts = getAllPostsMeta();
   const tags = Array.from(new Set(posts.flatMap((p) => p.tags)));
   const paths = tags.map((tag) => ({ params: { tag } }));
 
@@ -49,7 +49,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const tag = params?.tag as string;
   //   直接调用 getAllPosts(tag) 获取某个 tag 的文章
-  const posts = getAllPosts(tag);
+  const posts = getAllPostsMeta(tag);
 
   return {
     props: { tag, posts },

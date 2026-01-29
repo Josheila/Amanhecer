@@ -1,1 +1,16 @@
-{}
+{
+  "[project]/components/BlogListControls.tsx [client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/BlogListControls.tsx [client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_BlogListControls_tsx_8932939d._.js",
+      "static/chunks/components_BlogListControls_tsx_edc266d4._.js"
+    ]
+  },
+  "[project]/components/BlogListPagination.tsx [client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/BlogListPagination.tsx [client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_BlogListPagination_tsx_084ea73a._.js",
+      "static/chunks/components_BlogListPagination_tsx_edc266d4._.js"
+    ]
+  }
+}

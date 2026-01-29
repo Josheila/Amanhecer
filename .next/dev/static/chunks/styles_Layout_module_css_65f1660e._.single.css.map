@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/Layout.module.css"],"sourcesContent":["/* styles/Layout.module.css */\n.container {\n  display: flex;\n  flex-direction: column;\n  min-height: 100vh; /* 高度占满整个窗口 */\n}\n\n.main {\n  flex: 1; /* 占据剩余空间，保证 footer 在底部 */\n}\n\n/* CopyRight 自己的样式可以保持原来的 MdContent.module.css 或 CopyRight.module.css */\n"],"names":[],"mappings":"AACA;;;;;;AAMA"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/Layout.module.css"],"sourcesContent":["/* =========================\n   页面布局容器\n   ========================= */\n.container {\n  display: flex;\n  flex-direction: column;\n  min-height: 100vh; /* 高度占满整个窗口 */\n}\n\n/* 主体区域 */\n.main {\n  flex: 1; /* 占据剩余空间，保证 footer 在底部 */\n}\n"],"names":[],"mappings":"AAGA;;;;;;AAOA"}}]
 }

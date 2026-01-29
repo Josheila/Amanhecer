@@ -34,16 +34,6 @@ function formatDate(dateStr, type = 1) {
 "[project]/styles/Moments.module.css [ssr] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "current": "Moments-module__2EPtZq__current",
-  "dots": "Moments-module__2EPtZq__dots",
-  "next": "Moments-module__2EPtZq__next",
-  "pageInput": "Moments-module__2EPtZq__pageInput",
-  "pageNavForm": "Moments-module__2EPtZq__pageNavForm",
-  "pageNumber": "Moments-module__2EPtZq__pageNumber",
-  "pageNumbers": "Moments-module__2EPtZq__pageNumbers",
-  "prev": "Moments-module__2EPtZq__prev",
-  "statusCard": "Moments-module__2EPtZq__statusCard",
-  "statusList": "Moments-module__2EPtZq__statusList",
 });
 }),
 "[project]/components/Moments.tsx [ssr] (ecmascript)", ((__turbopack_context__) => {

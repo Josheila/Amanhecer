@@ -3,12 +3,15 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Header from "../components/Header";
-import ReactMarkdown from "react-markdown";
 import { formatDate } from "../lib/date";
 import SEO from "../components/SEO";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import styles from "../styles/MdContent.module.css";
+import Image from "next/image";
+import blogListStyles from "../styles/BlogList.module.css";
+import ReactMarkdown from "react-markdown";
+import { BLUR_DATA_URL } from "../lib/blur";
 
 interface Post {
   title: string;
@@ -42,18 +45,20 @@ export default function NowPage({ post }: NowPageProps) {
 
         <main>
           {post.cover && (
-            <img
-              src={post.cover}
-              alt={post.title}
-              style={{
-                width: "50%",
-                // height: "250px",
-                aspectRatio: "1 / 1",
-                objectFit: "cover",
-                borderRadius: "16px",
-                marginBottom: "1rem",
-              }}
-            />
+            <div className={blogListStyles.coverWrapper}>
+              <div className={blogListStyles.coverBox}>
+                <Image
+                  src={post.cover}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 768px) 60vw, 30vw"
+                  className={blogListStyles.coverImage}
+                  priority
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA_URL}
+                />
+              </div>
+            </div>
           )}
 
           <p

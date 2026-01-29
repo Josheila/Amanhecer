@@ -1,7 +1,6 @@
 // /pages/posts/[slug].tsx
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
-import ReactMarkdown from "react-markdown";
 import Header from "../../components/Header"; // 用 Header 组件
 import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
 import { tagMap } from "../../lib/tags";
@@ -10,6 +9,10 @@ import remarkGfm from "remark-gfm";
 import styles from "../../styles/MdContent.module.css";
 import remarkBreaks from "remark-breaks";
 import SEO from "../../components/SEO";
+import blogListStyles from "../../styles/BlogList.module.css";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import { BLUR_DATA_URL } from "../../lib/blur";
 
 interface PostPageProps {
   post: Post;
@@ -36,18 +39,20 @@ export default function PostPage({ post }: PostPageProps) {
         {/* 文章内容 */}
         <main>
           {post.cover && (
-            <img
-              src={post.cover}
-              alt={post.title}
-              style={{
-                width: "50%",
-                // height: "250px",
-                aspectRatio: "1 / 1",
-                objectFit: "cover",
-                borderRadius: "16px",
-                marginBottom: "1rem",
-              }}
-            />
+            <div className={blogListStyles.coverWrapper}>
+              <div className={blogListStyles.coverBox}>
+                <Image
+                  src={post.cover}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 768px) 60vw, 30vw"
+                  className={blogListStyles.coverImage}
+                  priority
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA_URL}
+                />
+              </div>
+            </div>
           )}
 
           <p
@@ -86,9 +91,11 @@ export default function PostPage({ post }: PostPageProps) {
                         gap: "0.2rem", // 图标和文字间距
                       }}
                     >
-                      <img
+                      <Image
                         src="/icon/pound.svg"
                         alt="#"
+                        width={16}
+                        height={16}
                         style={{ width: "1em", height: "1em" }}
                       />{" "}
                       {tagMap[tag] || tag}

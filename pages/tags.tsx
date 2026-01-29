@@ -1,10 +1,11 @@
 // /pages/tags.tsx
 import Link from "next/link";
 import Header from "../components/Header";
-import { getAllPosts, Post } from "../lib/posts";
+import { getAllPostsMeta, PostMeta } from "../lib/posts";
 import { tagMap } from "../lib/tags";
 import SEO from "../components/SEO";
 import styles from "../styles/Tags.module.css";
+import Image from "next/image";
 
 interface TagsPageProps {
   tags: { name: string; count: number }[];
@@ -47,9 +48,11 @@ export default function Tags({ tags }: TagsPageProps) {
                     className={styles.tagItem}
                     style={{ fontSize: `${fontSize}rem` }}
                   >
-                    <img
+                    <Image
                       src="/icon/pound.svg"
                       alt="#"
+                      width={16}
+                      height={16}
                       className={styles.icon}
                     />
                     {tagMap[tag.name] || tag.name}
@@ -66,7 +69,7 @@ export default function Tags({ tags }: TagsPageProps) {
 
 // 获取标签及权重
 export async function getStaticProps() {
-  const posts: Post[] = getAllPosts();
+  const posts: PostMeta[] = getAllPostsMeta();
 
   const tagCountMap: Record<string, number> = {};
 

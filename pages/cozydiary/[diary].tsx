@@ -4,10 +4,13 @@ import { getAllDiaries, getDiaryBySlug, Diary } from "../../lib/diary";
 import { formatDate } from "../../lib/date";
 import Header from "../../components/Header"; // 用 Header 组件
 import styles from "../../styles/MdContent.module.css";
-import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import SEO from "../../components/SEO";
+import blogListStyles from "../../styles/BlogList.module.css";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import { BLUR_DATA_URL } from "../../lib/blur";
 
 interface DiaryPageProps {
   diary: Diary | null;
@@ -40,20 +43,19 @@ export default function DiaryPage({ diary }: DiaryPageProps) {
           ]}
         />
         {diary.cover && (
-          <div style={{ marginBottom: "1rem" }}>
-            <img
-              src={diary.cover}
-              alt={diary.title}
-              style={{
-                maxHeight: "400px",
-                objectFit: "cover",
-                width: "50%",
-                // height: "250px",
-                aspectRatio: "1 / 1",
-                borderRadius: "16px",
-                marginBottom: "1rem",
-              }}
-            />
+          <div className={blogListStyles.coverWrapper}>
+            <div className={blogListStyles.coverBox}>
+              <Image
+                src={diary.cover}
+                alt={diary.title}
+                fill
+                sizes="(max-width: 768px) 60vw, 30vw"
+                className={blogListStyles.coverImage}
+                priority
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_URL}
+              />
+            </div>
           </div>
         )}
 
