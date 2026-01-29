@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "e34fad3e0e4f2f73715ab99de7cdf6c5",
-    "previewModeSigningKey": "22782846608d6277e9c3a514d937289d9508eecde8f4f9d7c5f59e27a516e346",
-    "previewModeEncryptionKey": "ccdb65973a6f57ec4fc6f288cb02f675361de5bfbeb584aa0d10d1ef2eb362a5"
-  }
-}
+{"version":4,"routes":{"/posts/post_1":{},"/posts/post_2":{},"/tags/milestone":{},"/tags/topic":{}},"dynamicRoutes":{"/posts/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/posts/[slug]","routeRegex":"^\\/posts\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/tags/[tag]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/tags/[tag]","routeRegex":"^\\/tags\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"1090297391bfd5fe49f52e7ce9390a9b","previewModeSigningKey":"b3e1b931df0a47b8cccc081fe6937e1e3174e76ea21b227d62c92d627c467b0d","previewModeEncryptionKey":"9dca47ae2045f8c9147f31d176bf68cecf4b16ba2824d4fb4e177251a8c12584"}}

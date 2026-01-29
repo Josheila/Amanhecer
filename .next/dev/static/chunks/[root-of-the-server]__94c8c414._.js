@@ -470,6 +470,7 @@ __turbopack_context__.v({
   "navButton": "Header-module__vcZAwq__navButton",
   "navButtons": "Header-module__vcZAwq__navButtons",
   "navText": "Header-module__vcZAwq__navText",
+  "selected": "Header-module__vcZAwq__selected",
 });
 }),
 "[project]/components/Header.tsx [client] (ecmascript)", ((__turbopack_context__) => {
@@ -481,7 +482,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/link.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/router.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/Header.module.css [client] (css module)");
+;
+var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
@@ -495,7 +499,7 @@ function Header({ buttons = [
         href: "/posts"
     },
     {
-        label: "CozyDiary",
+        label: "COZYDIARY",
         href: "/cozydiary"
     },
     {
@@ -509,43 +513,51 @@ function Header({ buttons = [
     {
         label: "NOW",
         href: "/now"
-    },
-    {
-        label: "ME",
-        href: "/about"
     }
 ], style }) {
+    _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].header,
         style: style,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButtons,
-            children: buttons.map((btn)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+            children: buttons.map((btn)=>{
+                // 判断当前路由是否等于按钮 href
+                const isSelected = router.pathname === btn.href;
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     href: btn.href,
+                    passHref: true,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButton,
+                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].navButton} ${isSelected ? __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$Header$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].selected : ""}`,
                         children: btn.label
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 27,
-                        columnNumber: 13
+                        lineNumber: 33,
+                        columnNumber: 15
                     }, this)
                 }, btn.href, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 26,
-                    columnNumber: 11
-                }, this))
+                    lineNumber: 32,
+                    columnNumber: 13
+                }, this);
+            })
         }, void 0, false, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 24,
+            lineNumber: 26,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 23,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
+_s(Header, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$4_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = Header;
 var _c;
 __turbopack_context__.k.register(_c, "Header");
@@ -563,7 +575,9 @@ __turbopack_context__.s([
 ]);
 const tagMap = {
     daily: "にちじょうりょく",
-    milestone: "aniversário"
+    milestone: "O Especial",
+    topic: "多谈谈问题",
+    cheatsheet: "CheatSheet"
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -674,7 +688,7 @@ function PostPage({ post }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 34,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -686,14 +700,14 @@ function PostPage({ post }) {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$date$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["formatDate"])(post.date)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 48,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         children: post.title
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 57,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -706,12 +720,12 @@ function PostPage({ post }) {
                             children: post.content
                         }, void 0, false, {
                             fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 60,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 59,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$40$19$2e$2$2e$3$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -748,7 +762,7 @@ function PostPage({ post }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/posts/[slug].tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 83,
                                                 columnNumber: 21
                                             }, this),
                                             " ",
@@ -756,28 +770,28 @@ function PostPage({ post }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/posts/[slug].tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 70,
                                         columnNumber: 19
                                     }, this)
                                 }, tag, false, {
                                     fileName: "[project]/pages/posts/[slug].tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 69,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/pages/posts/[slug].tsx",
-                            lineNumber: 68,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/posts/[slug].tsx",
-                        lineNumber: 67,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/posts/[slug].tsx",
-                lineNumber: 32,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]

@@ -1,8 +1,8 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/pages/tags/[tag].js")
-R.c("server/chunks/ssr/[root-of-the-server]__b8dd296b._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__f7e0cb73._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__430558a5._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__02944de9._.js")
 R.c("server/chunks/ssr/node_modules__pnpm_b83107fa._.js")
 R.c("server/chunks/ssr/[externals]__e6a4d965._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__fc839fc8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__382d428c._.js")
 R.m("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/esm/build/templates/pages.js { INNER_PAGE => \"[project]/pages/tags/[tag].tsx [ssr] (ecmascript)\", INNER_DOCUMENT => \"[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/document.js [ssr] (ecmascript)\", INNER_APP => \"[project]/pages/_app.tsx [ssr] (ecmascript)\" } [ssr] (ecmascript)")
 module.exports=R.m("[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/esm/build/templates/pages.js { INNER_PAGE => \"[project]/pages/tags/[tag].tsx [ssr] (ecmascript)\", INNER_DOCUMENT => \"[project]/node_modules/.pnpm/next@16.1.4_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/document.js [ssr] (ecmascript)\", INNER_APP => \"[project]/pages/_app.tsx [ssr] (ecmascript)\" } [ssr] (ecmascript)").exports

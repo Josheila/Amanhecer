@@ -179,7 +179,9 @@ __turbopack_context__.s([
 ]);
 const tagMap = {
     daily: "にちじょうりょく",
-    milestone: "aniversário"
+    milestone: "O Especial",
+    topic: "多谈谈问题",
+    cheatsheet: "CheatSheet"
 };
 }),
 "[project]/pages/tags.tsx [ssr] (ecmascript)", ((__turbopack_context__) => {

@@ -575,7 +575,9 @@ __turbopack_context__.s([
 ]);
 const tagMap = {
     daily: "にちじょうりょく",
-    milestone: "aniversário"
+    milestone: "O Especial",
+    topic: "多谈谈问题",
+    cheatsheet: "CheatSheet"
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

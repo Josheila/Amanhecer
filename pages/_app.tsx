@@ -1,5 +1,6 @@
 // pages/_app.tsx
 import "../styles/globals.css";
+import SEO from "../components/SEO";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import ScrollToTop from "../components/ScrollToTop";
@@ -14,9 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <ScrollToTop />
       </main>
-
       {/* 全局页脚 */}
       <CopyRight />
+      <SEO /> {/* 默认 SEO */}
     </div>
   );
 }

@@ -1,7 +1,244 @@
-[00:00:00.839] Server  LOG     ✓ Ready in 626ms
-[00:02:04.574] Server  LOG     ✓ Compiled in 121ms
-[00:02:25.985] Server  LOG     ✓ Compiled in 12ms
-[00:02:58.318] Server  LOG     ✓ Compiled in 50ms
-[00:03:03.442] Server  LOG     ✓ Compiled in 13ms
-[00:03:27.949] Server  LOG     ✓ Compiled in 12ms
-[00:03:36.264] Server  LOG     ✓ Compiled in 11ms
+[00:00:01.075] Server  LOG     ✓ Ready in 843ms
+[00:36:43.531] Server  LOG     ✓ Compiled in 125ms
+[02:09:31.131] Browser LOG     Refreshing page data due to server-side change
+[02:09:31.131] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.131] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:31.317] Browser ERROR   uncaughtError: Error: ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+
+
+[02:09:31.561] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.561] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:31.562] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.562] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:31.562] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.563] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:31.563] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.563] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:31.563] Browser ERROR   ./pages/_app.tsx:26:25
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     |                         ^^^
+  27 |   return (
+  28 |     <>
+  29 |       <SEO /> {/* 默认 SEO */}
+
+the name `App` is defined multiple times
+[02:09:31.563] Browser ERROR   ./pages/_app.tsx:26:1
+Ecmascript file had an error
+  24 | }
+  25 |
+> 26 | export default function App({ Component, pageProps }) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |   return (
+     | ^^^^^^^^^^
+> 28 |     <>
+     | ^^^^^^^^^^
+> 29 |       <SEO /> {/* 默认 SEO */}
+     | ^^^^^^^^^^
+> 30 |       <Component {...pageProps} />
+     | ^^^^^^^^^^
+> 31 |     </>
+     | ^^^^^^^^^^
+> 32 |   );
+     | ^^^^^^^^^^
+> 33 | }
+     | ^^
+  34 |
+
+the name `default` is exported multiple times
+[02:09:47.478] Server  LOG     ✓ Compiled in 17ms
+[02:09:48.552] Browser ERROR   ./pages/_app.tsx:16:10
+Parsing ecmascript source code failed
+  14 |       <Component {...pageProps} />
+  15 |     </>
+> 16 |     <div className={styles.container}>
+     |          ^^^^^^^^^
+  17 |       {/* 页面主体 */}
+  18 |       <main className={styles.main}>
+  19 |         <Component {...pageProps} />
+
+Expected ',', got 'className'
+[02:09:59.696] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.696] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.702] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.702] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.702] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.703] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.703] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.704] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.705] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:59.707] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:18:00.906] Server  LOG     ✓ Compiled in 19ms
+[02:19:30.178] Server  LOG     ✓ Compiled in 18ms
