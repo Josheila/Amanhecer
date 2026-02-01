@@ -9,7 +9,8 @@
   "[project]/components/BlogListPagination.tsx [client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/BlogListPagination.tsx [client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/components_BlogListPagination_tsx_084ea73a._.js",
+      "static/chunks/styles_Pagination_module_d5a0aaec.css",
+      "static/chunks/_45139ebc._.js",
       "static/chunks/components_BlogListPagination_tsx_edc266d4._.js"
     ]
   }

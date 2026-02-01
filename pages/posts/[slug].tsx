@@ -5,13 +5,10 @@ import Header from "../../components/Header"; // 用 Header 组件
 import { getAllPosts, getPostBySlug, Post } from "../../lib/posts";
 import { tagMap } from "../../lib/tags";
 import { formatDate } from "../../lib/date";
-import remarkGfm from "remark-gfm";
-import styles from "../../styles/MdContent.module.css";
-import remarkBreaks from "remark-breaks";
+import Markdown from "../../components/Markdown";
 import SEO from "../../components/SEO";
 import blogListStyles from "../../styles/BlogList.module.css";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 import { BLUR_DATA_URL } from "../../lib/blur";
 
 interface PostPageProps {
@@ -66,11 +63,7 @@ export default function PostPage({ post }: PostPageProps) {
           </p>
           <h1>{post.title}</h1>
 
-          <div className={styles.mdContent}>
-            <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
-              {post.content}
-            </ReactMarkdown>
-          </div>
+          <Markdown content={post.content} />
 
           {/* Tags 区域 */}
           {post.tags && post.tags.length > 0 && (

@@ -1,5 +1,16 @@
 /* [project]/styles/Moments.module.css [client] (css) */
+.Moments-module__2EPtZq__statusCard small {
+  margin-bottom: 12px;
+  display: block;
+}
 
+.Moments-module__2EPtZq__statusCard {
+  margin-bottom: 16px;
+}
+
+.Moments-module__2EPtZq__statusCard p {
+  margin: 8px 0;
+}
 
 /* [project]/styles/Header.module.css [client] (css) */
 .Header-module__vcZAwq__header {

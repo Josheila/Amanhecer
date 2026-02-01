@@ -1,6 +1,12 @@
 self.__BUILD_MANIFEST = {
-  "/now": [
-    "static/chunks/pages/now.js"
+  "/moments": [
+    "static/chunks/pages/moments.js"
+  ],
+  "/posts": [
+    "static/chunks/pages/posts.js"
+  ],
+  "/posts/[slug]": [
+    "static/chunks/pages/posts/[slug].js"
   ],
   "__rewrites": {
     "afterFiles": [],

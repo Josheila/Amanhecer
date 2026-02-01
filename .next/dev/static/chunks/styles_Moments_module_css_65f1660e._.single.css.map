@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/Moments.module.css"],"sourcesContent":[""],"names":[],"mappings":""}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/Moments.module.css"],"sourcesContent":["/* 状态页样式占位（当前无额外样式，保持现有显示效果） */\n\n/* 增大日期与下一条内容之间的间距 */\n.statusCard small {\n  display: block;\n  margin-bottom: 12px;\n}\n\n.statusCard {\n  margin-bottom: 16px;\n}\n\n.statusCard p {\n  margin: 8px 0;\n}\n"],"names":[],"mappings":"AAGA;;;;;AAKA;;;;AAIA"}}]
 }

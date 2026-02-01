@@ -9,11 +9,38 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/5e54f_react-dom_4d21b075._.js",
       "static/chunks/node_modules__pnpm_f4116989._.js",
       "static/chunks/[root-of-the-server]__ce9686c1._.js",
-      "static/chunks/styles_aaf59668._.css",
+      "static/chunks/_5e26157e._.css",
       "static/chunks/pages__app_2da965e7._.js",
-      "static/chunks/turbopack-pages__app_565f088b._.js"
+      "static/chunks/turbopack-pages__app_e3a1b2cb._.js"
     ],
-    "/now": [
+    "/moments": [
+      "static/chunks/62cdd_next_dist_compiled_21aa67ac._.js",
+      "static/chunks/62cdd_next_dist_shared_lib_135f3eea._.js",
+      "static/chunks/62cdd_next_dist_client_6d18410a._.js",
+      "static/chunks/62cdd_next_dist_cef891fc._.js",
+      "static/chunks/62cdd_next_7ff5752b._.js",
+      "static/chunks/5e54f_react-dom_4d21b075._.js",
+      "static/chunks/node_modules__pnpm_f4116989._.js",
+      "static/chunks/[root-of-the-server]__d47c7316._.js",
+      "static/chunks/styles_ce017831._.css",
+      "static/chunks/pages_moments_2da965e7._.js",
+      "static/chunks/turbopack-pages_moments_fae00722._.js"
+    ],
+    "/posts": [
+      "static/chunks/components_539d578a._.js",
+      "static/chunks/62cdd_next_dist_compiled_21aa67ac._.js",
+      "static/chunks/62cdd_next_dist_shared_lib_14fa51c5._.js",
+      "static/chunks/62cdd_next_dist_client_6d18410a._.js",
+      "static/chunks/62cdd_next_dist_cef891fc._.js",
+      "static/chunks/62cdd_next_44baaa33._.js",
+      "static/chunks/5e54f_react-dom_4d21b075._.js",
+      "static/chunks/node_modules__pnpm_f4116989._.js",
+      "static/chunks/[root-of-the-server]__00aae6d5._.js",
+      "static/chunks/styles_f77c3a6a._.css",
+      "static/chunks/pages_posts_2da965e7._.js",
+      "static/chunks/turbopack-pages_posts_4c29477d._.js"
+    ],
+    "/posts/[slug]": [
       "static/chunks/62cdd_next_dist_compiled_21aa67ac._.js",
       "static/chunks/62cdd_next_dist_shared_lib_5fb4e0d9._.js",
       "static/chunks/62cdd_next_dist_client_6d18410a._.js",
@@ -21,11 +48,12 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/62cdd_next_8162376f._.js",
       "static/chunks/5e54f_react-dom_4d21b075._.js",
       "static/chunks/b5ecd_micromark-core-commonmark_dev_lib_f7b16d9d._.js",
-      "static/chunks/node_modules__pnpm_db570974._.js",
-      "static/chunks/[root-of-the-server]__95c7441a._.js",
+      "static/chunks/46550_highlight_ffeb0270.js",
+      "static/chunks/node_modules__pnpm_5999bceb._.js",
+      "static/chunks/[root-of-the-server]__ed5f88e0._.js",
       "static/chunks/styles_cb9cd25d._.css",
-      "static/chunks/pages_now_2da965e7._.js",
-      "static/chunks/turbopack-pages_now_18390dc3._.js"
+      "static/chunks/pages_posts_[slug]_tsx_2da965e7._.js",
+      "static/chunks/turbopack-pages_posts_[slug]_tsx_94c5ca85._.js"
     ]
   },
   "devFiles": [],

@@ -5,4 +5,5 @@ export const tagMap: Record<string, string> = {
   milestone: "O Especial",
   topic: "多谈谈问题",
   cheatsheet: "CheatSheet",
+  ai: "chatwithAI",
 };

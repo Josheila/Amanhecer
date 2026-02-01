@@ -5,13 +5,10 @@ import matter from "gray-matter";
 import Header from "../components/Header";
 import { formatDate } from "../lib/date";
 import SEO from "../components/SEO";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
-import styles from "../styles/MdContent.module.css";
 import Image from "next/image";
 import blogListStyles from "../styles/BlogList.module.css";
-import ReactMarkdown from "react-markdown";
 import { BLUR_DATA_URL } from "../lib/blur";
+import Markdown from "../components/Markdown";
 
 interface Post {
   title: string;
@@ -71,11 +68,7 @@ export default function NowPage({ post }: NowPageProps) {
             {formatDate(post.date)}
           </p>
           <h1>{post.title}</h1>
-          <div className={styles.mdContent}>
-            <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
-              {post.content}
-            </ReactMarkdown>
-          </div>
+          <Markdown content={post.content} />
         </main>
       </div>
     </>

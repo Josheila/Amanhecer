@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/brainfuck.js"],"sourcesContent":["'use strict'\n\nmodule.exports = brainfuck\nbrainfuck.displayName = 'brainfuck'\nbrainfuck.aliases = []\nfunction brainfuck(Prism) {\n  Prism.languages.brainfuck = {\n    pointer: {\n      pattern: /<|>/,\n      alias: 'keyword'\n    },\n    increment: {\n      pattern: /\\+/,\n      alias: 'inserted'\n    },\n    decrement: {\n      pattern: /-/,\n      alias: 'deleted'\n    },\n    branching: {\n      pattern: /\\[|\\]/,\n      alias: 'important'\n    },\n    operator: /[.,]/,\n    comment: /\\S+/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,UAAU,WAAW,GAAG;AACxB,UAAU,OAAO,GAAG,EAAE;AACtB,SAAS,UAAU,KAAK;IACtB,MAAM,SAAS,CAAC,SAAS,GAAG;QAC1B,SAAS;YACP,SAAS;YACT,OAAO;QACT;QACA,WAAW;YACT,SAAS;YACT,OAAO;QACT;QACA,WAAW;YACT,SAAS;YACT,OAAO;QACT;QACA,WAAW;YACT,SAAS;YACT,OAAO;QACT;QACA,UAAU;QACV,SAAS;IACX;AACF","ignoreList":[0]}}]
+}

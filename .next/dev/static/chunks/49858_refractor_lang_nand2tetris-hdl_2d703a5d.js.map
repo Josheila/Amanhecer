@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/nand2tetris-hdl.js"],"sourcesContent":["'use strict'\n\nmodule.exports = nand2tetrisHdl\nnand2tetrisHdl.displayName = 'nand2tetrisHdl'\nnand2tetrisHdl.aliases = []\nfunction nand2tetrisHdl(Prism) {\n  Prism.languages['nand2tetris-hdl'] = {\n    comment: /\\/\\/.*|\\/\\*[\\s\\S]*?(?:\\*\\/|$)/,\n    keyword: /\\b(?:BUILTIN|CHIP|CLOCKED|IN|OUT|PARTS)\\b/,\n    boolean: /\\b(?:false|true)\\b/,\n    function: /\\b[A-Za-z][A-Za-z0-9]*(?=\\()/,\n    number: /\\b\\d+\\b/,\n    operator: /=|\\.\\./,\n    punctuation: /[{}[\\];(),:]/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,eAAe,WAAW,GAAG;AAC7B,eAAe,OAAO,GAAG,EAAE;AAC3B,SAAS,eAAe,KAAK;IAC3B,MAAM,SAAS,CAAC,kBAAkB,GAAG;QACnC,SAAS;QACT,SAAS;QACT,SAAS;QACT,UAAU;QACV,QAAQ;QACR,UAAU;QACV,aAAa;IACf;AACF","ignoreList":[0]}}]
+}

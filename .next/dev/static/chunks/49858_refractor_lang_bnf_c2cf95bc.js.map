@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/bnf.js"],"sourcesContent":["'use strict'\n\nmodule.exports = bnf\nbnf.displayName = 'bnf'\nbnf.aliases = ['rbnf']\nfunction bnf(Prism) {\n  Prism.languages.bnf = {\n    string: {\n      pattern: /\"[^\\r\\n\"]*\"|'[^\\r\\n']*'/\n    },\n    definition: {\n      pattern: /<[^<>\\r\\n\\t]+>(?=\\s*::=)/,\n      alias: ['rule', 'keyword'],\n      inside: {\n        punctuation: /^<|>$/\n      }\n    },\n    rule: {\n      pattern: /<[^<>\\r\\n\\t]+>/,\n      inside: {\n        punctuation: /^<|>$/\n      }\n    },\n    operator: /::=|[|()[\\]{}*+?]|\\.{3}/\n  }\n  Prism.languages.rbnf = Prism.languages.bnf\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,IAAI,WAAW,GAAG;AAClB,IAAI,OAAO,GAAG;IAAC;CAAO;AACtB,SAAS,IAAI,KAAK;IAChB,MAAM,SAAS,CAAC,GAAG,GAAG;QACpB,QAAQ;YACN,SAAS;QACX;QACA,YAAY;YACV,SAAS;YACT,OAAO;gBAAC;gBAAQ;aAAU;YAC1B,QAAQ;gBACN,aAAa;YACf;QACF;QACA,MAAM;YACJ,SAAS;YACT,QAAQ;gBACN,aAAa;YACf;QACF;QACA,UAAU;IACZ;IACA,MAAM,SAAS,CAAC,IAAI,GAAG,MAAM,SAAS,CAAC,GAAG;AAC5C","ignoreList":[0]}}]
+}

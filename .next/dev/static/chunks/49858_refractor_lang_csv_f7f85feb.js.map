@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/csv.js"],"sourcesContent":["'use strict'\n\nmodule.exports = csv\ncsv.displayName = 'csv'\ncsv.aliases = []\nfunction csv(Prism) {\n  // https://tools.ietf.org/html/rfc4180\n  Prism.languages.csv = {\n    value: /[^\\r\\n,\"]+|\"(?:[^\"]|\"\")*\"(?!\")/,\n    punctuation: /,/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,IAAI,WAAW,GAAG;AAClB,IAAI,OAAO,GAAG,EAAE;AAChB,SAAS,IAAI,KAAK;IAChB,sCAAsC;IACtC,MAAM,SAAS,CAAC,GAAG,GAAG;QACpB,OAAO;QACP,aAAa;IACf;AACF","ignoreList":[0]}}]
+}

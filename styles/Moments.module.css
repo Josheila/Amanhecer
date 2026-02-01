@@ -1,1 +1,15 @@
 /* 状态页样式占位（当前无额外样式，保持现有显示效果） */
+
+/* 增大日期与下一条内容之间的间距 */
+.statusCard small {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.statusCard {
+  margin-bottom: 16px;
+}
+
+.statusCard p {
+  margin: 8px 0;
+}

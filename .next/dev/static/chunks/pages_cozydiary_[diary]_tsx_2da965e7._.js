@@ -8,8 +8,9 @@
   "static/chunks/62cdd_next_fce00d02._.js",
   "static/chunks/5e54f_react-dom_4d21b075._.js",
   "static/chunks/b5ecd_micromark-core-commonmark_dev_lib_f7b16d9d._.js",
-  "static/chunks/node_modules__pnpm_db570974._.js",
-  "static/chunks/[root-of-the-server]__62a60e16._.js",
+  "static/chunks/46550_highlight_ffeb0270.js",
+  "static/chunks/node_modules__pnpm_5999bceb._.js",
+  "static/chunks/[root-of-the-server]__e6d501b9._.js",
   "static/chunks/styles_cb9cd25d._.css"
 ],
     source: "entry"

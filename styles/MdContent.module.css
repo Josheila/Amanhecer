@@ -2,47 +2,58 @@
 
 /* Markdown 容器整体 */
 .mdContent {
-  line-height: 1.4;
-  white-space: pre-line; /* 按源码换行渲染 */
+  line-height: 1;
+  white-space: normal; /* 交给 remark-breaks 控制换行 */
   font-size: 0.9rem;
   color: var(--color-gray-7);
 }
 
 /* 段落 */
 .mdContent p {
-  margin: 0rem 0;
-  line-height: 1.4; /* 同一段内自动换行的行距 */
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.mdContent p + p {
+  margin-top: 0;
 }
 
 /* 标题 */
 .mdContent h1 {
-  font-size: 1.6rem;
-  margin: 1rem 0 0.5rem;
+  font-size: 1.35rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 .mdContent h2 {
-  font-size: 1.5rem;
-  margin: 0.8rem 0 0.4rem;
+  font-size: 1.28rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 .mdContent h3 {
-  font-size: 1.4rem;
-  margin: 0.3rem 0 0 0;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 .mdContent h4 {
-  font-size: 1.3rem;
-  margin: 0.3rem 0 0 0;
+  font-size: 1.12rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 .mdContent h5 {
-  font-size: 1.2rem;
-  margin: 0.6rem 0 0.3rem;
+  font-size: 1.06rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 .mdContent h6 {
   font-size: 1rem;
-  margin: 0.6rem 0 0.3rem;
+  margin: 0;
+  padding: 1rem 0;
   color: var(--color-gray-6);
 }
 
@@ -53,38 +64,57 @@
 .mdContent h4 + p,
 .mdContent h5 + p,
 .mdContent h6 + p {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 /* 列表 */
 .mdContent ul,
 .mdContent ol {
-  padding-left: 8px;
-  margin: 0;
+  padding-left: 1.2rem;
+  margin: 0 0 10px;
+  list-style-position: outside;
+}
+
+/* 嵌套列表缩进 */
+.mdContent ul ul,
+.mdContent ul ol,
+.mdContent ol ul,
+.mdContent ol ol {
+  padding-left: 1rem;
 }
 
 .mdContent li {
   font-size: 0.9rem;
-  line-height: 1.2;
-  margin: 0;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.mdContent ul > li:last-child,
+.mdContent ol > li:last-child {
+  margin-bottom: 0;
 }
 
 .mdContent li > p {
   margin: 0;
 }
 
-.mdContent br {
-  display: none;
-  line-height: 0;
-  height: 0;
+/* 列表项里紧跟子列表时，给“上一行文字”留出间距 */
+.mdContent li > ul,
+.mdContent li > ol {
+  margin-top: 10px;
+}
+
+/* 列表项后接子列表时，去掉该 li 的底部内边距 */
+.mdContent li:has(> ul),
+.mdContent li:has(> ol) {
+  margin-bottom: 0;
 }
 
 /* 段落与列表之间的间距 */
 .mdContent p + ul,
 .mdContent p + ol,
 .mdContent ul + p,
-.mdContent p + p,
 .mdContent ol + p {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 /* 链接 */
@@ -96,27 +126,92 @@
   opacity: 0.8;
 }
 
-/* 代码块 */
-.mdContent pre {
-  background-color: var(--color-code-block-bg);
-  padding: 0.75rem;
-  border-radius: 8px;
-  overflow-x: auto;
+/* 高亮 */
+.mdContent mark {
+  background-color: var(--color-gray-4);
+  color: inherit;
+  padding: 0 0.2em;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
+/* 引用文本 */
+.mdContent blockquote {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0 0 10px;
+  color: var(--color-gray-6);
+  background-color: var(--color-gray-1);
+}
+
+.mdContent blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-gray-4);
+}
+
+.mdContent blockquote p {
+  margin: 0;
+}
+
+/* 代码块 */
+.mdContent .codeBlock {
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.mdContent .codeLang {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-6);
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  margin: 0;
+  z-index: 1;
+  font-weight: 500;
+}
+
+/* 多行代码 */
+.mdContent .codePre {
+  background-color: var(--color-gray-3);
+  padding: 28px 12px 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  line-height: 1.4;
+}
+
+.mdContent pre {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* 单行代码 */
 .mdContent code {
   background-color: var(--color-gray-3);
   color: var(--color-gray-7);
-  padding: 0rem 3px;
-  margin: 0 1px;
-  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
   font-family: monospace;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.mdContent pre code {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
 }
 
 /* 图片 */
 .mdContent img {
   max-width: 100%;
-  border-radius: 8px;
-  margin: 0.5rem 0;
+  border-radius: 0;
+  margin: 0;
 }

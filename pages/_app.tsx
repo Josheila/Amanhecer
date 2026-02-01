@@ -1,5 +1,6 @@
 // pages/_app.tsx
 import "../styles/globals.css";
+import "highlight.js/styles/github.css";
 import SEO from "../components/SEO";
 import type { AppProps } from "next/app";
 import Head from "next/head";

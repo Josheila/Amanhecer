@@ -1,4 +1,15 @@
 /* [project]/styles/Moments.module.css [client] (css) */
+.Moments-module__2EPtZq__statusCard small {
+  margin-bottom: 12px;
+  display: block;
+}
 
+.Moments-module__2EPtZq__statusCard {
+  margin-bottom: 16px;
+}
+
+.Moments-module__2EPtZq__statusCard p {
+  margin: 8px 0;
+}
 
 /*# sourceMappingURL=styles_Moments_module_css_65f1660e._.single.css.map*/

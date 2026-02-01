@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/hoon.js"],"sourcesContent":["'use strict'\n\nmodule.exports = hoon\nhoon.displayName = 'hoon'\nhoon.aliases = []\nfunction hoon(Prism) {\n  Prism.languages.hoon = {\n    comment: {\n      pattern: /::.*/,\n      greedy: true\n    },\n    string: {\n      pattern: /\"[^\"]*\"|'[^']*'/,\n      greedy: true\n    },\n    constant: /%(?:\\.[ny]|[\\w-]+)/,\n    'class-name': /@(?:[a-z0-9-]*[a-z0-9])?|\\*/i,\n    function: /(?:\\+[-+] {2})?(?:[a-z](?:[a-z0-9-]*[a-z0-9])?)/,\n    keyword:\n      /\\.[\\^\\+\\*=\\?]|![><:\\.=\\?!]|=[>|:,\\.\\-\\^<+;/~\\*\\?]|\\?[>|:\\.\\-\\^<\\+&~=@!]|\\|[\\$_%:\\.\\-\\^~\\*=@\\?]|\\+[|\\$\\+\\*]|:[_\\-\\^\\+~\\*]|%[_:\\.\\-\\^\\+~\\*=]|\\^[|:\\.\\-\\+&~\\*=\\?]|\\$[|_%:<>\\-\\^&~@=\\?]|;[:<\\+;\\/~\\*=]|~[>|\\$_%<\\+\\/&=\\?!]|--|==/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,KAAK,WAAW,GAAG;AACnB,KAAK,OAAO,GAAG,EAAE;AACjB,SAAS,KAAK,KAAK;IACjB,MAAM,SAAS,CAAC,IAAI,GAAG;QACrB,SAAS;YACP,SAAS;YACT,QAAQ;QACV;QACA,QAAQ;YACN,SAAS;YACT,QAAQ;QACV;QACA,UAAU;QACV,cAAc;QACd,UAAU;QACV,SACE;IACJ;AACF","ignoreList":[0]}}]
+}

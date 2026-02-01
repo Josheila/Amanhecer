@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/properties.js"],"sourcesContent":["'use strict'\n\nmodule.exports = properties\nproperties.displayName = 'properties'\nproperties.aliases = []\nfunction properties(Prism) {\n  Prism.languages.properties = {\n    comment: /^[ \\t]*[#!].*$/m,\n    'attr-value': {\n      pattern:\n        /(^[ \\t]*(?:\\\\(?:\\r\\n|[\\s\\S])|[^\\\\\\s:=])+(?: *[=:] *(?! )| ))(?:\\\\(?:\\r\\n|[\\s\\S])|[^\\\\\\r\\n])+/m,\n      lookbehind: true\n    },\n    'attr-name': /^[ \\t]*(?:\\\\(?:\\r\\n|[\\s\\S])|[^\\\\\\s:=])+(?= *[=:]| )/m,\n    punctuation: /[=:]/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,WAAW,WAAW,GAAG;AACzB,WAAW,OAAO,GAAG,EAAE;AACvB,SAAS,WAAW,KAAK;IACvB,MAAM,SAAS,CAAC,UAAU,GAAG;QAC3B,SAAS;QACT,cAAc;YACZ,SACE;YACF,YAAY;QACd;QACA,aAAa;QACb,aAAa;IACf;AACF","ignoreList":[0]}}]
+}

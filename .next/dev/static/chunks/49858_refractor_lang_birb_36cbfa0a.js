@@ -1,0 +1,33 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/node_modules/.pnpm/refractor@3.6.0/node_modules/refractor/lang/birb.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = birb;
+birb.displayName = 'birb';
+birb.aliases = [];
+function birb(Prism) {
+    Prism.languages.birb = Prism.languages.extend('clike', {
+        string: {
+            pattern: /r?("|')(?:\\.|(?!\1)[^\\])*\1/,
+            greedy: true
+        },
+        'class-name': [
+            /\b[A-Z](?:[\d_]*[a-zA-Z]\w*)?\b/,
+            /\b(?:[A-Z]\w*|(?!(?:var|void)\b)[a-z]\w*)(?=\s+\w+\s*[;,=()])/
+        ],
+        keyword: /\b(?:assert|break|case|class|const|default|else|enum|final|follows|for|grab|if|nest|new|next|noSeeb|return|static|switch|throw|var|void|while)\b/,
+        operator: /\+\+|--|&&|\|\||<<=?|>>=?|~(?:\/=?)?|[+\-*\/%&^|=!<>]=?|\?|:/,
+        variable: /\b[a-z_]\w*\b/
+    });
+    Prism.languages.insertBefore('birb', 'function', {
+        metadata: {
+            pattern: /<\w+>/,
+            greedy: true,
+            alias: 'symbol'
+        }
+    });
+}
+}),
+]);
+
+//# sourceMappingURL=49858_refractor_lang_birb_36cbfa0a.js.map

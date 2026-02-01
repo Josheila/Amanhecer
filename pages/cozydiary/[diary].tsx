@@ -3,13 +3,10 @@ import { useRouter } from "next/router";
 import { getAllDiaries, getDiaryBySlug, Diary } from "../../lib/diary";
 import { formatDate } from "../../lib/date";
 import Header from "../../components/Header"; // 用 Header 组件
-import styles from "../../styles/MdContent.module.css";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
+import Markdown from "../../components/Markdown";
 import SEO from "../../components/SEO";
 import blogListStyles from "../../styles/BlogList.module.css";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 import { BLUR_DATA_URL } from "../../lib/blur";
 
 interface DiaryPageProps {
@@ -65,11 +62,7 @@ export default function DiaryPage({ diary }: DiaryPageProps) {
         <h1 style={{ fontSize: "1.7rem", marginBottom: "2rem" }}>
           {diary.title}
         </h1>
-        <div className={styles.mdContent}>
-          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
-            {diary.content}
-          </ReactMarkdown>
-        </div>
+        <Markdown content={diary.content} />
       </div>
     </>
   );

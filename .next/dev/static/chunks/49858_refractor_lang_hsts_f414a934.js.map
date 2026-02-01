@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/hsts.js"],"sourcesContent":["'use strict'\n\nmodule.exports = hsts\nhsts.displayName = 'hsts'\nhsts.aliases = []\nfunction hsts(Prism) {\n  /**\n   * Original by Scott Helme.\n   *\n   * Reference: https://scotthelme.co.uk/hsts-cheat-sheet/\n   */\n  Prism.languages.hsts = {\n    directive: {\n      pattern: /\\b(?:includeSubDomains|max-age|preload)(?=[\\s;=]|$)/i,\n      alias: 'property'\n    },\n    operator: /=/,\n    punctuation: /;/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,KAAK,WAAW,GAAG;AACnB,KAAK,OAAO,GAAG,EAAE;AACjB,SAAS,KAAK,KAAK;IACjB;;;;GAIC,GACD,MAAM,SAAS,CAAC,IAAI,GAAG;QACrB,WAAW;YACT,SAAS;YACT,OAAO;QACT;QACA,UAAU;QACV,aAAa;IACf;AACF","ignoreList":[0]}}]
+}

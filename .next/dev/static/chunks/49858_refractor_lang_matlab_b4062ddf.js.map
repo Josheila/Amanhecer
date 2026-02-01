@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sheilazhai/Library/Mobile%20Documents/com~apple~CloudDocs/Amanhecer/node_modules/.pnpm/refractor%403.6.0/node_modules/refractor/lang/matlab.js"],"sourcesContent":["'use strict'\n\nmodule.exports = matlab\nmatlab.displayName = 'matlab'\nmatlab.aliases = []\nfunction matlab(Prism) {\n  Prism.languages.matlab = {\n    comment: [/%\\{[\\s\\S]*?\\}%/, /%.+/],\n    string: {\n      pattern: /\\B'(?:''|[^'\\r\\n])*'/,\n      greedy: true\n    },\n    // FIXME We could handle imaginary numbers as a whole\n    number: /(?:\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:[eE][+-]?\\d+)?(?:[ij])?|\\b[ij]\\b/,\n    keyword:\n      /\\b(?:NaN|break|case|catch|continue|else|elseif|end|for|function|if|inf|otherwise|parfor|pause|pi|return|switch|try|while)\\b/,\n    function: /\\b(?!\\d)\\w+(?=\\s*\\()/,\n    operator: /\\.?[*^\\/\\\\']|[+\\-:@]|[<>=~]=?|&&?|\\|\\|?/,\n    punctuation: /\\.{3}|[.,;\\[\\](){}!]/\n  }\n}\n"],"names":[],"mappings":"AAEA,OAAO,OAAO,GAAG;AACjB,OAAO,WAAW,GAAG;AACrB,OAAO,OAAO,GAAG,EAAE;AACnB,SAAS,OAAO,KAAK;IACnB,MAAM,SAAS,CAAC,MAAM,GAAG;QACvB,SAAS;YAAC;YAAkB;SAAM;QAClC,QAAQ;YACN,SAAS;YACT,QAAQ;QACV;QACA,qDAAqD;QACrD,QAAQ;QACR,SACE;QACF,UAAU;QACV,UAAU;QACV,aAAa;IACf;AACF","ignoreList":[0]}}]
+}

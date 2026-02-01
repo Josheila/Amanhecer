@@ -14,7 +14,13 @@ __turbopack_context__.v((parentImport) => {
 
 __turbopack_context__.v((parentImport) => {
     return Promise.all([
-  "static/chunks/components_BlogListPagination_tsx_084ea73a._.js",
+  {
+    "path": "static/chunks/styles_Pagination_module_d5a0aaec.css",
+    "included": [
+      "[project]/styles/Pagination.module.css [client] (css)"
+    ]
+  },
+  "static/chunks/_45139ebc._.js",
   "static/chunks/components_BlogListPagination_tsx_edc266d4._.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
         return parentImport("[project]/components/BlogListPagination.tsx [client] (ecmascript, next/dynamic entry)");
